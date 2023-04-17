@@ -93,6 +93,8 @@ publishing:
         - root
     writeStubs: false
     siteRootDir: docs
+    siteUrl: https://JosiahJack.github.io/
+    assetsPrefix: /KeepModReadme
     seo:
         title: Dendron
         description: Personal Knowledge Space

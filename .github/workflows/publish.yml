@@ -4,6 +4,7 @@ on:
   push:
     branches:
     - feature/DendronTest
+    - master
 jobs:
   build:
     runs-on: ubuntu-latest

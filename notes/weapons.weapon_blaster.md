@@ -1,0 +1,41 @@
+---
+id: h2a804o06zih0achf0x3zv4
+title: Laser Blaster
+desc: ''
+updated: 1681786109246
+created: 1657647810607
+---
+### `weapon_blaster`
+
+### Normal Effects
+Replaces shotgun on pickup.  Does same damage as shotgun but shoots a laser
+projectile.  Lasers ricochet off walls up to 3 times but lose 10% damage with
+each ricochet with a 15% chance of not ricocheting.
+
+### Tome of Power Effects
+Double damage and flings out sparks.
+
+### Stats Table
+
+|Attribute                     |Value                          |
+|:-----------------------------|:------------------------------|
+|Entity                        |weapon_blaster                 |
+|Source Mod                    |Drake                          |
+|Provides                      |25 Shells                      |
+|Ammo Usage                    |1 Shell                        |
+|Direct Impulse                |2                              |
+|Weapon Slot                   |2                              |
+|Normal Damage                 |24                             |
+|Alternate Damage 1            |                               |
+|Tome of Power Damage          |48                             |
+|Tome of Power Alternate Damage|                               |
+
+|Pickup|View Model Normal|
+|:---:|:---:|
+![Picture](assets/img/weapon_blaster.png)|![Picture](assets/img/v_blaster.png)|
+
+-------------------------------------------------------------------------------
+Book table of contents: [Weapons](3.0-Weapons.md)
+<br />
+
+Tome table of contents: [Introduction](1.0-Introduction.md)

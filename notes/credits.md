@@ -1,0 +1,27 @@
+---
+id: jejp4x6svhemnxp0ioejmc7
+title: Credits
+desc: ''
+updated: 1657647932681
+created: 1657647929110
+---
+Since this is a compilation mod, it has had development by a large number of different people over the past 25 years of Quake modding history.  I have attempted to be thorough here, no etc.'s allowed, but please email me if I left your name out of this list.  Also of note, I have included all the various readmes from the different mods used in Keep into the `keep/credits` folder.
+
+## Sourced Projects
+Arcane Dimensions (AD)
+Quake Mission Pack 1 (Hipnotic)
+Quake Mission Pack 2 (Rogue)
+Quoth
+Rubicon
+Rubicon 2
+Rubicon Rumble Pack
+Custents
+extras_r4
+extras_r5
+Nehahra
+
+## Per Project Credit Listing
+Here I provide the credits for each mod as provided at the time of mod release from the mods' documentation.
+
+## Full Name List Alphabetized
+This should be everyone ever involved all in one large list.

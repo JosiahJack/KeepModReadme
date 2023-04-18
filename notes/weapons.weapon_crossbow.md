@@ -1,0 +1,41 @@
+---
+id: xlamjtgrup3r46cxhfdxzyb
+title: Crossbow
+desc: ''
+updated: 1681786109271
+created: 1657651490621
+---
+#### `weapon_crossbow`
+
+### Normal Effects
+Fires either normal bolts or poison bolts.  Poison bolts cause poison debuff
+and do more damage.  Excellent stealth weapon since enemies can be shot
+without angering them.
+
+### Tome of Power Effects
+Rapid fire Van Helsing style.
+
+### Stats Table
+
+|Attribute                     |Value                          |
+|:-----------------------------|:------------------------------|
+|Entity                        |weapon_crossbow                |
+|Source Mod                    |In The Shadows (ITS)           |
+|Provides                      |8 Bolts                        |
+|Ammo Usage                    |1 Bolt or 1 Poison             |
+|Direct Impulse                |78                             |
+|Weapon Slot                   |9                              |
+|Normal Damage                 |100                            |
+|Alternate Damage 1            |110                            |
+|Tome of Power Damage          |                               |
+|Tome of Power Alternate Damage|                               |
+
+|Pickup|View Model Normal|View Model Poison|
+|:---:|:---:|:---:|
+![Picture](assets/img/weapon_crossbow.png)|![Picture](assets/img/v_crossbow1.png)|![Picture](assets/img/v_crossbow2.png)|
+
+-------------------------------------------------------------------------------
+Book table of contents: [Weapons](3.0-Weapons.md)
+<br />
+
+Tome table of contents: [Introduction](1.0-Introduction.md)

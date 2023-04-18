@@ -2,10 +2,10 @@
 id: m7lqt0asrth1ysbyz8nj11i
 title: Armagon
 desc: ''
-updated: 1657678591072
+updated: 1681786109328
 created: 1657649298753
 ---
-![Monster Picture](img/armagon.png)
+![Monster Picture](assets/img/armagon.png)
 
 |Name  |Desription|
 |------|-------------|

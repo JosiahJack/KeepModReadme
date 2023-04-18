@@ -2,10 +2,10 @@
 id: 7gc8r0yms23j7d2sk8mb4mf
 title: Rocketeer
 desc: ''
-updated: 1657678635824
+updated: 1681786109230
 created: 1657649103976
 ---
-![Monster Picture](img/grunt_rocket.png)
+![Monster Picture](assets/img/grunt_rocket.png)
 
 |Name  |Desription|
 |------|-------------|

@@ -2,10 +2,10 @@
 id: pba7lfbg17udyca9lx175vm
 title: Archer
 desc: ''
-updated: 1657678599862
+updated: 1681786109208
 created: 1657649370432
 ---
-![Monster Picture](img/archer.png)
+![Monster Picture](assets/img/archer.png)
 
 |Name  |Desription|
 |------|-------------|

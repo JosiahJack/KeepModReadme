@@ -2,7 +2,7 @@
 id: hqeu6dx916hhn8483bow8xq
 title: Flak Cannon
 desc: ''
-updated: 1657654872391
+updated: 1681786109215
 created: 1657651474875
 ---
 ### `weapon_flak`
@@ -31,7 +31,7 @@ Hitscan instead of projectile.
 
 |Pickup|View Model Normal|
 |:---:|:---:|
-![Picture](img/weapon_flak.png)|![Picture](img/v_flak1.png)|
+![Picture](assets/img/weapon_flak.png)|![Picture](assets/img/v_flak1.png)|
 
 -------------------------------------------------------------------------------
 Book table of contents: [Weapons](3.0-Weapons.md)

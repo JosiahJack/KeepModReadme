@@ -2,10 +2,10 @@
 id: jarf01r21s1mser32ntxwmc
 title: Grunt
 desc: ''
-updated: 1657678812095
+updated: 1681786109166
 created: 1657649243671
 ---
-![Monster Picture](img/grunt.png)
+![Monster Picture](assets/img/grunt.png)
 
 |Name  |Desription|
 |------|-------------|

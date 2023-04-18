@@ -2,7 +2,7 @@
 id: k9p15d3i31xcwakh77awafg
 title: Laser Cannon
 desc: ''
-updated: 1657654955207
+updated: 1681786109276
 created: 1657651307554
 ---
 ### `weapon_laser_gun`
@@ -34,7 +34,7 @@ Double damage and flings out sparks.
 
 |Pickup|View Model Normal|
 |:---:|:---:|
-![Picture](img/weapon_lasercannon.png)|![Picture](img/v_lasercannon.png)|
+![Picture](assets/img/weapon_lasercannon.png)|![Picture](assets/img/v_lasercannon.png)|
 
 -------------------------------------------------------------------------------
 Book table of contents: [Weapons](3.0-Weapons.md)

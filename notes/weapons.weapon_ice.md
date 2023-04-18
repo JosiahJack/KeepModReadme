@@ -2,7 +2,7 @@
 id: 96ixybufv55ueshyg7ueh2e
 title: Blizzard Sphere, Ran's Staff
 desc: ''
-updated: 1657654965291
+updated: 1681786109266
 created: 1657651324769
 ---
 ### `weapon_ice`
@@ -31,7 +31,7 @@ Forked lightning up to 10 targets. Adds boulder projectile to end of combo.
 
 |Pickup|View Model Normal|
 |:---:|:---:|
-![Picture](img/weapon_ice.png)|![Picture](img/v_ice.png)|
+![Picture](assets/img/weapon_ice.png)|![Picture](assets/img/v_ice.png)|
 
 -------------------------------------------------------------------------------
 Book table of contents: [Weapons](3.0-Weapons.md)

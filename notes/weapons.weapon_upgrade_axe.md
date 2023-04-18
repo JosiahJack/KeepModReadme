@@ -2,7 +2,7 @@
 id: bsnq3xhtewg75oyfxig2rcf
 title: Shadow Axe
 desc: ''
-updated: 1657654918547
+updated: 1681786109335
 created: 1657651676821
 ---
 ### `weapon_upgrade_axe`
@@ -32,7 +32,7 @@ gibs.
 
 |Pickup|View Model Normal|
 |:---:|:---:|
-![Picture](img/weapon_shadaxe.png)|![Picture](img/v_shadaxe.png)|
+![Picture](assets/img/weapon_shadaxe.png)|![Picture](assets/img/v_shadaxe.png)|
 
 -------------------------------------------------------------------------------
 Book table of contents: [Weapons](3.0-Weapons.md)

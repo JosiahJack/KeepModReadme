@@ -2,7 +2,7 @@
 id: h2a804o06zih0achf0x3zv4
 title: Laser Blaster
 desc: ''
-updated: 1657654451698
+updated: 1681786109246
 created: 1657647810607
 ---
 ### `weapon_blaster`
@@ -32,7 +32,7 @@ Double damage and flings out sparks.
 
 |Pickup|View Model Normal|
 |:---:|:---:|
-![Picture](img/weapon_blaster.png)|![Picture](img/v_blaster.png)|
+![Picture](assets/img/weapon_blaster.png)|![Picture](assets/img/v_blaster.png)|
 
 -------------------------------------------------------------------------------
 Book table of contents: [Weapons](3.0-Weapons.md)

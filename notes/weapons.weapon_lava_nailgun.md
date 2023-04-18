@@ -2,7 +2,7 @@
 id: 8k3b8dorwlvcsflzbqfp9gj
 title: Lava Nailgun
 desc: ''
-updated: 1657654946726
+updated: 1681786109191
 created: 1657651289246
 ---
 ### `weapon_lava_nailgun`
@@ -37,7 +37,7 @@ Fire applies 4 damage every second for a total time of damage / 4.  Then does
 
 |Pickup|View Model Normal|
 |:---:|:---:|
-![Picture](img/weapon_lavanail.png)|![Picture](img/v_lavanail.png)|
+![Picture](assets/img/weapon_lavanail.png)|![Picture](assets/img/v_lavanail.png)|
 
 -------------------------------------------------------------------------------
 Book table of contents: [Weapons](3.0-Weapons.md)

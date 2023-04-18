@@ -2,7 +2,7 @@
 id: aum55alyokbtaszwruzz064
 title: Common Attributes
 desc: ''
-updated: 1657678442366
+updated: 1681786109316
 created: 1657643421425
 nav_order: 1
 ---
@@ -218,7 +218,7 @@ These are attributes not listed on the fgd and are meant for special use cases o
 
 # Example Monster
 >Picture goes here>
-![Example](img/ogre.png)
+![Example](assets/img/ogre.png)
 >Used ogre as an example
 
 |Name  |Desription|

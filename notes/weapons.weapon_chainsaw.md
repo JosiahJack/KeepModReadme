@@ -2,7 +2,7 @@
 id: c8mib0w1umccl4uwspfy9d9
 title: Chainsaw
 desc: ''
-updated: 1657654854292
+updated: 1681786109221
 created: 1657651501213
 ---
 ### `weapon_chainsaw`
@@ -33,7 +33,7 @@ front of player at any time.
 
 |Pickup|View Model Normal|View Model Zerstorer|
 |:---:|:---:|:---:|
-![Picture](img/weapon_chainsaw.png)|![Picture](img/v_chainsawq15.png)|![Picture](img/v_chainsaw.png)|
+![Picture](assets/img/weapon_chainsaw.png)|![Picture](assets/img/v_chainsawq15.png)|![Picture](assets/img/v_chainsaw.png)|
 
 -------------------------------------------------------------------------------
 Book table of contents: [Weapons](3.0-Weapons.md)

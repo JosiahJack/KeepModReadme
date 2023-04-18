@@ -2,11 +2,11 @@
 id: ya789satwbb1a8h20qbacrf
 title: Anaconda
 desc: ''
-updated: 1657654798315
+updated: 1681786109321
 created: 1657646778414
 ---
 ## monster_anac
-![Monster Picture](img/anac.png)
+![Monster Picture](assets/img/anac.png)
 
 |Name  |Desription|
 |------|-------------|

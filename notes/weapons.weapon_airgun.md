@@ -2,7 +2,7 @@
 id: rupa7ryyng489woyn1fmsdr
 title: Air Fist
 desc: ''
-updated: 1657654813279
+updated: 1681786109261
 created: 1657647776721
 ---
 ### `weapon_airgun`
@@ -42,7 +42,7 @@ unpredictable for the player and make it harder to eliminate all enemies.
 
 |Pickup|View Model Normal|
 |:---:|:---:|
-![Picture](img/weapon_airgun.png)|![Picture](img/v_airfist.png)|
+![Picture](assets/img/weapon_airgun.png)|![Picture](assets/img/v_airfist.png)|
 
 
 -------------------------------------------------------------------------------

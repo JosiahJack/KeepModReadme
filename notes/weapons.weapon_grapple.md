@@ -2,7 +2,7 @@
 id: toagzhmp663d57na30zd5wx
 title: Grapple Hook
 desc: ''
-updated: 1657654881295
+updated: 1681786109256
 created: 1657651457517
 ---
 ### `weapon_grapple`
@@ -34,7 +34,7 @@ Tosses sparks out.
 
 |Pickup|View Model Normal|
 |:---:|:---:|
-![Picture](img/weapon_grapple.png)|![Picture](img/v_grapple.png)|
+![Picture](assets/img/weapon_grapple.png)|![Picture](assets/img/v_grapple.png)|
 
 
 -------------------------------------------------------------------------------

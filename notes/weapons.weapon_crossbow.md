@@ -2,7 +2,7 @@
 id: xlamjtgrup3r46cxhfdxzyb
 title: Crossbow
 desc: ''
-updated: 1657654861515
+updated: 1681786109271
 created: 1657651490621
 ---
 #### `weapon_crossbow`
@@ -32,7 +32,7 @@ Rapid fire Van Helsing style.
 
 |Pickup|View Model Normal|View Model Poison|
 |:---:|:---:|:---:|
-![Picture](img/weapon_crossbow.png)|![Picture](img/v_crossbow1.png)|![Picture](img/v_crossbow2.png)|
+![Picture](assets/img/weapon_crossbow.png)|![Picture](assets/img/v_crossbow1.png)|![Picture](assets/img/v_crossbow2.png)|
 
 -------------------------------------------------------------------------------
 Book table of contents: [Weapons](3.0-Weapons.md)

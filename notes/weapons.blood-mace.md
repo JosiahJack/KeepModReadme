@@ -2,7 +2,7 @@
 id: q7d9plhgjsis5x7l570q0mc
 title: Blood Mace
 desc: ''
-updated: 1657678984499
+updated: 1681786109310
 created: 1657660696054
 ---
 ### `weapon_mace`
@@ -34,4 +34,4 @@ Double damage.
 
 |Pickup|View Model Normal|
 |:---:|:---:|
-![Picture](img/weapon_mace.png)|![Picture](img/v_mace.png)|
+![Picture](assets/img/weapon_mace.png)|![Picture](assets/img/v_mace.png)|

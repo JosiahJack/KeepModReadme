@@ -2,10 +2,10 @@
 id: iez3ksp5z0u4hqgs6hor6pd
 title: Archer Assassin
 desc: ''
-updated: 1657678603574
+updated: 1681786109198
 created: 1657649336100
 ---
-![Monster Picture](img/archer_lord.png)
+![Monster Picture](assets/img/archer_lord.png)
 
 |Name  |Desription|
 |------|-------------|

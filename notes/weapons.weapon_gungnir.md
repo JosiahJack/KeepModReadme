@@ -2,7 +2,7 @@
 id: jn9xht5i27feextpuzg8mo1
 title: Gungnir, Spear of Odin
 desc: ''
-updated: 1657654977995
+updated: 1681786109303
 created: 1657651386873
 ---
 ### `weapon_gungnir`
@@ -33,7 +33,7 @@ players, and strikes them with lightning.
 
 |Pickup|View Model Normal|
 |:---:|:---:|
-![Picture](img/weapon_gungnir.png)|![Picture](img/v_gungnir.png)|
+![Picture](assets/img/weapon_gungnir.png)|![Picture](assets/img/v_gungnir.png)|
 
 -------------------------------------------------------------------------------
 Book table of contents: [Weapons](3.0-Weapons.md)

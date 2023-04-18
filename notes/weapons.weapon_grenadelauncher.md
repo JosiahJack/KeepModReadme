@@ -2,7 +2,7 @@
 id: c7q7hqtbb728zrjrnizexyx
 title: Grenade Launcher
 desc: ''
-updated: 1657654991342
+updated: 1681786109240
 created: 1657651416284
 ---
 ### `weapon_grenadelauncher`
@@ -32,7 +32,7 @@ explosion can set things on fire.
 
 |Pickup|View Model Normal|
 |:---:|:---:|
-![Picture](img/weapon_grenadelauncher.png)|![Picture](img/v_grenade.png)|
+![Picture](assets/img/weapon_grenadelauncher.png)|![Picture](assets/img/v_grenade.png)|
 
 -------------------------------------------------------------------------------
 Book table of contents: [Weapons](3.0-Weapons.md)

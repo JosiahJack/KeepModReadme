@@ -2,11 +2,11 @@
 id: u8gatxwbx5vug5lp8s94467
 title: Nail Grunt
 desc: ''
-updated: 1657678207322
+updated: 1681786109173
 created: 1657649168811
 ---
 # Nail Grunt
-![Monster Picture](img/grunt_spike.png)
+![Monster Picture](assets/img/grunt_spike.png)
 
 |Name   |Desription|
 |:------|:------------|

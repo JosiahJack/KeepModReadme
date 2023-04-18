@@ -2,7 +2,7 @@
 id: s3key0bi2w0sa9qe7xe3qs2
 title: Chain Lightning Gun
 desc: ''
-updated: 1657678856035
+updated: 1681786109286
 created: 1657651512911
 ---
 ### `weapon_chain_lightning`
@@ -34,4 +34,4 @@ Increased damage plus spark effects at impact.
 
 |Pickup|View Model Normal|
 |:---:|:---:|
-![Picture](img/weapon_chain_lightning.png)|![Picture](img/v_chainlightning.png)|
+![Picture](assets/img/weapon_chain_lightning.png)|![Picture](assets/img/v_chainlightning.png)|

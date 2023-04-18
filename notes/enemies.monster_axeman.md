@@ -2,10 +2,10 @@
 id: fhlel4mer8u63cvs9om2ulp
 title: Axe Knight, Forest Thug
 desc: ''
-updated: 1657679079033
+updated: 1681786109236
 created: 1657649478535
 ---
-![Monster Picture](img/knight_axe.png)
+![Monster Picture](assets/img/knight_axe.png)
 
 |Name  |Desription|
 |------|-------------|
@@ -27,7 +27,7 @@ created: 1657649478535
 Set `exactskin` to 1 or 2.  Only changes `deathstring` to `" was bushwhacked by a Forest Thug\n"`.
 
 1.
-![skin1](img/knight_axe1.png)
+![skin1](assets/img/knight_axe1.png)
 
 2.
-![skin2](img/knight_axe2.png)
+![skin2](assets/img/knight_axe2.png)

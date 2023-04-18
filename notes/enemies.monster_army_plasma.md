@@ -2,10 +2,10 @@
 id: waau9ysyytyrq9a4p24gw8m
 title: Electrocutioner
 desc: ''
-updated: 1657678582575
+updated: 1681786109297
 created: 1657649213568
 ---
-![Monster Picture](img/grunt_plasma.png)
+![Monster Picture](assets/img/grunt_plasma.png)
 
 |Name  |Desription|
 |------|-------------|

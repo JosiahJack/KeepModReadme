@@ -2,7 +2,7 @@
 id: yxoeqw93an87f9f7mitcn3d
 title: Thunderbolt
 desc: ''
-updated: 1657654928469
+updated: 1681786109182
 created: 1657651241708
 ---
 ### `weapon_lightning`
@@ -35,7 +35,7 @@ Double damage and throws sparks.
 
 |Pickup|View Model Normal|
 |:---:|:---:|
-![Picture](img/weapon_lightning.png)|![Picture](img/v_thunderbolt.png)|
+![Picture](assets/img/weapon_lightning.png)|![Picture](assets/img/v_thunderbolt.png)|
 
 -------------------------------------------------------------------------------
 Book table of contents: [Weapons](3.0-Weapons.md)

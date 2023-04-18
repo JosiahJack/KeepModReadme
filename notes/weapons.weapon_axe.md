@@ -2,7 +2,7 @@
 id: eawj906fg1s74o82ideaizh
 title: Axe
 desc: ''
-updated: 1657654823504
+updated: 1681786109202
 created: 1657647797369
 ---
 ### `weapon_axe`
@@ -37,7 +37,7 @@ than simply upgrading to the shadow axe's behavior. Throws out extra gibs.
 
 |Pickup|View Model Normal|View Model AD|
 |:---:|:---:|:---:|
-![Picture](img/weapon_axe.png)|![Picture](img/v_axe.png)|![Picture](img/v_adaxe.png)|
+![Picture](assets/img/weapon_axe.png)|![Picture](assets/img/v_axe.png)|![Picture](assets/img/v_adaxe.png)|
 
 -------------------------------------------------------------------------------
 Book table of contents: [Weapons](3.0-Weapons.md)

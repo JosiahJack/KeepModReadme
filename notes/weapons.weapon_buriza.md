@@ -2,7 +2,7 @@
 id: oiybnb3ufxwm0pndpxb9k63
 title: Asgard Arbalest
 desc: ''
-updated: 1657654835729
+updated: 1681786109251
 created: 1657651616026
 ---
 ### `weapon_buriza`
@@ -36,7 +36,7 @@ Fires 3 bolts out in a fan for the same ammo cost of 1.
 
 |Pickup|View Model Normal|
 |:---:|:---:|
-![Picture](img/weapon_buriza.png)|![Picture](img/v_buriza.png)|
+![Picture](assets/img/weapon_buriza.png)|![Picture](assets/img/v_buriza.png)|
 
 -------------------------------------------------------------------------------
 Book table of contents: [Weapons](3.0-Weapons.md)

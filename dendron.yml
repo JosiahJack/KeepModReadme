@@ -96,8 +96,8 @@ publishing:
     siteUrl: https://JosiahJack.github.io/
     assetsPrefix: /KeepModReadme
     seo:
-        title: Dendron
-        description: Personal Knowledge Space
+        title: KeepModReadme
+        description: Keep the Uber Mod For Quake
     github:
         enableEditLink: true
         editLinkText: Edit this page on GitHub

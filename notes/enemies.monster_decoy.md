@@ -1,8 +1,8 @@
 ---
 id: t6ujhtkzrujle4i1ghn3e4w
-title: Monster_decoy
+title: Decoy Player
 desc: ''
-updated: 1681963022264
+updated: 1681963715738
 created: 1681955166863
 ---
 ![Monster Picture](assets/img/player.png)

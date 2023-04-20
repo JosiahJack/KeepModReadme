@@ -1,15 +1,15 @@
 ---
 id: 3798q6kb7ivprba4z4jhm3d
-title: Monster_dfury_boss
+title: Brigade Commander, Stone Brigade Commander
 desc: ''
-updated: 1681963095609
+updated: 1681964000540
 created: 1681955849551
 ---
 ![Monster Picture](assets/img/knight_fury_boss.png)
 
 |Name  |Desription|
 |------|-------------|
-|Entity|monster_dfury|
+|Entity|monster_dfury_boss|
 |Source Mod||
 |Health||
 |Pain Flinch||

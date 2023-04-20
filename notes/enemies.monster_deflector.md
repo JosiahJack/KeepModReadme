@@ -1,8 +1,8 @@
 ---
 id: 7a957f1mkqzd4cllc67okgs
-title: Monster_deflector
+title: Deflector
 desc: ''
-updated: 1681963054518
+updated: 1681963733312
 created: 1681955842092
 ---
 ![Monster Picture](assets/img/enforcer_deflector.png)

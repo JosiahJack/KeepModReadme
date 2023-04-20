@@ -1,8 +1,8 @@
 ---
 id: u8jbd0docd0khqc32n9yj69
-title: Monster_dfury
+title: Fury Knight
 desc: ''
-updated: 1681963089857
+updated: 1681963711305
 created: 1681955847088
 ---
 ![Monster Picture](assets/img/knight_fury.png)

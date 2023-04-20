@@ -1,8 +1,8 @@
 ---
 id: z7b57oqs6g1awc956zu89zi
-title: Monster_death_guard
+title: Death Guard (Quoth)
 desc: ''
-updated: 1681962980321
+updated: 1681963952425
 created: 1681955839593
 ---
 ![Monster Picture](assets/img/knight_deathguard.png)

@@ -1,8 +1,8 @@
 ---
 id: wqt1efywds3z4grxea4mf8d
-title: Monster_dknight
+title: Death Knight (AD)
 desc: ''
-updated: 1681963141762
+updated: 1681964044415
 created: 1681955854650
 ---
 ![Monster Picture](assets/img/knight_death.png)

@@ -1,8 +1,8 @@
 ---
 id: x912g3cin82cybnktst735m
-title: Monster_dcrossbow
+title: Crossbow Knight (AD)
 desc: ''
-updated: 1681962963879
+updated: 1681963928540
 created: 1681955837102
 ---
 ![Monster Picture](assets/img/knight_crossbow.png)

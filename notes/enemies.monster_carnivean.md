@@ -1,8 +1,8 @@
 ---
 id: zuxza6fu8ld7rupdnirkket
-title: Monster_carnivean
+title: Carnivean
 desc: ''
-updated: 1681962680724
+updated: 1681963863618
 created: 1681955827009
 ---
 ![Monster Picture](assets/img/carnivean.png)

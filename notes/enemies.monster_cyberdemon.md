@@ -1,8 +1,8 @@
 ---
 id: plt7sqj5tv3mxf5sxc79ro3
-title: Monster_cyberdemon
+title: Cyberdemon
 desc: ''
-updated: 1681962905720
+updated: 1681963913966
 created: 1681955834597
 ---
 ![Monster Picture](assets/img/cyberdemon.png)

@@ -1,8 +1,8 @@
 ---
 id: h8wbj51x9rc2z7w3xn4les6
-title: Monster_centurion
+title: Centurion
 desc: ''
-updated: 1681962709559
+updated: 1681963867873
 created: 1681955832087
 ---
 ![Monster Picture](assets/img/enforcer_centurion.png)

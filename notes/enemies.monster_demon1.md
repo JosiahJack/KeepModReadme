@@ -1,8 +1,8 @@
 ---
 id: 8phcafm8ea6vjhs6m59k3d2
-title: Monster_demon1
+title: Fiend
 desc: ''
-updated: 1681963065254
+updated: 1681963699133
 created: 1681955844583
 ---
 ![Monster Picture](assets/img/fiend.png)

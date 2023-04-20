@@ -1,8 +1,8 @@
 ---
 id: waecwtsue4b3e1tov7fwzg0
-title: Monster_boil
+title: Boil
 desc: ''
-updated: 1681962613552
+updated: 1681963822367
 created: 1681955781910
 ---
 ![Monster Picture](assets/img/boil.png) ![Monster Picture](assets/img/boil_ground.png) ![Monster Picture](assets/img/boil_wall.png)

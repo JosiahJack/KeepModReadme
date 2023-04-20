@@ -1,8 +1,8 @@
 ---
 id: q9cotv0gvhq397u73vlhc05
-title: Monster_army_cyborg
+title: Cyborg Grunt
 desc: ''
-updated: 1681961070866
+updated: 1681963749400
 created: 1681956134293
 ---
 ![Monster Picture](assets/img/grunt_cyborg.png)

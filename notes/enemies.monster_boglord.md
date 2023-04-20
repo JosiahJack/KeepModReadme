@@ -1,8 +1,8 @@
 ---
 id: kt96qp2r4zirqj8fd4plmue
-title: Monster_boglord
+title: Bog Lord
 desc: ''
-updated: 1681962385718
+updated: 1681963816010
 created: 1681955784401
 ---
 ![Monster Picture](assets/img/boglord.png)

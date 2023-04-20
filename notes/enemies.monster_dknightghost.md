@@ -1,8 +1,8 @@
 ---
 id: 3u3dhxo8ps3j2fhgkjhvq26
-title: Monster_dknightghost
+title: Ghost Knight
 desc: ''
-updated: 1681963159100
+updated: 1681964071257
 created: 1681955857148
 ---
 ![Monster Picture](assets/img/knight_death.png)

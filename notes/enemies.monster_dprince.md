@@ -1,8 +1,8 @@
 ---
 id: 1vxxeibl3uq0yn0n72q9jd9
-title: Monster_dprince
+title: Dark Prince
 desc: ''
-updated: 1681963328043
+updated: 1681964103900
 created: 1681955867343
 ---
 ![Monster Picture](assets/img/knight_dprince.png)

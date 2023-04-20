@@ -1,8 +1,8 @@
 ---
 id: 7yogerrxg6ihrn90j1njpuv
-title: Monster_death_lord
+title: Death Lord
 desc: ''
-updated: 1681963006825
+updated: 1681963723194
 created: 1681955859698
 ---
 ![Monster Picture](assets/img/knight_deathlord.png)

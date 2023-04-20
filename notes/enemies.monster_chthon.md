@@ -1,8 +1,8 @@
 ---
 id: esok1zhyg6n3atwy6t244cn
-title: Monster_chthon
+title: Chthon (Killable)
 desc: ''
-updated: 1681962721443
+updated: 1681963857730
 created: 1681955819530
 ---
 ![Monster Picture](assets/img/chthon.png)

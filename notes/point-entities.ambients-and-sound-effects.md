@@ -2,7 +2,7 @@
 id: 2k24uzhmr4ibcm0cbuxnofv
 title: Ambients and Sound Effects
 desc: ''
-updated: 1657650230312
+updated: 1681957244932
 created: 1657650227861
 ---
 There are numerous looped sound effects, called ambients.  Most of them are the same and simply change the default sound file that is played.  Alternatively, `ambient_custom_looping` can be used in place of any of these so long as you know what sound file to specify.
@@ -69,7 +69,7 @@ These are simply static location, looping sound effects that play the same sound
 
 # Specialty Ambient Noises
 
-#### `ambient_custom_chime`
+### `ambient_custom_chime`
 Randomly plays chime sounds at randomized intervals.  Can be enabled or disabled using the [entity state system](https://github.com/JosiahJack/KeepModReadme/wiki/Point-Entities:-Logic-and-Entity-State-System).
 |Key|Type|Default|Description|
 |---|---|---|---|
@@ -83,7 +83,7 @@ Randomly plays chime sounds at randomized intervals.  Can be enabled or disabled
 
 .
 
-#### `ambient_custom_loop` or `ambient_generalpurpose` or `ambient_custom_water`
+### `ambient_custom_loop` or `ambient_generalpurpose` or `ambient_custom_water`
 Useful to set a custom looping ambient noise.
 |Key|Type|Default|Description|
 |---|---|---|---|
@@ -92,7 +92,7 @@ Useful to set a custom looping ambient noise.
 
 .
 
-#### `ambient_custom_rain`
+### `ambient_custom_rain`
 Plays one of 3 different rain types looping.  **Must** be targeted to start.
 |Key|Type|Default|Description|
 |---|---|---|---|
@@ -115,7 +115,7 @@ Sounds to play:
 
 .
 
-#### `ambient_custom_rumble`
+### `ambient_custom_rumble`
 Randomly plays low rumbling sounds at randomized intervals.  Can be enabled or disabled using the [entity state system](https://github.com/JosiahJack/KeepModReadme/wiki/Point-Entities:-Logic-and-Entity-State-System).
 |Key|Type|Default|Description|
 |---|---|---|---|
@@ -139,7 +139,7 @@ Sounds to play:
 
 .
 
-#### `ambient_custom_sound `
+### `ambient_custom_sound `
 Plays one of 3 different sounds at randomized interval.  Can be enabled or disabled using the [entity state system](https://github.com/JosiahJack/KeepModReadme/wiki/Point-Entities:-Logic-and-Entity-State-System).
 |Key|Type|Default|Description|
 |---|---|---|---|
@@ -163,7 +163,7 @@ Plays one of 3 different sounds at randomized interval.  Can be enabled or disab
 
 .
 
-#### `ambient_custom_wind`
+### `ambient_custom_wind`
 Randomly plays wind gust sounds at randomized intervals.  Can be enabled or disabled using the [entity state system](https://github.com/JosiahJack/KeepModReadme/wiki/Point-Entities:-Logic-and-Entity-State-System).
 |Key|Type|Default|Description|
 |---|---|---|---|
@@ -190,7 +190,7 @@ Sounds to play:
 
 .
 
-#### `ambient_custom_wood`
+### `ambient_custom_wood`
 Randomly plays wood creaking sounds at randomized intervals.  Can be enabled or disabled using the [entity state system](https://github.com/JosiahJack/KeepModReadme/wiki/Point-Entities:-Logic-and-Entity-State-System).
 |Key|Type|Default|Description|
 |---|---|---|---|

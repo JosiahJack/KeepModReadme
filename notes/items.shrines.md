@@ -2,7 +2,7 @@
 id: tphzvgj738urcbgg96m6aof
 title: Shrines
 desc: ''
-updated: 1657646657743
+updated: 1681957197816
 created: 1657646654633
 ---
 The inhabitants of the world of Quake are not altogether unreligious.  There is a plenary collection of deities and household teraphim.  Travelers may choose to pay their respects by lighting a candle and thus receive a blessing.  It is important to distinguish between _teraphim_, who serve as physical representatives of deities and _idols_, who are treated as deities of themselves.  However, one may alternatively disregard such lesser deities and distinctions entirely and pay respects to a higher deity by counting these shrines as unholy, desecrating them by smashing them to receive an alternative blessing from an elder god.  What one does must be considered carefully, even atheistically ignoring shrines may have consequences.
@@ -61,9 +61,9 @@ Blessings are always the same according to below, but the response to actions is
 
 .
 
-### `info_shrine`
+## `info_shrine`
 Grants blessing when used and runs targets.
-#### `style`
+### `style`
 * **Type:** integer
 * **If Set:** Choice between 0 through 5.  This changes the blessing granted according to the chart here.
 * * 0 Earth
@@ -74,17 +74,17 @@ Grants blessing when used and runs targets.
 * * 5 Spirit
 * **If Left Blank:** Defaults to Earth type.
 
-#### `proj_limit`
+### `proj_limit`
 * **Type:** float
 * **If Set:** Specifies override projection radial distance for aura effects, magic sparkles will shoot at the player to form a sort of beam.  Only affects blessings that have an aura.
 * **If Left Blank:** Defaults to 384.
 
-#### `message`
+### `message`
 * **Type:** string
 * **If Set:** Specifies god name.
 * **If Left Blank:** Defaults to `Cthulhu`.
 
-#### `delay`
+### `delay`
 * **Type:** float
 * **If Set:** Specifies time between aura effects taking place, such as healing.  Each instance applies effects by the amount of `cnt`.
 * **If Left Blank:** Defaults to the following based on the `style` chosen.  Ideally, leave at the defaults since the effects are not customizable.
@@ -95,7 +95,7 @@ Grants blessing when used and runs targets.
 * * Blood: 0.3
 * * Spirit: 0.2
 
-#### `cnt`
+### `cnt`
 * **Type:** integer
 * **If Set:** Specifies amount to apply for each effect at each instance every `delay` seconds.  For example, healing effects will add `cnt` + `target.health` every `delay` seconds.  Only applies to entities affected by the aura.
 * **If Left Blank:** Defaults to the following based on the `style` chosen.  Ideally, leave at the defaults since the effects are not customizable.

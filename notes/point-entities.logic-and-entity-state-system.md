@@ -2,36 +2,36 @@
 id: y3svp82bm5u5sfu4brr9y80
 title: Logic and Entity State System
 desc: ''
-updated: 1657650198658
+updated: 1681957250643
 created: 1657650191656
 ---
 There are various invisible entities that control different aspects of the game and handle triggering and using the functions of other entities.  These are useful in many situations and allow for a large amount of flexibility in setups and creating special events, large and small.
 
 # General Logic Entities
 
-#### `info_player_start`
+### `info_player_start`
 Starting point for the player in single player games.  Also used as one of the spawn points for coop.  Placing more than one will create a warning, should only ever be 1, which is why we have...
 
-#### `info_player_startdev`
+### `info_player_startdev`
 Forced to use and only used as starting point if `developer` is 1.  Useful for immediately starting in area of the map for testing without having to noclip over there.
 
-#### `info_player_coop`
+### `info_player_coop`
 Starting point for coop players.  Coop players will start here first, if present, before picking the `info_player_start` instead.  `spawnflags` 64 will cause this to start off.  Can be enabled or disabled using the entity state system (see below).
 
-#### `info_player_start2`
+### `info_player_start2`
 Secondary starting point for the player in single player games.  Player will spawn here if serverflag bitmask value 16, 32, or 64 is true or if player had all 4 runes in previous map.
 
-#### `info_player_coop2`
+### `info_player_coop2`
 Secondary starting point for the player in coop games.  Player will spawn here if serverflag bitmask value 16, 32, or 64 is true or if player had all 4 runes in previous map.  Coop players will start here first, if present and met the above conditions, before picking the `info_player_start2` instead.  `spawnflags` 64 will cause this to start off.  Can be enabled or disabled using the entity state system (see below).
 
 
-#### `info_player_deathmatch `
+### `info_player_deathmatch `
 Secondary starting point for the player in deathmatch games.  You should sprinkle at least 4 of these around every level.  `spawnflags` 64 will cause this to start off.  Can be enabled or disabled using the entity state system (see below).
 
-#### `info_skyroom`
+### `info_skyroom`
 Skyroom camera for QSS/FTE engines for implementation of 3D skyboxes.  Automatically sets worldspawn's `_skyroom` value to the origin vector of the location of this entity.  Overrides worldspawn.  Only 1 should be used.  If using multiple, the last one placed in the map editor will be used.
 
-#### `info_intermission `
+### `info_intermission `
 This is used to display a view of the level after completing it.  Typically shows off one of the best viewing angles of an area of the map.  Best if used to showcase memorable setpieces.  Can be and highly recommended to be more than one.  Clicking the mouse switches to the next camera.  Pressing jump will exit the level.
 |Key|Type|Default|Description|
 |---|---|---|---|
@@ -41,29 +41,29 @@ This is used to display a view of the level after completing it.  Typically show
 |fog_colour|vector|`0.1 0.1 0.1`|Set to change the fog color when switching to this intermission, set like `r g b` (red green blue) with value between 0 and 1.0.|
 |speed|float|2|Total time to transition from previous fog settings to this intermission's fog settings.|
 
-#### `info_skullwiz_destination `
+### `info_skullwiz_destination `
 Used by `monster_skullwiz` when phasing to teleport to while invisible.  Set `target` and `targetname` to other `info_skullwiz_destination`'s in order to have the `monster_skullwiz` teleport to them in a set sequence.
 |Key|Type|Default|Description|
 |---|---|---|---|
 |target|string||Name of the next `info_skullwiz_destination ` in the chain.|
 |distance|integer|192|The player must be at least this distance away from this point before teleporting to it.|
 
-#### `info_overlord_destination `
+### `info_overlord_destination `
 Used by `monster_super_wrath` to teleport to when randomly teleporting away.  Overlord will teleport to a random one of these points.  Set multiple if desired.
 
-#### `info_morph_destination`
+### `info_morph_destination`
 Used by `monster_morph` to teleport to when randomly teleporting away.  Guardian will teleport to a random one of these points.  Set multiple if desired.
 
-#### `info_target`
+### `info_target`
 Useful to set a position for an object to move towards, such as a door or button.
 
-#### `info_home`
+### `info_home`
 Useful to set a starting position for a `func_qrobot`.
 
-#### `info_null`
+### `info_null`
 Useful to set a spotlight target.  Removed on game start.
 
-#### `info_notnull`
+### `info_notnull`
 Does nothing...but can!  Useful for various map hacks by giving it various code functions to `think`.
 |Key|Type|Description|
 |---|---|---|
@@ -74,7 +74,7 @@ Does nothing...but can!  Useful for various map hacks by giving it various code 
 |nextthink|float|Amount of time in seconds after map start before executing the `think` function.  `think` must be set for this to affect anything.|
 |<field>|<any>|Set any desired fields by adding them manually.  This could be any supported data field defined by the qc code and relevant to the other functions you've set on this hack.  For instance you could set `wait`, `delay`, `count`, `dmg` etc.|
 
-#### `info_command`
+### `info_command`
 Triggerable console command.  Use with caution!  Be nice!!
 |Key|Type|Default|Description|
 |---|---|---|---|
@@ -82,7 +82,7 @@ Triggerable console command.  Use with caution!  Be nice!!
 |message|string||This is the actual command to pass to the console.  Works as if the player had typed the command into the console once this entity is targeted.|
 |spawnflags|integer|8|No auto newline.  Prevents automatically adding `\n` which would then execute the command.  Useful for sending partial entries to the console one after the other using multiple `info_command` entities.  This makes this `info_command`'s message not execute until another `info_command` is triggered that does not have this spawnflag set.|
 
-#### `info_command_server`
+### `info_command_server`
 Same as `info_command` but gets sent to all players and not just the current player on this PC.  Useful for coop or deathmatch.
 |Key|Type|Default|Description|
 |---|---|---|---|
@@ -91,7 +91,7 @@ Same as `info_command` but gets sent to all players and not just the current pla
 |spawnflags|integer|2|Activator Only.  Turns this back into an `info_command`.|
 |||8|No auto newline.  Prevents automatically adding `\n` which would then execute the command.  Useful for sending partial entries to the console one after the other using multiple `info_command` entities.  This makes this `info_command`'s message not execute until another `info_command` is triggered that does not have this spawnflag set.|
 
-#### `info_command_spawn`
+### `info_command_spawn`
 Same as `info_command_server`, but automatically carries out when the map starts.
 |Key|Type|Default|Description|
 |---|---|---|---|
@@ -100,10 +100,10 @@ Same as `info_command_server`, but automatically carries out when the map starts
 |spawnflags|integer|8|No auto newline.  Prevents automatically adding `\n` which would then execute the command.  Useful for sending partial entries to the console one after the other using multiple `info_command` entities.  This makes this `info_command`'s message not execute until another `info_command` is triggered that does not have this spawnflag set.|
 |||16|Resend on load.  Makes this execute again anytime the player loads from a save/quicksave.|
 
-#### `info_bomb`
+### `info_bomb`
 Used as the center point when activating the bomb effect.
 
-#### `info_effect_pulse `
+### `info_effect_pulse `
 Projectile light effect.  Laucnhes an invisible projectile that has `effects` set to carry a light with it.  Useful for added dynamic lighting.
 |Key|Type|Default|Description|
 |---|---|---|---|
@@ -111,7 +111,7 @@ Projectile light effect.  Laucnhes an invisible projectile that has `effects` se
 |delay|float|0.1|Delay in seconds before it sends out a pulse|
 |wait|float|0.1|Interval time between sending another pulse.  Set to -1 for only once, but needs `targetname` set for triggering if so.|
 
-#### `trigger_relay`
+### `trigger_relay`
 
 # Entity State System
 When the Arcane Dimensions mod came out, it introduced a novel idea for handling the enabling and disabling of various entities, including triggers.  Quoting its description here:

@@ -2,10 +2,15 @@
 id: wx1sy8nifr8d616pvl6tw7f
 title: World
 desc: ''
-updated: 1681956836426
+updated: 1681957359378
 created: 1657650346096
 ---
-The current game level, known as world or map, has many options specific to that level.  This could be global effects such skybox and fog or could be player specific such has starting items or item removal.
+The current game level, known as world or map, has many options specific to
+that level.  This could be global effects such skybox and fog or could be
+player specific such has starting items or item removal.
+
+Please note that the entity name for the world is `worldspawn` and is itself
+technically an entity whose model is the map bsp.
 
 ## General Options
 

@@ -2,7 +2,7 @@
 id: aum55alyokbtaszwruzz064
 title: Common Attributes
 desc: ''
-updated: 1681786109316
+updated: 1681957158017
 created: 1657643421425
 nav_order: 1
 ---
@@ -10,7 +10,7 @@ All enemies have certain attributes in common.  All enemies start with `monster_
 
 For understanding the `Type` given below, refer to [[general.data-types]].
 
-#### `spawnflags`
+### `spawnflags`
 * **Type:** integer
 * **If Set:** This value is a decimal value used as on/off bits.  Each bit indicates whether to use or don't use a certain option.  The sum of the decimal values is the resultant `value` of the `key` called `spawnflags` (Recall that Quake uses `key|value` pairs on all entities to specify data about that entity, for instance `targetname|hello` gives that entity the name of "hello").  For spawnflags, level editors let you check off check boxes to select certain options.  The values are summed together to give the `value` to `spawnflags`; for instance checking 2, 4, and 8 gives a summed `value` of `14`.  Since each value is equal to the binary equivalent of 1, 10, 100, 1000, etc. each sum is inherently unique and guarantees that only certain digit places are changed from 0 to 1.  The maximum number of bits available is 24. `Technical Note: since Quake uses 32 bit floats, you might wonder why we can't use all 32.  The remaining bits would be used to indicate positive/negative and to specify power to raise to such as 2 for squared, but Quake's parser doesn't look at these for spawnflags.`
 
@@ -43,73 +43,73 @@ For understanding the `Type` given below, refer to [[general.data-types]].
 * **If Left Blank:** Monster will start and behave normally.
 
 
-#### `angrytarget`
+### `angrytarget`
 * **Type:** string
 * **If Set:** If monster starts angry (either spawnflag 128 or by being targeted), this specifies who to be angry at.  Monster will search for and find first entity with matching `targetname` in the edict list and set that entity to the monster's `enemy`, but only if the target is a monster.
 * **If Left Blank:** A player will be found instead.
 
 
-#### `deathtarget`
+### `deathtarget`
 * **Type:** string
 * **If Set:** When monster dies, this is an extra `target` to trigger.  Works in addition to setting `target`.  The `deathtarget` will be used, e.g. if a door is deathtargeted, then the door's `use` will happen; doors typically open on use.
 * **If Left Blank:** Nothing additional will happen (normal `target` will still work on death).
 
 
-#### `health`
+### `health`
 * **Type:** integer
 * **If Set:** This changes the monster's starting health.  Also overrides any health changes caused by spawnflags.
 * **If Left Blank:** The default monster health will be used.
 
 
-#### `exactskin`
+### `exactskin`
 * **Type:** integer
 * **If Set:** This changes the monster's `skin` to use the exact value specified.  If the value is too high, most engines will default to `skin` 0.
 * **If Left Blank:** The default monster `skin` will be used and random range will be used, if the monster has it (e.g. monster_army has a few random skins)
 
 
-#### `upgrade_axe`, `upgrade_ssg`, and `upgrade_lg`
+### `upgrade_axe`, `upgrade_ssg`, and `upgrade_lg`
 * **Type:** boolean (0 or 1)
 * **If Set:** Monster will only appear if the player has the upgraded weapon. upgrade_axe is the Shadow Axe that can gib fallen zombies, upgrade_ssg is the Widowmaker (triple shotgun), upgrade_lg is the AD plasmagun.
 * **If Left Blank:** The monster will appear normally.
 
 
-#### `nomonstercount`
+### `nomonstercount`
 * **Type:** boolean (0 or 1)
 * **If Set:** Enemy won't count towards the total until it is killed.  Useful for monsters in super secrets.
 * **If Left Blank:** Enemy counts as 1 towards the count.  If this is a denizen, will count towards the total number of denizens instead.
 
 
-#### `delaymonstercount`
+### `delaymonstercount`
 * **Type:** boolean (0 or 1)
 * **If Set:** Monster won't contribute to the total count until it is spawned.  Useful for monsters in secret areas or super secrets.
 * **If Left Blank:** Enemy counts as 1 towards the count.  If this is a denizen, will count towards the total number of denizens instead.
 
-#### `infightextra`
+### `infightextra`
 * **Type:** float
 * **If Set:** When monster infights with another monster, it's damage will be multiplied by this `infightextra` value.  Can be less than 1 if you want infighting to take longer.  Cannot be less than or equal to 0 or it will be treated as if it were left blank...
 * **If Left Blank:** Will default to 1.  Normal damage will be dealt against other monsters.
 
-#### `pain_ignore`
+### `pain_ignore`
 * **Type:** boolean (0 or 1)
 * **If Set:** Monster will never go into pain animation.
 * **If Left Blank:** Monster will react to pain normally, if they have a pain animation.
 
-#### `noinfighting`
+### `noinfighting`
 * **Type:** boolean (0 or 1)
 * **If Set:** Monster will not react to damage from monsters, unless they are psychotic.  Will still change enemy to another player if damaged by a player.
 * **If Left Blank:** Monster will react and infight normally with other monsters, so long as they have opposing alignment, differing classgroups, differing classnames.
 
-#### `no_liquiddmg`
+### `no_liquiddmg`
 * **Type:** boolean (0 or 1)
 * **If Set:** Monster will not get hurt by lava or slime.
 * **If Left Blank:** If monster is normally damaged by a particular liquid, they will be damaged.  E.g. zombies are usually damaged by most things.
 
-#### `no_zaware`
+### `no_zaware`
 * **Type:** boolean (0 or 1)
 * **If Set:** Monster will not adjust lobbing aim for difference in height.  Usually only useful for ogres.  This is default ID1 behavior for normal ogres and has no affect on standard monster_ogre's.  This flag is really only useful for Hunter Ogres (monster_hogre, monster_hogremac, monster_hogreham).
 * **If Left Blank:** If monster has z-aware capability, it will adjust its aim to help it hit players better...somewhat uncannily accurately too.  Only Hunter Ogres have this ability (monster_hogre, monster_hogremac, monster_hogreham)
 
-#### `bboxtype`
+### `bboxtype`
 * **Type:** integer
 * **If Set:** Overrides the monsters size.  "bbox" stands for "bounding box" and is the rectilinear, axes-locked size of the monster in the world in x, y, and z directions.  There is a catch, however, as the exact size specified only affects the bullet tracing and impact against the monster and player collision with the monster.  The monster's collision size against the world will always only be one of 2 sizes.  The engine will round the size to the nearest one of these 2: hull1 of 32 x 32 x 56, or hull2 of 64 x 64 x 88. (Technical Note: hull0 is point size 0 x 0 x 0 used by bullets, etc.  The hulls are baked into the map at compile time.  This size is unrelated to the shown editor's box; the editor will use the fgd's size which could be either one of the hull sizes or the bbox size).
 
@@ -145,57 +145,57 @@ For understanding the `Type` given below, refer to [[general.data-types]].
 
 * **If Left Blank:** The enemy will default to its usual size.
 
-#### `gibondeath`
+### `gibondeath`
 * **Type:** boolean (0 or 1)
 * **If Set:** The enemy will burst into gibs when killed, if it supports gibbing.  Some monsters cannot be gibbed or have special deaths auch as monster_tarbaby or monster_skullwiz who explode and fade respectively.
 * **If Left Blank:** The enemy will die normally.
 
-#### `bodyfadeaway`
+### `bodyfadeaway`
 * **Type:** float
 * **If Set:** Changes the default time for the body to fade and dissappear after killed.  Time = 10 + ((random between 0 and 1) * `bodyfadeaway`.  If the worldspawn's `bodyfadeaway` is set to greater than 0, that will override this setting and default to 10 to 15 seconds.
 * **If Left Blank:** The enemy's body will fade after 999999 seconds (about 4.6 hours), unless the map's worldspawn `bodyfadeaway` is greater than 0.
 
-#### `turrethealth`
+### `turrethealth`
 * **Type:** float (0.0 to 1.0)
 * **If Set:** What percentage of health should be remaining before a monster that is acting as a turret is released from turret mode and begins to chase the player.  Useful for perched ogres who are in turret mode (stationary, projectile attackers), who you then want to jump down and chase the player after the player has hurt them.  Monster will remain stationary until health = health * `turrethealth`.  Monsters not in turret mode will ignore this value.
 * **If Left Blank:** Monsters in turret mode will remain stationary until dead.  Monsters not in turret mode will ignore this value.
 
-#### `turrettarget`
+### `turrettarget`
 * **Type:** string
 * **If Set:** Set to the name of a target to activate when the monster's health falls below health * `turrethealth`.  Useful if you want to have the environment react to a monster who is no longer in turret mode (stationary, projectile attacker), such as a door opening or a breakable breaking as the monster gets angry and bursts forth.  Monsters not in turret mode will ignore this value.
 * **If Left Blank:** Monsters released from turret mode will not trigger anything then.  Monsters not in turret mode will ignore this value.
 
-#### `cooponly`
+### `cooponly`
 * **Type:** boolean (0 or 1)
 * **If Set:** The enemy will only be present in coop, regardless of skill setting.  Skill settings Appearflags are still respected if coop is active and monsters who are set to remove on that skill will still be removed.
 * **If Left Blank:** The enemy will appear normally.
 
-#### `passive_state`
+### `passive_state`
 * **Type:** boolean (0 or 1)
 * **If Set:** The enemy will not attack the player on sight and only attack if provoked or if they see the player attack another monster.
 * **If Left Blank:** The enemy will behave and get angry normally when they see the player.
 
-#### `passive_resethp`
+### `passive_resethp`
 * **Type:** boolean (0 or 1)
 * **If Set:** Reset health to full when returning to passive.  After the player has been lost out of sight, the monster will return to being passive.  Useful for magical guardians who have a tether point set, but a tether is not required.
 * **If Left Blank:** The enemy's health will never reset.
 
-#### `passive_resettimer`
+### `passive_resettimer`
 * **Type:** float
 * **If Set:** Time after player has been lost out of sight before the monster forgets the player and returns to being passive and non-angry.
 * **If Left Blank:** The enemy will not forget the player until after 999999 seconds (about 4.6 hours).
 
-#### `angles`
+### `angles`
 * **Type:** vector
 * **If Set:** Pitch Yaw Roll for viewing angle.  For instance 0 90 0 to face "north".  Set the middle value to -1 for random facing orientation, e.g. 0 -1 0.  Pitch and Roll are otherwise not used.
 * **If Left Blank:** The enemy will orient based on `angle` if set by the map editor.
 
-#### `jumpdist`
+### `jumpdist`
 * **Type:** vector
 * **If Set:** Jump distance defaults for monsters that have jumping behavior (e.g. monster_voreling). Specified as X Y Z with spaces between.  X = distance, Y = height.
 * **If Left Blank:** The enemy will jump with its defaults.
 
-#### `jumprange`
+### `jumprange`
 * **Type:** vector
 * **If Set:** Range at which the monster will attempt a jump attack - x y 0, for example 200 300 0, which means the monster will attempt jumps when the player is between 200 and 300 units from it.
 * **If Left Blank:** The enemy will jump with its defaults.
@@ -203,12 +203,12 @@ For understanding the `Type` given below, refer to [[general.data-types]].
 ### Special Overrides
 These are attributes not listed on the fgd and are meant for special use cases or testing.  It is highly recommended to _not_ use these values since it can confuse players when, for instance, enemies simpy won't die if their health is made to be higher than normal.  Could also have a use in a special bonus level to make all enemies have only 1 health.
 
-#### `health`
+### `health`
 * **Type:** float
 * **If Set:** Changes the enemy's health to be this value.  Setting to less than or equal to zero will be the same as if left blank.
 * **If Left Blank:** The enemy will have its default health and be predictable and satisfying.
 
-#### `deathstring`
+### `deathstring`
 * **Type:** string
 * **If Set:** Changes the message displayed when the player is killed by this enemy.  Should always have a space as the first character and also highly recommended to include the monster's name.  Example: ` was tusk-skewered by a raging Wildebeast.`
 * **If Left Blank:** The enemy will have its default message and netname displayed within.  Some enemies randomize between a few different appropriate messages.

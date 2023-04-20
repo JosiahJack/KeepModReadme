@@ -2,7 +2,7 @@
 id: dlyjypde6tyeremlb1hgmp7
 title: Config and Settings
 desc: ''
-updated: 1657647869810
+updated: 1681957235297
 created: 1657647867304
 ---
 There are numerous configurable settings and keybinds specific to the Keep mod, with most deriving from Arcane Dimensions (AD)'s way of doing things.
@@ -10,7 +10,7 @@ There are numerous configurable settings and keybinds specific to the Keep mod, 
 # Settings
 The various mod settings are specified in the `keep/quake.rc` file.  All of the MOD features can be changed before loading by editing this file in a text editor.
 
-#### `temp1`
+### `temp1`
 * **Type:** integer used as bitmask
 * **Description:** Set by adding desired active values together.  Defaults to 132096 which is equal to 131072 + 1024 for particles on by default and disable projectile shotguns by default.  Specified in quake.rc like so:
 
@@ -68,9 +68,6 @@ The following are rarely needed special options done by entering `impulse #` in 
 |100|Toggle auto aim|
 |100|Toggle auto aim|
 |100|Toggle auto aim|
-
-
-#### 
 
 # Config
 These files are used for specific engine confirguration and keybind settings:

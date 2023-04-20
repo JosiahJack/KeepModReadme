@@ -2,7 +2,7 @@
 id: wx1sy8nifr8d616pvl6tw7f
 title: World
 desc: ''
-updated: 1681957359378
+updated: 1681958224228
 created: 1657650346096
 ---
 The current game level, known as world or map, has many options specific to
@@ -138,7 +138,9 @@ technically an entity whose model is the map bsp.
 
 ### `no_sgprojectile`
 * **Type:** trilean (-1, 0, or 1)
-* **If Set:** Changes the visibility of shotgun projectiles.  Only applicable if projectile shotguns are used in [settings](https://github.com/JosiahJack/KeepModReadme/wiki/8.0-Config-and-Settings) `temp1` variable.
+* **If Set:** Changes the visibility of shotgun projectiles.  Only applicable
+  if projectile shotguns are used in `temp1` variable (See
+  [[general.config-and-settings]]).
 > * Set to -1 to make projectiles invisible if used.
 > * Set to 0 to use default of visible (if `temp1` has projectile shotguns enabled)
 > * Set to 1 to force visible (if `temp1` has projectile shotguns enabled)
@@ -146,7 +148,9 @@ technically an entity whose model is the map bsp.
 
 ### `no_sgcasing`
 * **Type:** trilean (-1, 0, or 1)
-* **If Set:** Disiable or enable dropping of casings, e.g. when firing shotguns.  Only applicable if casings are enabled in [settings](https://github.com/JosiahJack/KeepModReadme/wiki/8.0-Config-and-Settings) `temp1` variable.
+* **If Set:** Disiable or enable dropping of casings, e.g. when firing shotguns.
+  Only applicable if casings are enabled in `temp1` variable (See
+  [[general.config-and-settings]]).
 > * Set to -1 to disable all casings.
 > * Set to 0 to use default of dropping casings (if `temp1` has casings enabled enabled)
 > * Set to 1 to force dropping of casings (if `temp1` has casings enabled)
@@ -154,7 +158,9 @@ technically an entity whose model is the map bsp.
 
 ### `no_bigprojectiles`
 * **Type:** boolean (0 or 1)
-* **If Set:** Force use of larger more easily visible shotgun projectiles.  Only applicable if projectile shotguns are used in [settings](https://github.com/JosiahJack/KeepModReadme/wiki/8.0-Config-and-Settings) `temp1` variable.
+* **If Set:** Force use of larger more easily visible shotgun projectiles. 
+  Only applicable if projectile shotguns are used in `temp1` variable (See
+  [[general.config-and-settings]])
 * **If Left Blank:** Default to using smaller projectiles (if `temp1` has projectile shotguns enabled).
 
 ### `mapvar_update`
@@ -279,12 +285,18 @@ technically an entity whose model is the map bsp.
 
 ### `give_weapons`
 * **Type:** integer
-* **If Set:** Specify which `items` to give at level start.  Add any bitmask values together from the table on [Weapons](https://github.com/JosiahJack/KeepModReadme/wiki/3.0-Weapons) page to create the value to add to the player's inventory.  This only affects `items` and not `items2`, `moditems`, or `perms`.
+* **If Set:** Specify which `items` to give at level start.  Add any bitmask
+  values together from the table on [[weapons]] page to create the value to add
+  to the player's inventory.  This only affects `items` and not `items2`,
+  `moditems`, or `perms`.
 * **If Left Blank:** Leaves inventory `items` untouched.
 
 ### `take_weapons`
 * **Type:** integer
-* **If Set:** Specify which `items` to take away at level start.  Add any bitmask values together from the table on [Weapons](https://github.com/JosiahJack/KeepModReadme/wiki/3.0-Weapons) page to create the value to take away from the player's inventory.  This only affects `items` and not `items2`, `moditems`, or `perms`.
+* **If Set:** Specify which `items` to take away at level start.  Add any
+  bitmask values together from the table on [[weapons]] page to create the
+  value to take away from the player's inventory.  This only affects `items`
+  and not `items2`, `moditems`, or `perms`.
 * **If Left Blank:** Leaves inventory `items` untouched.
 
 ### `take_perms`

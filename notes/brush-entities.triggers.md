@@ -2,7 +2,7 @@
 id: zm3ht1jckm40lp8r92gqmq9
 title: Triggers
 desc: ''
-updated: 1681957043192
+updated: 1681958887481
 created: 1681955025373
 ---
 Triggers are brush based entities that are invisible and non-solid as far as
@@ -67,8 +67,9 @@ spread for a cone-shaped fountain. Ommit either h2 or v2 for a fan shaped
 emission, or set v1=1 v2=360 h1=1 h2=360 for a fire-works style spherical
 burst.
 
-The "emitter_angles.png" image included with the extras_r4 (and r5) mod is a
-diagram that visualizes the horizontal and vertical angle relationship.
+The following diagram visualizes the horizontal and vertical angle relationship.
+
+![Emitter Angles](assets/img/emitter_angles.gif)
 
 When viewing a map from the top, an H angle value of 270 points up, and
 moves clockwise, making right 360 (or 0), down 90 and left 180. Same goes
@@ -77,7 +78,7 @@ for the V angle when viewed from the front.
 The particle spread is always contained from the first angle (h1/v1) to the
 second angle (h2/v2), going clockwise. So h1=10 h2=350 is NOT the same as 
 h1=350 h2=10. (the first is a near circular spread, while the second is a
-tight 20� fan shaped spread).
+tight 20º fan shaped spread).
 
 Also note that although 0 would normally be a valid replacement for 360, you
 should use a range of 1 - 360 as a value of 0 is simply ignored (though this

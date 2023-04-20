@@ -2,11 +2,11 @@
 id: 0j2knqkj9hgjxupb41hp4mt
 title: Balrog
 desc: ''
-updated: 1657678220417
+updated: 1681957876748
 created: 1657650440315
 ---
 # Balrog
-![Monster Picture](https://github.com/JosiahJack/Keep/blob/master/readmesrc/bandit.png)
+![Monster Picture](assets/img/balrog.gif)
 
 |Name  |Desription|
 |------|-------------|

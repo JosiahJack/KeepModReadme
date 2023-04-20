@@ -2,7 +2,7 @@
 id: zm3ht1jckm40lp8r92gqmq9
 title: Triggers
 desc: ''
-updated: 1681956257762
+updated: 1681957043192
 created: 1681955025373
 ---
 Triggers are brush based entities that are invisible and non-solid as far as
@@ -14,6 +14,8 @@ perform a special action, or acting upon the entities that touched it.
 There is no real limit to what behavior a trigger can have or on who or what
 can trigger it.  Different triggers are normally configured to be either player
 only, monster only, projectile only, or some combination.
+
+---
 
 ## Extras Emitters
 

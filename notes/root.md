@@ -2,12 +2,14 @@
 id: opv748qnyh2uwtk20mh0548
 title: TOME OF KEEP MOD
 desc: ''
-updated: 1681783946534
+updated: 1681957021821
 created: 1657642701590
 ---
 #### Current Version: 0.96.2
 #### Compiled and Edited by W. Josiah Jack, aka Qmaster.  2007 - 2023.
 `NOTE: This is a work in progress!  Expect updates!`
+
+`NOTE: This is the manual.  For the actual mod see` [here](https://github.com/JosiahJack/Keep)
 
 ---
 

@@ -2,8 +2,9 @@
 id: gb9igfysmrzmdslln5fttro
 title: Behavior
 desc: ''
-updated: 1657649728010
+updated: 1681965563500
 created: 1657649587702
+nav_order: 2
 ---
 Enemy behavior in original Quake is largely simplistic.  See a player, get
 angry at the player, chase the player in a straight line for indefinite amount

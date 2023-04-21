@@ -2,10 +2,12 @@
 id: 7gc8r0yms23j7d2sk8mb4mf
 title: Rocketeer
 desc: ''
-updated: 1681961432075
+updated: 1682078659173
 created: 1657649103976
 ---
 ![Monster Picture](assets/img/grunt_rocket.png)
+
+Base soldier, launches rockets.
 
 |Name  |Desription|
 |------|-------------|
@@ -15,7 +17,8 @@ created: 1657649103976
 |Gib Health|-35|
 |Pain Flinch|20|
 |Drops|1 Rocket|
-|Description|Base soldier, launches rockets.|
+
+.
 
 |Attack Type|Attack Name|Description|Damage|
 |-----------|-----------|-----------|------|

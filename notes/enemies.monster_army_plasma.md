@@ -2,10 +2,12 @@
 id: waau9ysyytyrq9a4p24gw8m
 title: Electrocutioner
 desc: ''
-updated: 1681961405129
+updated: 1682078642074
 created: 1657649213568
 ---
 ![Monster Picture](assets/img/grunt_plasma.png)
+
+Strong base soldier.
 
 |Name  |Desription|
 |------|-------------|
@@ -15,7 +17,8 @@ created: 1657649213568
 |Gib Health|-35|
 |Pain Flinch|20|
 |Drops|1 Cell|
-|Description|Strong base soldier.|
+
+.
 
 |Attack Type|Attack Name|Description|Damage|Speed|
 |-----------|-----------|-----------|------|----|

@@ -2,10 +2,12 @@
 id: q3jeiwtj8wtw9t63eo72epw
 title: Grenadier
 desc: ''
-updated: 1681961338635
+updated: 1682078625226
 created: 1657649192718
 ---
 ![Monster Picture](assets/img/grunt_grenade.png)
+
+Base soldier, lobs grenades.
 
 |Name  |Desription|
 |------|-------------|
@@ -15,7 +17,8 @@ created: 1657649192718
 |Gib Health|-35|
 |Pain Flinch|20|
 |Drops|1 Rocket|
-|Description|Base soldier, lobs grenades.|
+
+.
 
 |Attack Type|Attack Name|Description|Damage|Speed|
 |-----------|-----------|-----------|------|----|

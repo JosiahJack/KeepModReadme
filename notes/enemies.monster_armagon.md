@@ -2,17 +2,23 @@
 id: m7lqt0asrth1ysbyz8nj11i
 title: Armagon
 desc: ''
-updated: 1681961603780
+updated: 1682078585742
 created: 1657649298753
 ---
 ![Monster Picture](assets/img/armagon.png)
+
+Large ugly gremlin-like monster combined with servo-mech legs.  Top half
+explodes on death and leaves behind non-solid legs.  Death explosions do not
+deal damage.  Attacks with different projectile attacks.  Stops randomly to
+fire barrage while planted in place.
 
 |Name  |Desription|
 |------|-------------|
 |Entity|monster_armagon|
 |Source Mod|Hipnotic|
 |Health|3000|
-|Description|Large ugly gremlin-like monster combined with servo-mech legs.  Top half explodes on death and leaves behind non-solid legs.  Death explosions do not deal damage.  Attacks with different projectile attacks.  Stops randomly to fire barrage while planted in place.|
+
+.
 
 |Attack Type|Attack Name|Description|Damage|
 |-----------|-----------|-----------|------|

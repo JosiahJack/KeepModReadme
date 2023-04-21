@@ -2,10 +2,20 @@
 id: pba7lfbg17udyca9lx175vm
 title: Archer
 desc: ''
-updated: 1681961491931
+updated: 1682077711876
 created: 1657649370432
 ---
 ![Monster Picture](assets/img/archer.png)
+
+Archer knight that shoots arrows with a bow.  Aims for bit before firing; will
+avoid firing if there is someone in the way who is friendly and wait for a
+clear shot.
+
+ > Model is based on the archer from Hexen2.  AI used is mostly Quake's with
+ > bit of Hexen2's.  Fancy moves such as ducking and sidestepping are NOT used, 
+ > since it is so un-Quake (and I simply want a medieval style grunt/enforcer).
+ > Holding his shot after drawing the bow, along with much of the shooting AI, 
+ > was ported over.  -- Patrick Martin
 
 |Name  |Desription|
 |------|-------------|
@@ -15,7 +25,8 @@ created: 1657649370432
 |Gib Health|-40|
 |Pain Flinch|40|
 |Drops|2 Bolts|
-|Description|Shoots arrows.  Aims for bit before firing.|
+
+.
 
 |Attack Type|Attack Name|Description|Damage|Speed|
 |-----------|-----------|-----------|------|----|

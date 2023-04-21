@@ -2,10 +2,12 @@
 id: u8gatxwbx5vug5lp8s94467
 title: Nail Grunt
 desc: ''
-updated: 1681961673807
+updated: 1682078681537
 created: 1657649168811
 ---
 ![Monster Picture](assets/img/grunt_spike.png)
+
+Grunt that shoots a nailgun.
 
 |Name   |Desription|
 |:------|:------------|
@@ -15,8 +17,10 @@ created: 1657649168811
 |Gib Health|-35|
 |Pain Flinch|20|
 |Drops|5 Nails|
-|Description|Grunt that shoots a nailgun.|
+|Description||
 |Spawnflag 8192|Fires lava nails.|
+
+.
 
 |Attack Type|Attack Name|Description|Damage|
 |-----------|-----------|-----------|------|

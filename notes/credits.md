@@ -2,10 +2,91 @@
 id: jejp4x6svhemnxp0ioejmc7
 title: Credits
 desc: ''
-updated: 1682145147959
+updated: 1682169255920
 created: 1657647929110
 ---
-Since this is a compilation mod, it has had development by a large number of different people over the past 25 years of Quake modding history.  I have attempted to be thorough here, no etc.'s allowed, but please email me if I left your name out of this list.  Also of note, I have included all the various readmes from the different mods used in Keep into the `keep/credits` folder.
+## Keep itself
+Since this is a compilation mod, it has had development by a large number of
+different people over the past 25 years of Quake modding history.  This first
+section lists just the credit for the compilation itself, authors of its custom
+additions that are unique to Keep.
+
+Consider each and every one of these as a sincerest thank you.  You all are
+amazing!
+
+### Keep Credits - Coupled with Mjölnir
+As Mjölnir is the primary user of Keep much in the same way that Tronyn's early
+projects were the primary users of Drake, the Mjölnir team is intertwined with
+Keep's development, especially over these last few years, to bring about the
+most amazing maps and features ever seen in Quake.  The combined efforts of any
+who helped to make both Mjölnir and to make Keep itself and its content are
+thus given below.  Please see [Mjölnir](TODO Add link).
+
+- W. Josiah Jack (Qmaster) - for co-lead, the compilation, code, modeling,
+  this readme, testing, level design, more code, texturing, support
+- Dustin Geeraert (Tronyn) - for co-lead, bulk level design, more level design, 
+  even crazier amount of level design, and all the crazy cool ideas Qmaster was
+  crazy enough to actually implement
+- Ryanscissorhands - for weapons code with an early version of Arms of Asgard
+- Madfox - for textures and modeling of so many cool things even Qmaster
+  couldn't keep up
+- Tintin - for level design, models, textures
+- Hrimfaxi - for level design, models
+- Maik Franz Xaver (mfx) - for level design, brushwork models, support and testing
+- Shadesmaster - for level design, testing
+- Ironliȥard - for level design, models, textures
+- Mackenzie Stewart - for Mjölnir world map painting
+- Idioplex - for music and sound effects
+- Eric Wasylishen (ericw) - for engine code, compiler enhancement, and support
+- Shpoike (aka Spike, aka Spoik) - for engine code, testing, feature support
+- Andre Drexler - for engine code, feature support, feedback
+- Naitelveni - for various artwork contributions from older maps
+- Redfield - for various artwork contributions from older maps
+- aDaya - for various artwork contributions from older maps
+- Stas Kuznetsov (dwere) - for weapons models
+- ijed - testing
+- Burzygóry - for music
+- Eduard Schwan - for music
+- Stvannyr - for music
+- Haxan Dreams - for music
+- WitcheR - for music
+- Johannes Hedberg - for music
+- Daniel Vadestrid - for music
+- Luke Jansen - for music
+- Mixed Chalk - for music
+- AlienMusic - for music
+- Save Tara - for music
+- Synthsound1 - for music
+- Echoes Station - for music
+- Kevin Schilder - for music
+- Jeehun Hwang - for music
+- Rob Patterson - for music
+- Martin O'Donnell - for music (yes, _that_ Martin O'Donnell)
+- EVERYONE ELSE (see below) - with special emphasis on Patrick Martin for Drake
+  and Sock and AD Team for Arcane Dimensions, the Quoth Team and Preach for
+  Quoth, the Nehahra team for Nehahra
+
+### Special note for Mjölnir:
+The completion of this free, open-source, and totally non-commercial game
+project has been made possible by the 2021 support of the [University of
+Manitoba Department of Icelandic Language and Literature](https://umanitoba.ca/arts/icelandic), Faculty of Arts
+(Endowment Fund) and English Department (DETFM).  Thanks to PJ Buchan and
+Catari Gauthier of the Icelandic Department, and to Katrín Nielsdóttir and Ryan
+E. Johnson of [The Icelandic Collection](https://libguides.lib.umanitoba.ca/c.php?g=723161), where Mackenzie Stewart's World Map
+painting and other contents of this project were displayed as part of [Creation
+Myths of the North in Fall of 2022](https://www.dropbox.com/s/ox6xa6qi6jpspv7/Icelandic.Department.Christmas.Newsletter.pdf?dl=0)
+
+.
+
+---
+Reiterating that this is primarily a compilation mod, at least in terms of
+content quantity, the following sections will list the credits for all of the
+mods and projects used.
+
+I have attempted to be thorough here, no etc.'s allowed, but please email me
+if I left your name out of this list.  Also of note, I have included all the
+various readmes from the different mods used in Keep into the `keep/credits`
+folder.
 
 The credits listed below were taken from the respective readmes of each release
 or in cases where no readme was present from the sources I obtained them from.
@@ -32,19 +113,21 @@ to Keep and may not be fully subsumed into the collective as of yet.
 
 Parentheses contain the abbreviation commonly associated with a project.
 
-- Abuse
-- Abyss of Pandemonium - The Final Mission v2.0 (aop)
-- Airfist
-- Alkaline
-- Anaconda
-- An Old Evil (anevil)
-- Arcane Dimensions (AD)
-- Arms of Asgard (early pre-alpha)
-- Bastion
-- Bazooka Babes 2.0
-- BSQM Safe v0.47
-- Bubbah's Snakeman
-- Church of the Unholy
+### Sourced Projects
+
+- [Abuse](https://www.myabandonware.com/game/abuse-1ne)
+- [Abyss of Pandemonium - The Final Mission v2.0 (aop)](https://www.moddb.com/mods/abyss-of-pandemonium)
+- [Airfist](https://www.geocities.ws/Area51/Nova/2704/quakeaf.html)
+- [Alkaline](https://www.slipseer.com/index.php?resources/alkaline.62/)
+- [Anaconda](https://www.quaddicted.com/reviews/anaconda.html)
+- [An Old, Old Evil (anevil, early Tronyn/Drake project)](https://www.quaddicted.com/reviews/anevilnew.html)
+- [Arcane Dimensions (AD)](https://www.moddb.com/mods/arcane-dimensions)
+- [Arms of Asgard](https://www.reddit.com/r/quake/comments/jirb8q/arms_of_asgard_a_2020_weapon_mod_for_quake_1996/)
+- [Bastion](https://www.quaddicted.com/reviews/kinn_bastion.html)
+- [Bazooka Babes 2.0](https://www.gamers.org/pub/idgames2/quakec/monsters/) (bazooka.zip)
+- [BSQM Safe v0.47](https://www.quaddicted.com/reviews/bsqmsafe.html)
+- [Bubbah's Snakeman](https://www.gamers.org/pub/idgames2/quakec/monsters/) (snakeman.zip)
+- [Church of the Unholy](https://www.moddb.com/mods/church-of-the-unholy)
 - Copper Quake v1.11
 - Custents
 - Deathmatch eXtreme Platinum Edition
@@ -67,9 +150,9 @@ Parentheses contain the abbreviation commonly associated with a project.
 - Marcher Fortress
 - Nehahra
 - Operation: Urth Majik (oum)
-- Quake (id1) by id Software
-- Quake 1.5
-- Quake Mission Pack 1 (Hipnotic)
+- [Quake](https://www.quaddicted.com/quake/download) (id1) by id Software [wiki](https://quake.fandom.com/wiki/Quake)
+- [Quake 1.5](https://www.moddb.com/mods/quake-15)
+- [Quake Mission Pack 1 (Hipnotic)](https://quake.fandom.com/wiki/Quake_Mission_Pack_1:_Scourge_of_Armagon)
 - Quake Mission Pack 2 (Rogue)
 - Quake Rally
 - Quoth 1
@@ -297,13 +380,14 @@ The Evolve team
 
 ---
 
-## Companies
+## Companies and Organizations
 
-The names of all companies credited with providing anything in this mod, real
+The names of all groups credited with providing anything in this mod, real
 or otherwise fabricate in a readme to represent a person.
 
 - id Software for making Quake in the first place
 - Blizzard Entertainment
+- Carbon Based Lifeforms
 - Eidos Interactive
 - Epic Megagames
 - From Software
@@ -329,7 +413,10 @@ discovered.
 
 - Aardappel
 - Acidd_UK
+- AlienMusic
+- aDaya
 - Alex the Chemist
+- Andre Drexler
 - Andrew Denner (Preach, AndrewD)
 - Andrey Saenko
 - Ben Morris
@@ -338,6 +425,7 @@ discovered.
 - Benoît Stordeur (Bal, BafuBal)
 - Brandon James
 - Brian Collins (EvilBastard)
+- Burzygóry
 - Capnbubs
 - Carl Glave (General WarT')
 - Cayenne Mandua
@@ -351,6 +439,7 @@ discovered.
 - Dan Bickell
 - Dan Martin
 - Daniel Garcia Romero (Headcrusher)
+- Daniel Vadestrid
 - Darc Jedi
 - Darien McNeil
 - David Biggs (Hotfat)
@@ -359,6 +448,9 @@ discovered.
 - Dmitry Svetlichny (DaMaul)
 - dumptruck_ds
 - Duong Dai Nguyen
+- Dustin Geeraert (Tronyn)
+- Eduard Schwan
+- Echoes Station
 - Eric VonRothKirch (RedChurch)
 - Eric Wasylishen (ericw)
 - Ender
@@ -369,16 +461,22 @@ discovered.
 - Frika C
 - Garry Ant
 - Gavin Edgington
+- Haxan Dreams
 - Hazel Whorley
 - Henrik Oresten
 - Hipshot
+- Hrimfaxi
 - Hybrid_V
+- Idioplex
 - ijed
 - Ikka Keranen (fingers)
 - Ionous
+- Ironliȥard
 - Jack Meacher (Scrag Bait)
 - Jason Abbot
 - Jazzinda
+- Jeehun Hwang
+- Johannes Hedberg
 - John Fitzgibbons (JohnFitz)
 - John McCann
 - Jon Skinner
@@ -388,13 +486,16 @@ discovered.
 - Kell
 - Kell McDonald
 - Ken Alverson
+- Kevin Schilder
 - King Chou
 - Kirk Cooper
 - Kona
 - Kristian Duske (kduske)
 - Louis Manning
 - LordHavoc
+- Luke Jansen
 - Maik Franz Xaver (mfx)
+- Mackenzie Stewart
 - Madfox (metfoks)
 - Marauder
 - Marc Fontaine
@@ -402,11 +503,14 @@ discovered.
 - Marisa Elek
 - Mark Lewis
 - Markie Music
+- Martin O'Donnell
 - Matt Houser
 - Matthew Breit
 - Matthew Lawrence (Quake Matt)
 - metlslime
 - Mickey (of TexMex)
+- Mixed Chalk
+- Naitelveni
 - Neal (of Wally)
 - Neil White III
 - necros
@@ -415,19 +519,23 @@ discovered.
 - Ogro
 - Orl
 - Parusa
-- Patrick Martin (PM)
+- Patrick Martin (PM, Murderous Martin)
 - Per
 - RBanninga
 - Redfield
 - Renier Banninga
+- Rob Patterson
 - Romain Barrilliot
+- Ryanscissorhands
+- Save Tara
 - Sean Campbell
 - Seven
 - Seth Galbraith (SerpentLord)
+- Shadesmaster
 - Shane W. Powell
+- Shpoike (aka Spike, aka Spoik)
 - Simon OCallaghan (sock, simonoc, Krampus)
 - Speedy
-- Spike
 - Spirit
 - Stas Kuznetsov (dwere)
 - Stecki
@@ -435,15 +543,16 @@ discovered.
 - Stephen Heaslip
 - Steve Fukuda
 - Steve Roscoe
+- Stvannyr
 - Survivor 25
 - Sven Ruthner
+- Synthsound1
 - Tan Sian Yue (Bubbah)
 - Tim Elek (ELEK)
 - Tim Wright (argh)
 - Than
 - The Lone Gunmen
 - Travis Prebble
-- Tronyn
 - Ty (of Wally)
 - Tyrann
 - Vondur

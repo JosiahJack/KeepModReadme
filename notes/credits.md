@@ -2,8 +2,9 @@
 id: jejp4x6svhemnxp0ioejmc7
 title: Credits
 desc: ''
-updated: 1682169255920
+updated: 1682172716573
 created: 1657647929110
+nav_order: 2
 ---
 ## Keep itself
 Since this is a compilation mod, it has had development by a large number of
@@ -23,7 +24,7 @@ who helped to make both Mjölnir and to make Keep itself and its content are
 thus given below.  Please see [Mjölnir](TODO Add link).
 
 - W. Josiah Jack (Qmaster) - for co-lead, the compilation, code, modeling,
-  this readme, testing, level design, more code, texturing, support
+  this readme, testing, level design, more code, texturing, support, concept art
 - Dustin Geeraert (Tronyn) - for co-lead, bulk level design, more level design, 
   even crazier amount of level design, and all the crazy cool ideas Qmaster was
   crazy enough to actually implement
@@ -32,8 +33,9 @@ thus given below.  Please see [Mjölnir](TODO Add link).
   couldn't keep up
 - Tintin - for level design, models, textures
 - Hrimfaxi - for level design, models
-- Maik Franz Xaver (mfx) - for level design, brushwork models, support and testing
-- Shadesmaster - for level design, testing
+- Maik Franz Xaver (mfx) - for level design, brushwork models, support and
+  testing
+- Shadesmaster - for level design, testing, and being way ahead of the curve
 - Ironliȥard - for level design, models, textures
 - Mackenzie Stewart - for Mjölnir world map painting
 - Idioplex - for music and sound effects
@@ -114,6 +116,8 @@ to Keep and may not be fully subsumed into the collective as of yet.
 Parentheses contain the abbreviation commonly associated with a project.
 
 ### Sourced Projects
+Links provided where possible.  Links are _not_ direct downloads for your
+sanity.
 
 - [Abuse](https://www.myabandonware.com/game/abuse-1ne)
 - [Abyss of Pandemonium - The Final Mission v2.0 (aop)](https://www.moddb.com/mods/abyss-of-pandemonium)
@@ -128,60 +132,61 @@ Parentheses contain the abbreviation commonly associated with a project.
 - [BSQM Safe v0.47](https://www.quaddicted.com/reviews/bsqmsafe.html)
 - [Bubbah's Snakeman](https://www.gamers.org/pub/idgames2/quakec/monsters/) (snakeman.zip)
 - [Church of the Unholy](https://www.moddb.com/mods/church-of-the-unholy)
-- Copper Quake v1.11
-- Custents
-- Deathmatch eXtreme Platinum Edition
-- Drake
-- Drake Beta 1
-- Drone QC Modification Beta
-- Dwell v1.2
-- extras_r4
-- extras_r5
-- Frikbot
-- Gyro 2
-- Hexen II: Hammer of Thyrion (Hexen2) by Raven Software
-- In the Shadows Demo 1.1 (ITS)
-- January Jump Jam
-- James Bond TC
-- Kothic Skies
-- Keep (yes this)
-- Kurok
-- Manga Babe
-- Marcher Fortress
-- Nehahra
-- Operation: Urth Majik (oum)
+- [Copper Quake v1.11](https://www.slipseer.com/index.php?resources/copper.27/)
+- [Custents](https://www.quakewiki.net/quake-1/mods/custents-custom-entities/)
+- [Deathmatch eXtreme Platinum Edition](https://www.quakewiki.net/quake-1/mods/deathmatch-extreme-platinum-edition/)
+- [Drake](https://www.slipseer.com/index.php?resources/ter-shibboleth-drake-redux.46/)
+- [Drake Beta 1](https://www.quakewiki.net/quake-expo-2011/drake-beta/)
+- [Drone QC Modification Beta](https://www.gamers.org/pub/idgames2/quakec/monsters/) (drone07.zip)
+- [Dwell v1.2](https://www.slipseer.com/index.php?resources/dwell.21/)
+- [extras_r4](https://www.quakewiki.net/quake-1/mods/extras-r4/)
+- [extras_r5 (Khreathor's extras_r4 mod)](https://bitbucket.org/khreathor/extras_r5/src/master/)
+- [Frikbot](https://www.insideqc.com/frikbot/fbx/)
+- [Gyro 2](https://www.quakewiki.net/quake-1/mods/gyro/)
+- [Hexen II: Hammer of Thyrion (Hexen2) by Raven Software](https://sourceforge.net/projects/uhexen2/)
+- [In the Shadows Demo 1.1 (ITS)](https://www.moddb.com/mods/its)
+- [January Jump Jam](https://www.quaddicted.com/reviews/jan_jump_jam_2020.html)
+- [James Bond TC](https://www.quakewiki.net/quake-1/mods/james-bond-tc/)
+- [Kothic Skies](https://www.quaddicted.com/webarchive/kell.quaddicted.com/skyboxes.html)
+- [Keep (yes this)](https://github.com/JosiahJack/Keep/tags)
+- [Kurok](https://gbatemp.net/threads/release-kurok.462803/#post-7142736)
+- [Manga Babe](https://www.gamers.org/pub/idgames2/quakec/monsters/) (mangab.zip)
+- [Marcher Fortress](https://www.quaddicted.com/reviews/kinn_marcher.html)
+- [Nehahra](https://www.moddb.com/mods/nehahra/downloads)
+- [Operation: Urth Majik (oum)](https://www.quaddicted.com/reviews/oum.html)
 - [Quake](https://www.quaddicted.com/quake/download) (id1) by id Software [wiki](https://quake.fandom.com/wiki/Quake)
 - [Quake 1.5](https://www.moddb.com/mods/quake-15)
 - [Quake Mission Pack 1 (Hipnotic)](https://quake.fandom.com/wiki/Quake_Mission_Pack_1:_Scourge_of_Armagon)
-- Quake Mission Pack 2 (Rogue)
-- Quake Rally
-- Quoth 1
-- Quoth 2
-- Quoth 2.1
-- Quoth 2.2 (Preach patch)
-- Rapture
-- Raven Keep
-- Rubicon
-- Rubicon 2
-- Rubicon Rumble Pack
-- Small Mod Compilation (SMC)
-- Soul of Evil
-- The Altar of Storms (ne_ruins)
-- The Ascension of Vigil (taov)
+- [Quake Mission Pack 2 (Rogue)](https://quake.fandom.com/wiki/Quake_Mission_Pack_2:_Dissolution_of_Eternity)
+- [Quake Rally](https://www.moddb.com/mods/quake-rally)
+- [Quoth 1](https://www.quaddicted.com/reviews/quoth.html)
+- [Quoth 2](https://www.quaddicted.com/reviews/quoth.html)
+- [Quoth 2.2 (Preach patch)](https://www.quaddicted.com/reviews/quoth2pt2full_2.html)
+- [Rapture](https://www.quaddicted.com/reviews/rapture.html)
+- [Raven Keep](https://celephais.net/board/view_thread.php?id=61953)
+- [Rubicon](https://www.quaddicted.com/reviews/rubicon.html)
+- [Rubicon 2](https://www.celephais.net/board/view_thread.php?id=60503&start=189&end=202)
+- [Rubicon Rumble Pack](https://www.quaddicted.com/reviews/rrp.html)
+- [Small Mod Compilation (SMC)](https://quakeone.com/forum/quake-mod-releases/finished-works/6241-small-mod-compilation)
+- [Soul of Evil](https://www.quaddicted.com/reviews/soe_full.html)
+- [The Altar of Storms (ne_ruins)](https://www.celephais.net/board/view_thread.php?id=60542&start=181&end=205)
+- [The Ascension of Vigil (taov)](https://www.moddb.com/mods/the-ascension-of-vigil)
 - The Blarg
-- The Color Burns (bluemonday_chrisholden)
-- The Final Level (tfl)
-- The Quake Raptor (raptors)
-- The TEF Double Pack #3 (tefdbl3)
-- The Vigil
-- Temple of Tourment v0.9
-- Travail
-- Twisted Christmas (twx)
+- [The Color Burns (bluemonday_chrisholden)](https://www.quaddicted.com/reviews/bluemonday_v2.html)
+- [The Final Level (tfl4)](https://www.quaddicted.com/reviews/tfl4.html)
+- [The Quake Raptor (raptors)](https://www.gamers.org/pub/idgames2/quakec/monsters/) (raptor.zip)
+- [The TEF Double Pack #3 (tefdbl3)](https://www.quaddicted.com/reviews/tefdbl3.html)
+- [The Vigil](https://www.quaddicted.com/reviews/vigil.html)
+- [Temple of Tourment v0.9](https://www.quaddicted.com/reviews/temple2.html)
+- [Travail](https://www.moddb.com/mods/travail)
+- [Twisted Christmas (twx)](https://www.quaddicted.com/reviews/twxfinal.html)
 - Virtus DeathmatchMaker
-- Virtual Reality Quake (vr)
-- Willy the Spider
-- Wyvern QC Modification
+- [Virtual Reality Quake (vr)](https://vittorioromeo.info/quakevr)
+- [Willy the Spider](https://www.gamers.org/pub/idgames2/quakec/monsters/) (spider21.zip)
+- [Wyvern QC Modification](https://www.gamers.org/pub/idgames2/quakec/monsters/) (wyv093.zip)
 - Zerstorer: Testament of the Destroyer by Nihilism Unlimited
+
+[qc](https://github.com/JosiahJack/Keep/tree/master/qcsources)
 
 ---
 

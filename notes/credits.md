@@ -2,13 +2,13 @@
 id: jejp4x6svhemnxp0ioejmc7
 title: Credits
 desc: ''
-updated: 1682172716573
+updated: 1682289312635
 created: 1657647929110
 nav_order: 2
 ---
 ## Keep itself
 Since this is a compilation mod, it has had development by a large number of
-different people over the past 25 years of Quake modding history.  This first
+different people over the past 25+ years of Quake modding history.  This first
 section lists just the credit for the compilation itself, authors of its custom
 additions that are unique to Keep.
 
@@ -99,9 +99,8 @@ its credits intact.
 
 The full name listing below is the complete compilation of all individuals
 named who contributed to any of the mods and projects included, no matter how
-trivial there contribution.  In some respects this will be a (not comprehensive
-but quite large) list of people who have touched Quake in significant ways over
-these many years since 1996.
+trivial there contribution.  In some respects this will be a list of people who
+have touched Quake in significant ways over these many years since 1996.
 
 ## Sourced Projects/Mods List Alphabatized
 Please note this excludes single authors releasing files individually (e.g.
@@ -119,13 +118,13 @@ Parentheses contain the abbreviation commonly associated with a project.
 Links provided where possible.  Links are _not_ direct downloads for your
 sanity.
 
+- [Arcane Dimensions (AD)](https://www.moddb.com/mods/arcane-dimensions) (Giving this top billing as it deserves it for redefining Quake, the rest is alphabetical)
 - [Abuse](https://www.myabandonware.com/game/abuse-1ne)
 - [Abyss of Pandemonium - The Final Mission v2.0 (aop)](https://www.moddb.com/mods/abyss-of-pandemonium)
 - [Airfist](https://www.geocities.ws/Area51/Nova/2704/quakeaf.html)
 - [Alkaline](https://www.slipseer.com/index.php?resources/alkaline.62/)
 - [Anaconda](https://www.quaddicted.com/reviews/anaconda.html)
 - [An Old, Old Evil (anevil, early Tronyn/Drake project)](https://www.quaddicted.com/reviews/anevilnew.html)
-- [Arcane Dimensions (AD)](https://www.moddb.com/mods/arcane-dimensions)
 - [Arms of Asgard](https://www.reddit.com/r/quake/comments/jirb8q/arms_of_asgard_a_2020_weapon_mod_for_quake_1996/)
 - [Bastion](https://www.quaddicted.com/reviews/kinn_bastion.html)
 - [Bazooka Babes 2.0](https://www.gamers.org/pub/idgames2/quakec/monsters/) (bazooka.zip)
@@ -171,7 +170,7 @@ sanity.
 - [Soul of Evil](https://www.quaddicted.com/reviews/soe_full.html)
 - [The Altar of Storms (ne_ruins)](https://www.celephais.net/board/view_thread.php?id=60542&start=181&end=205)
 - [The Ascension of Vigil (taov)](https://www.moddb.com/mods/the-ascension-of-vigil)
-- The Blarg
+- [The Blarg](https://www.quakewiki.net/quake-1/mods/blarg/)
 - [The Color Burns (bluemonday_chrisholden)](https://www.quaddicted.com/reviews/bluemonday_v2.html)
 - [The Final Level (tfl4)](https://www.quaddicted.com/reviews/tfl4.html)
 - [The Quake Raptor (raptors)](https://www.gamers.org/pub/idgames2/quakec/monsters/) (raptor.zip)
@@ -180,11 +179,11 @@ sanity.
 - [Temple of Tourment v0.9](https://www.quaddicted.com/reviews/temple2.html)
 - [Travail](https://www.moddb.com/mods/travail)
 - [Twisted Christmas (twx)](https://www.quaddicted.com/reviews/twxfinal.html)
-- Virtus DeathmatchMaker
+- [Virtus DeathmatchMaker](https://valvedev.info/tools/virtus-deathmatch-maker/)
 - [Virtual Reality Quake (vr)](https://vittorioromeo.info/quakevr)
 - [Willy the Spider](https://www.gamers.org/pub/idgames2/quakec/monsters/) (spider21.zip)
 - [Wyvern QC Modification](https://www.gamers.org/pub/idgames2/quakec/monsters/) (wyv093.zip)
-- Zerstorer: Testament of the Destroyer by Nihilism Unlimited
+- [Zerstorer: Testament of the Destroyer by Nihilism Unlimited](https://www.quaddicted.com/reviews/zer.html)
 
 [qc](https://github.com/JosiahJack/Keep/tree/master/qcsources)
 
@@ -199,7 +198,9 @@ The mods here are listed alphabetically with the exception of AD.  Within each
 mod the names are listed as they are found in the mod's documentation or as I
 discovered it.
 
-### Arcane Dimensions - Giving this top billing as it deserves it for redefining Quake
+### Arcane Dimensions
+Giving this top billing as it deserves it for redefining Quake, the rest is
+alphabetical.
 - Simon OCallaghan - Art, Code and Level Design
 - Maik Franz Xaver - Art and Level Design
 - Corey Jones - Animation and Code Support
@@ -243,8 +244,64 @@ discovered it.
 - Hybrid_V - for seeker sound effects
 
 ### Abuse
-Crack dot Com
-- Duong Dai Nguyen
+Various sound effects were used in Keep and in Nehahra, particularly the mutant
+spider monkey things.
+- Al Carnley - Packaging Design
+- Anja Rumbarger - Translation
+- Ann Williams - Product Manager
+- Billy Joe Cain - Co-Producer
+- Bryan Hill - QA
+- Catherine Cantieri - Documentation
+- Chris W. McCubbin - Documentation
+- Christian Primozich - QA
+- Dan Taillefer - Project leader French QA
+- David Ladyman - Documenation
+- Dave Taylor - Production
+- Duong Dai Nguyen - Graphics, Artwork, level editor manual
+- Ernest Gibson - QA
+- Greg Barwis - QA
+- Isabelle Rice - Translation
+- Joe Basquez - Music
+- John Guentzel - Network Setup & Test
+- Jonathan Clark - Programming
+- Jonathan Piasecki - QA
+- Kai Leibert - Translation
+- Lee Gibson - QA
+- Marcus Merell - Network Setup & Test
+- Marshall Andrews - Network Setup & Test, QA
+- Melissa Tyler - Documentation
+- Murray McMillan - Graphics, Artwork
+- Pual Baker - Music
+- Robert Irving - Network Setup & Test
+- Robert Prince - Sound
+- Roman Traycey - Project leader of German QA
+- Sam Yeates - Packaging Design
+- Sean Mustakas - Additional Network testing and technical assistance
+- Simon Davison - QA
+- Steven Donaldson - Special thanks
+- Tod Bailey - QA
+- Tom Godsey - Network Setup & Test
+- Trey Hermann - Packaging Design
+
+### Abyss of Pandemonium - The Final Mission v2.0
+- Alex "Cybermind" Redman - Biz, Game Core Design, Programmer Weapons Design,
+  Sound Effects
+- Aj "Crazed Fan" Greenlee - Game Core Design, Concept Originator
+- Ryan "Gribe" Mallen - Game Core Design, Lead Programmer, QA
+- Jamie "Sylvan Elf" Wood - Senior Programmer, Game Core Design 
+- Cayenne "X" Mandua - Lead Modeller, Creature Development
+- Jeramy "Agent" Cooke - Modeller, Texture Design
+- Hannu "Falconna" Hurme - Level Designs
+- Juha "PsychoDad" Koiste - Gameflow, Level Designs
+- Darren "Tremor" Nuckolls - Original Musical Soundtracks
+- Marcus "Mexx" Dromowicz - Gameflow, Level Designs
+- Jim Hendrickson - Gameflow, Level Designs
+- Kaspar Loit - Texture Designs
+- Peter "Gwai" Frain - Dark Knight, Grenling Voices
+- Lina "Wren" Valenti - Field Generator, Laser System Voices
+- Stuart "Howard" Bennett
+- Avery Barnett
+- Kevin Hansen
 
 ### Airfist
 The Evolve team
@@ -261,9 +318,30 @@ The Evolve team
 - Chris McGowen: Testing
 - Kirk Cooper: Testing
 
+### Alkaline
+- Greenwood - for code and project lead
+- bmFbr - for major coding assistance
+- Khreathor - for major coding assistance
+- Shamblernaut - for major coding assistance
+- metlslime - for original Rubicon 2 mod this derived from
+- aDaya - for plasma rifle model
+- Bloodshot - for chainsaw model
+- Fairweather - for ArachnoFloyd, modeling, animation
+- Markie - for texturing, laser cannon enhancement, and Bambler
+
+### Anaconda
+- Magicman - for level design and anaconda model
+- L.Pope - for anaconda model
+- Bubbah - for the snakeman monster
+
+### An Old, Old Evil
+- Bengt Jardrup (aguirRe) - Tools
+- Dustin Geeraert (Tronyn) - Level design
+- Patrick Martin (PM, Murderous Martin) - Code, Skins, Modeling
+
 ### Bastion
-- Ben Wooding (Kinn)
-- Bengt Jardrup
+- Ben Wooding (Kinn) - for level design and code
+- Bengt Jardrup - for support
 
 ### Custents
 - Carl Glave (General WarT')
@@ -297,7 +375,7 @@ The Evolve team
 - Tronyn for using Drake in his map packs
 
 ### extras_r4, extras_r5
-- Frank Condello (p0x)
+- Frank Condello (p0x) - for coding of original extras_r4, its readme
 - Khreathor - for extras_r5 update for Sewer Jam mappack
 
 ### Gyro 2
@@ -360,6 +438,24 @@ The Evolve team
 - Marisa Elek - for support
 - Jack 'Scrag Bait' Meacher - for help
 
+### Quake
+- Adrian Carmack - Art
+- American McGee - Design
+- Barret Alexander - Support
+- Dave Taylor - Original Sound Code and Unix Ports
+- Donna Jackson - Biz
+- Jay Wilbur - Biz
+- John Carmack - Programming
+- John Cash - Programming
+- John Romero - Design
+- Kevin Cloud - Art
+- Michael Abrash - Programming
+- Michael Trent Reznor - of Nine Inch Nails, Music and Sound Effects
+- Mike Wilson - Biz
+- Sandy Petersen - Design
+- Shawn C. Green - Projects
+- Tim Willits - Design
+
 ### Rapture
 - Kona
 - Tronyn
@@ -368,7 +464,7 @@ The Evolve team
 ### Raven Keep
 - Redfield
 - Arcane Dimensions team
-- Frank Condello - for laders from extras
+- Frank Condello (p0x) - for ladders from extras
 - Joshua Skelton - for misc code
 - dumptruck_ds - for misc code
 - Qmaster - for phantom sword code assistance, testing
@@ -393,11 +489,14 @@ or otherwise fabricate in a readme to represent a person.
 - id Software for making Quake in the first place
 - Blizzard Entertainment
 - Carbon Based Lifeforms
+- Crack dot Com
+- Design Island
 - Eidos Interactive
 - Epic Megagames
 - From Software
 - Gray Matter Interactive
 - Hipnotic Software
+- Incan Monkey God Productions
 - Ion Storm
 - Nihilism Unlimited
 - Nine Inch Nails
@@ -418,24 +517,41 @@ discovered.
 
 - Aardappel
 - Acidd_UK
-- AlienMusic
 - aDaya
+- Adrian Carmack
+- Al Carnley
+- AlienMusic
+- Aj Greenlee (Crazed Fan)
+- Alex Redman (Cybermind)
 - Alex the Chemist
+- American McGee
 - Andre Drexler
 - Andrew Denner (Preach, AndrewD)
 - Andrey Saenko
+- Anja Rumbarger
+- Ann Williams
+- Avery Barnett
+- Barret Alexander
 - Ben Morris
 - Ben Wooding (Kinn, BenW)
 - Bengt Jardrup (aguirRe)
 - Benoît Stordeur (Bal, BafuBal)
+- Billy Joe Cain
+- Bloodshot
+- bmFbr
 - Brandon James
 - Brian Collins (EvilBastard)
+- Bryan Hill
+- Bubbah
 - Burzygóry
 - Capnbubs
 - Carl Glave (General WarT')
-- Cayenne Mandua
+- Catherine Cantieri
+- Cayenne Mandua (X)
 - Chris McGowen
+- Chris W. McCubbin
 - Christian Grawert (czg, CZG)
+- Christian Primozich
 - Christopher Bolin
 - CO.AG Music
 - Corey Jones
@@ -443,14 +559,19 @@ discovered.
 - Curtis Kendrick (The Lieutenant)
 - Dan Bickell
 - Dan Martin
+- Dan Taillefer
 - Daniel Garcia Romero (Headcrusher)
 - Daniel Vadestrid
 - Darc Jedi
 - Darien McNeil
+- Darren Nuckolls (Tremor)
+- Dave Taylor
 - David Biggs (Hotfat)
 - David Karl
+- David Ladyman
 - Deft'Conrad
 - Dmitry Svetlichny (DaMaul)
+- Donna Jackson
 - dumptruck_ds
 - Duong Dai Nguyen
 - Dustin Geeraert (Tronyn)
@@ -459,13 +580,18 @@ discovered.
 - Eric VonRothKirch (RedChurch)
 - Eric Wasylishen (ericw)
 - Ender
+- Ernest Gibson
 - Ethan Leon
+- Fairweather
 - Fat Controller
 - Fern
 - Frank Condello (p0x)
 - Frika C
 - Garry Ant
 - Gavin Edgington
+- Greenwood
+- Greg Barwis
+- Hannu Hurme (Falconna)
 - Haxan Dreams
 - Hazel Whorley
 - Henrik Oresten
@@ -477,44 +603,72 @@ discovered.
 - Ikka Keranen (fingers)
 - Ionous
 - Ironliȥard
+- Isabelle Rice
 - Jack Meacher (Scrag Bait)
+- Jamie Wood (Sylvan Elf)
 - Jason Abbot
+- Jay Wilbur
 - Jazzinda
 - Jeehun Hwang
+- Jeramy Cooke (Agent)
+- Jim Hendrickson
+- Joe Basquez
 - Johannes Hedberg
-- John Fitzgibbons (JohnFitz)
+- John Carmack
+- John Cash
+- John Fitzgibbons (JohnFitz, metlslime)
+- John Guentzel
 - John McCann
+- John Romero
 - Jon Skinner
+- Jonathan Clark
+- Jonathan Piasecki
 - Jose Carlos Rodriguez (JCR)
 - Joshua Skelton
+- Juha Koiste (PsychoDad)
 - Jussi Jaiskelainen
+- Kai Leibert
+- Kaspar Loit
 - Kell
 - Kell McDonald
 - Ken Alverson
+- Kevin Cloud
+- Kevin Hansen
 - Kevin Schilder
+- Khreathor
 - King Chou
 - Kirk Cooper
 - Kona
 - Kristian Duske (kduske)
+- Lee Gibson
+- L.Pope
+- Lina Valenti (Wren)
 - Louis Manning
 - LordHavoc
 - Luke Jansen
 - Maik Franz Xaver (mfx)
 - Mackenzie Stewart
 - Madfox (metfoks)
+- Magicman
 - Marauder
 - Marc Fontaine
-- Marcus Dromowicz
+- Marcus Dromowicz (Mexx)
+- Marcus Merell
 - Marisa Elek
 - Mark Lewis
 - Markie Music
+- Marshall Andrews
 - Martin O'Donnell
 - Matt Houser
 - Matthew Breit
 - Matthew Lawrence (Quake Matt)
-- metlslime
+- Melissa Tyler
 - Mickey (of TexMex)
+- Michael Abrash
+- Michael Trent Reznor
+- Mike Wilson
 - Mixed Chalk
+- Murray McMillan
 - Naitelveni
 - Neal (of Wally)
 - Neil White III
@@ -525,20 +679,32 @@ discovered.
 - Orl
 - Parusa
 - Patrick Martin (PM, Murderous Martin)
+- Pual Baker
 - Per
+- Peter Frain (Gwai)
 - RBanninga
 - Redfield
 - Renier Banninga
 - Rob Patterson
+- Robert Irving
+- Robert Prince
 - Romain Barrilliot
+- Roman Traycey
+- Ryan Mallen (Gribe)
 - Ryanscissorhands
+- Sam Yeates
+- Sandy Petersen
 - Save Tara
 - Sean Campbell
+- Sean Mustakas
 - Seven
 - Seth Galbraith (SerpentLord)
 - Shadesmaster
+- Shamblernaut
 - Shane W. Powell
+- Shawn C. Green
 - Shpoike (aka Spike, aka Spoik)
+- Simon Davison
 - Simon OCallaghan (sock, simonoc, Krampus)
 - Speedy
 - Spirit
@@ -546,18 +712,24 @@ discovered.
 - Stecki
 - Stephen F. Karl
 - Stephen Heaslip
+- Steven Donaldson
 - Steve Fukuda
 - Steve Roscoe
+- Stuart Bennett (Howard)
 - Stvannyr
 - Survivor 25
 - Sven Ruthner
 - Synthsound1
 - Tan Sian Yue (Bubbah)
 - Tim Elek (ELEK)
+- Tim Willits
 - Tim Wright (argh)
 - Than
 - The Lone Gunmen
+- Tod Bailey
+- Tom Godsey
 - Travis Prebble
+- Trey Hermann
 - Ty (of Wally)
 - Tyrann
 - Vondur

@@ -2,7 +2,7 @@
 id: opv748qnyh2uwtk20mh0548
 title: TOME OF KEEP MOD
 desc: ''
-updated: 1681960338660
+updated: 1682416762032
 created: 1657642701590
 ---
 #### Current Version: 0.96.2
@@ -57,23 +57,32 @@ The entity definition file (.fgd) contains all the necessary fields and spawnfla
 
 All features of this mod are documented here in their various sections.  A complete entity list can be found in the appendix.  In every section the entities are listed alphabetically by entity name.
 
+# Motivation
+
+The purpose of this mod is to provide a toolset for creating any kind of Quake
+map you desire with anything you may have encountered in some of the best known
+mods.  This mod is a mod for mappers, intended for mappers to make excellent
+maps for players to play.  Also, in the spirit of the earliest days of Quake,
+this mod is not striving for overall quality, nor quantity, but is intending to
+provide fun.  Some content is intentionally as-is, in terms of quality, to
+preserve the old-school 90's feel; other content is much more polished.  The
+quality of content you use is up to you, the mapper.
+
+> The mapper is always right.  The player is at the mercy of the mapper.
+
 # TABLE OF CONTENTS
 Here are links to each book within the tome.
 
+* [[general]]
+* [[credits]]
 * [[enemies]]
 * [[weapons]]
 * [[items]]
 * [[traps]]
 * [[brush-entities]]
 * [[point-entities]]
-* [[general]]
 * [[requirements]]
-* [[credits]]
 
-
-.
-
-.
 
 .
 

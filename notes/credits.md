@@ -2,7 +2,7 @@
 id: jejp4x6svhemnxp0ioejmc7
 title: Credits
 desc: ''
-updated: 1682289312635
+updated: 1682420475168
 created: 1657647929110
 nav_order: 2
 ---
@@ -86,9 +86,12 @@ content quantity, the following sections will list the credits for all of the
 mods and projects used.
 
 I have attempted to be thorough here, no etc.'s allowed, but please email me
-if I left your name out of this list.  Also of note, I have included all the
-various readmes from the different mods used in Keep into the `keep/credits`
-folder.
+if I left your name out of this list: josiahjackcitadel AT gmail.com
+Also of note, I have included all the various readmes from the different mods
+used in Keep into the `keep/credits` folder as many require this.  Further,
+each mod's content is sorted into named folders within various sections of
+progs and sounds and in the qcsources.  Attributions are given on each qc file
+in keepsrc as well.
 
 The credits listed below were taken from the respective readmes of each release
 or in cases where no readme was present from the sources I obtained them from.
@@ -179,6 +182,7 @@ sanity.
 - [Temple of Tourment v0.9](https://www.quaddicted.com/reviews/temple2.html)
 - [Travail](https://www.moddb.com/mods/travail)
 - [Twisted Christmas (twx)](https://www.quaddicted.com/reviews/twxfinal.html)
+- Violent Rumble
 - [Virtus DeathmatchMaker](https://valvedev.info/tools/virtus-deathmatch-maker/)
 - [Virtual Reality Quake (vr)](https://vittorioromeo.info/quakevr)
 - [Willy the Spider](https://www.gamers.org/pub/idgames2/quakec/monsters/) (spider21.zip)
@@ -339,9 +343,35 @@ The Evolve team
 - Dustin Geeraert (Tronyn) - Level design
 - Patrick Martin (PM, Murderous Martin) - Code, Skins, Modeling
 
+### Arms of Asgard
+- Ryanscissorhands
+- Tronyn - glorious tester
+- carcarooch - glorious tester
+- fortysixandtwo - glorious tester
+- NewHouse - glorious tester
+- VoidForce - glorious tester
+- Greenwood - for UI artwork!
+- Spoike - special thanks
+- Preach - for 3D models
+- Qmaster - special thanks
+- Dumptruck - special thanks
+- Sock and the rest of the Arcane Dimensions team - special thanks
+
 ### Bastion
 - Ben Wooding (Kinn) - for level design and code
 - Bengt Jardrup - for support
+
+### Bazooka Babes 2.0
+- Tian Sian Yue (Bubbah) - author
+- Gyro Gearloose - additional credit
+- Lando - for qmflag proggy
+- Brian K. Martin - for testing and feedback
+- Gib666 - for testing and feedback
+- babe S. - for her voice
+
+### BSQM Safe v.0.47
+Used its gib kicking code.
+- Lord Asaki
 
 ### Custents
 - Carl Glave (General WarT')
@@ -413,7 +443,7 @@ The Evolve team
 - Brian 'EvilBastard' Collins - for models/animations
 - David 'Hotfat' Biggs - for models/animations
 - King Chou - for models/animations
-- Tan Sian Yue, a.k.a. 'Bubbah' - for models/animations
+- Tan Sian Yue (Bubbah) - for models/animations
 - Garry Ant - for models/animations
 - Daniel Garcia Romero, a.k.a. 'Headcrusher' - for models/animations
 - Cayenne Mandua - for models/animations
@@ -531,6 +561,7 @@ discovered.
 - Anja Rumbarger
 - Ann Williams
 - Avery Barnett
+- babe S.
 - Barret Alexander
 - Ben Morris
 - Ben Wooding (Kinn, BenW)
@@ -541,10 +572,11 @@ discovered.
 - bmFbr
 - Brandon James
 - Brian Collins (EvilBastard)
+- Brian K. Martin
 - Bryan Hill
-- Bubbah
 - Burzygóry
 - Capnbubs
+- carcarooch
 - Carl Glave (General WarT')
 - Catherine Cantieri
 - Cayenne Mandua (X)
@@ -572,7 +604,7 @@ discovered.
 - Deft'Conrad
 - Dmitry Svetlichny (DaMaul)
 - Donna Jackson
-- dumptruck_ds
+- dumptruck_ds (aka Dumptruck)
 - Duong Dai Nguyen
 - Dustin Geeraert (Tronyn)
 - Eduard Schwan
@@ -585,12 +617,15 @@ discovered.
 - Fairweather
 - Fat Controller
 - Fern
+- fortysixandtwo
 - Frank Condello (p0x)
 - Frika C
 - Garry Ant
 - Gavin Edgington
+- Gib666
 - Greenwood
 - Greg Barwis
+- Gyro Gearloose
 - Hannu Hurme (Falconna)
 - Haxan Dreams
 - Hazel Whorley
@@ -640,10 +675,12 @@ discovered.
 - Kirk Cooper
 - Kona
 - Kristian Duske (kduske)
+- Lando
 - Lee Gibson
 - L.Pope
 - Lina Valenti (Wren)
 - Louis Manning
+- Lord Asaki
 - LordHavoc
 - Luke Jansen
 - Maik Franz Xaver (mfx)
@@ -674,9 +711,10 @@ discovered.
 - Neil White III
 - necros
 - Negke
+- NewHouse
 - Noel Lacaillade
 - Ogro
-- Orl
+- Ken Chennar (Orl)
 - Parusa
 - Patrick Martin (PM, Murderous Martin)
 - Pual Baker
@@ -732,11 +770,57 @@ discovered.
 - Trey Hermann
 - Ty (of Wally)
 - Tyrann
+- VoidForce
 - Vondur
 - Vigilante
 - Vengeance
 - V.S.KiRill
 - Woebane
 
+## About the Compiler
+The Compiler: W. Josiah Jack (Qmaster) (known as Bubby to his 3 sisters).
 
-The Compiler: W. Josiah Jack (Qmaster) (known as Bubby to his sisters).
+I like to self describe myself as `Christian, Husband, Father, Engineer`.  In
+this order of importance.
+- Christian - I am baptized into the name of the almighty creator God, Jesus
+  Christ, King of the World.  My theology drives my actions.  I can best be
+  summarized as postmillenial preterist paedocommunionist paedobaptist though
+  such terms are a woeful oversimplification of the grandeur and beauty that
+  is found in the Bible, the Word of God, and its symbolic and typological
+  worldview of which I am ever shaped and striving to have my mind healed from
+  the influences of evil to conform to.
+- Husband - Maried to one wife, of whom I am thankful for putting up with my
+  many sleepless nights of pouring myself into my projects.  My rock canyon
+  country hiking partner.  Listed before and as more important than being a
+  parent since I will only be in charge of my children for a brief part of
+  their lives, but I am married for all of my life.  May we ever grow closer
+  together as our decades go on.
+- Father - I am the father of 3 children.  Two of which are born, the 3rd is on
+  her way.  My daughter is adopted and in my care since she was 20min old.  We
+  became pregnant with my son only a few months after we adopted her.  They
+  are both very smart and the cutest kids you've ever seen.  We'll likely have
+  a 4th someday at least.
+- Engineer - This seems the best term to describe how I interact with my world.
+  In every area of life this describes how I strive to take dominion of the
+  earth for the Kingdom of Jesus Christ, moving everthing I touch from glory to
+  glory ever improving, beautifying, and making it the best it can be.  You may
+  notice I haven't described my job at all yet; this is because I do not find
+  my life purpose in what I am currently doing for money, but rather in what I
+  am currently doing for Christ.  That said, I am presently employed as an
+  Embedded Software Engineer helping to make the best equipment for connecting
+  people with utilities they need; this helps to move history forward from
+  Garden to Garden City.  As a programmer I, like God, use the power of the
+  written word to change the world.  My engineering is not limited to career,
+  as I engineer systems for my game projects, shape my yard into gardens, mod
+  my cars to look better than factory, and improve my house always striving to
+  leave a place better than I found it.  True engineering is dominioneering.
+
+#### Other  Interests
+Utah and the Coloradeau Plateau in general, canyons, rocks (red or otherwise),
+Legos, sci-fi tech, Linux, building computers, learning, programming, 3D
+modeling, rendering, dabbling in any digital medium such as video or audio
+editing, water color painting, world map drawing, concept art, graph paper
+sketches, Quake mapping, blacked-out wheels and trim on silver vehicles, off
+road vehicle mods, gardening, puzzles, detective TV shows, history, ancient
+artifacts and architecture, theoretical physics and alternate theories from
+mainstream, exploring

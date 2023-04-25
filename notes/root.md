@@ -2,7 +2,7 @@
 id: opv748qnyh2uwtk20mh0548
 title: TOME OF KEEP MOD
 desc: ''
-updated: 1682416762032
+updated: 1682424325599
 created: 1657642701590
 ---
 #### Current Version: 0.96.2
@@ -56,6 +56,8 @@ Any conflicts have been resolved in such a manner as to retain the unique featur
 The entity definition file (.fgd) contains all the necessary fields and spawnflags for accessing these conflict resolving features as well as any Keep specific features that have been added.
 
 All features of this mod are documented here in their various sections.  A complete entity list can be found in the appendix.  In every section the entities are listed alphabetically by entity name.
+
+For what is and isn't implemented, refer to the [Checklist](https://github.com/JosiahJack/KeepModReadme/blob/master/KeepFeatureChecklist.xlsx)
 
 # Motivation
 

@@ -2,7 +2,7 @@
 id: jejp4x6svhemnxp0ioejmc7
 title: Credits
 desc: ''
-updated: 1682420475168
+updated: 1682424302693
 created: 1657647929110
 nav_order: 2
 ---
@@ -84,6 +84,9 @@ Myths of the North in Fall of 2022](https://www.dropbox.com/s/ox6xa6qi6jpspv7/Ic
 Reiterating that this is primarily a compilation mod, at least in terms of
 content quantity, the following sections will list the credits for all of the
 mods and projects used.
+
+For what is and isn't implemented, refer to the
+[Checklist](https://github.com/JosiahJack/KeepModReadme/blob/master/KeepFeatureChecklist.xlsx)
 
 I have attempted to be thorough here, no etc.'s allowed, but please email me
 if I left your name out of this list: josiahjackcitadel AT gmail.com
@@ -373,11 +376,65 @@ The Evolve team
 Used its gib kicking code.
 - Lord Asaki
 
+### Bubbah's Snakeman
+- Tian Sian Yue (Bubbah) - author
+- Ken Turner - for his spider qc and help
+- Coyote - for coding help and input
+
+### Church of the Unholy
+- Inky - main author, mapper, creepy voice actor
+- dumptruck_ds - for his support and involvement in Quake
+- dougm nyc - for English assistance
+- Sigmund Krähe - for music "Eternal Night"
+- Michael Houston - for endorsement to use Dank and Scud characters
+- Joshua Skelton - for code and tools
+- Bal - for help with lighting and doors
+- 4LT - for help with rotating objects
+- MissLavender - for textures
+- Philip Klevestav - for Half-Life textures
+- bmFbr - for switchable shadows
+- Lunaran - for func_bobbing entity
+- Steviemeic - for support and base brushwork
+- FrancisT128 - for testing
+- func_dave - for testing
+- VoidForce - for testing
+
+### Copper Quake v1.11
+- Lunaran - main author
+- Scampie - for testing, ideas, sounding and discussion
+- Spike - for FTEQCC and coding support
+- Preach - for QuakeC programming help, ballistic theta code, Quoth drifty fly
+  help to avoid their bugs
+- czg - for the fog code in honey_fog.qc and stuffcmd_float()
+- Bal - for testing
+- ijed - for testing
+- ionous - for testing
+- negke - for testing
+- JCR - for testing
+- mfx - for testing
+- Simon O'Callaghan (sock) - for sounds and testing
+- muk - for testing
+- NewHouse - for testing
+- VuRkka - for coop testing
+- zigi - for coop testing
+- iw - for diligently identifying, and providing example fixes for, a bunch of
+  bugs
+- John Fitzgibbons (metlslime) - for models and sounds
+- Quake 3: Arena - for falling-to-his-death sound
+- Markie Music - for autosave sound
+- Seven - for vore model
+
 ### Custents
 - Carl Glave (General WarT')
 - Dan Bickell - for making all the Apocalypse related skins and textures
 - Ethan Leon - for making Apocalypse related models
 - Steve Fukuda - for support
+
+### Deathmatch eXtreme Platinum Edition
+- Luke Whiteside (WeAsL-311) - team leader, models, general idea, mapping
+- Matt Metke (SG, Mutilator) - QC, sounds, models, html, graphics
+- Matt Lander (Wolvie-311, Gurgeh, Quasimoto, Crom7, RedWine) - for map
+  entities, sounds, text files, mapping
 
 ### Drake
 - Patrick Martin (PM)
@@ -545,6 +602,7 @@ internet forums, as seen in deathmatch, discords, chats, etc.  May or may not
 be initials or truncated form of real name.  Any known aliases are provided as
 discovered.
 
+- 4LT
 - Aardappel
 - Acidd_UK
 - aDaya
@@ -587,6 +645,7 @@ discovered.
 - Christopher Bolin
 - CO.AG Music
 - Corey Jones
+- Coyote
 - Crinity
 - Curtis Kendrick (The Lieutenant)
 - Dan Bickell
@@ -604,6 +663,7 @@ discovered.
 - Deft'Conrad
 - Dmitry Svetlichny (DaMaul)
 - Donna Jackson
+- dougm nyc
 - dumptruck_ds (aka Dumptruck)
 - Duong Dai Nguyen
 - Dustin Geeraert (Tronyn)
@@ -618,8 +678,10 @@ discovered.
 - Fat Controller
 - Fern
 - fortysixandtwo
+- FrancisT128
 - Frank Condello (p0x)
 - Frika C
+- func_dave
 - Garry Ant
 - Gavin Edgington
 - Gib666
@@ -636,9 +698,11 @@ discovered.
 - Idioplex
 - ijed
 - Ikka Keranen (fingers)
-- Ionous
+- ionous
+- Inky
 - Ironliȥard
 - Isabelle Rice
+- iw
 - Jack Meacher (Scrag Bait)
 - Jamie Wood (Sylvan Elf)
 - Jason Abbot
@@ -667,6 +731,7 @@ discovered.
 - Kell
 - Kell McDonald
 - Ken Alverson
+- Ken Turner
 - Kevin Cloud
 - Kevin Hansen
 - Kevin Schilder
@@ -683,6 +748,8 @@ discovered.
 - Lord Asaki
 - LordHavoc
 - Luke Jansen
+- Luke Whiteside (WeAsL-311)
+- Lunaran
 - Maik Franz Xaver (mfx)
 - Mackenzie Stewart
 - Madfox (metfoks)
@@ -697,26 +764,32 @@ discovered.
 - Marshall Andrews
 - Martin O'Donnell
 - Matt Houser
+- Matt Lander (Wolvie-311, Gurgeh, Quasimoto, Crom7, RedWine)
+- Matt Metke (SG, Mutilator)
 - Matthew Breit
 - Matthew Lawrence (Quake Matt)
 - Melissa Tyler
 - Mickey (of TexMex)
 - Michael Abrash
+- Michael Houston
 - Michael Trent Reznor
 - Mike Wilson
 - Mixed Chalk
+- MissLavender
+- muk
 - Murray McMillan
 - Naitelveni
 - Neal (of Wally)
 - Neil White III
 - necros
-- Negke
+- negke
 - NewHouse
 - Noel Lacaillade
 - Ogro
 - Ken Chennar (Orl)
 - Parusa
 - Patrick Martin (PM, Murderous Martin)
+- Philip Klevestav
 - Pual Baker
 - Per
 - Peter Frain (Gwai)
@@ -733,10 +806,12 @@ discovered.
 - Sam Yeates
 - Sandy Petersen
 - Save Tara
+- Scampie
 - Sean Campbell
 - Sean Mustakas
 - Seven
 - Seth Galbraith (SerpentLord)
+- Sigmund Krähe
 - Shadesmaster
 - Shamblernaut
 - Shane W. Powell
@@ -753,6 +828,7 @@ discovered.
 - Steven Donaldson
 - Steve Fukuda
 - Steve Roscoe
+- Steviemeic
 - Stuart Bennett (Howard)
 - Stvannyr
 - Survivor 25
@@ -770,12 +846,14 @@ discovered.
 - Trey Hermann
 - Ty (of Wally)
 - Tyrann
-- VoidForce
-- Vondur
+- V.S.KiRill
 - Vigilante
 - Vengeance
-- V.S.KiRill
+- VoidForce
+- Vondur
+- VuRkka
 - Woebane
+- zigi
 
 ## About the Compiler
 The Compiler: W. Josiah Jack (Qmaster) (known as Bubby to his 3 sisters).

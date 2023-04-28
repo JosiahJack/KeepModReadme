@@ -129,16 +129,19 @@ These are attributes not listed on the fgd and are meant for special use cases o
 
 >Used ogre as an example
 
+Description goes here and provides interesting info that isn't described in other fields.
+Example: Not actually an available entity.  Able to teleport away.
+
 |Name  |Desription|
 |------|-------------|
 |Entity|entity name, e.g. monster_example|
-|Source Mod|name of mod|
-|Alternate Mod(s)|name of additional mods found in|
+|Source Mod(s)|name of mod(s) found in with primary mod listed first|
 |Health|health amount|
 |Gib Health|damage below 0 required to gib the monster into chunks|
 |Pain Flinch|damage required to cause pain animation|
 |Drops|what enemy drops on death|
-|Description|<Interesting info that isn't described in other fields.  Example: Not actually an available entity.  Able to teleport away.>  |
+
+.
 
 |Attack Type|Attack Name|Description|Damage|
 |-----------|-----------|-----------|------|

@@ -10,7 +10,9 @@ All enemies have certain attributes in common.  All enemies start with `monster_
 
 For understanding the `Type` given below, refer to [[general.data-types]].
 
-## `spawnflags`
+## Spawnflags
+
+### `spawnflags`
 * **Type:** integer
 * **If Set:** This value is a decimal value used as on/off bits.  Each bit indicates whether to use or don't use a certain option.  The sum of the decimal values is the resultant `value` of the `key` called `spawnflags` (Recall that Quake uses `key|value` pairs on all entities to specify data about that entity, for instance `targetname|hello` gives that entity the name of "hello").  For spawnflags, level editors let you check off check boxes to select certain options.  The values are summed together to give the `value` to `spawnflags`; for instance checking 2, 4, and 8 gives a summed `value` of `14`.  Since each value is equal to the binary equivalent of 1, 10, 100, 1000, etc. each sum is inherently unique and guarantees that only certain digit places are changed from 0 to 1.  The maximum number of bits available is 24. `Technical Note: since Quake uses 32 bit floats, you might wonder why we can't use all 32.  The remaining bits would be used to indicate positive/negative and to specify power to raise to such as 2 for squared, but Quake's parser doesn't look at these for spawnflags.`
 
@@ -68,7 +70,7 @@ For understanding the `Type` given below, refer to [[general.data-types]].
 |---|---|---|---|
 |Tiny|1|-16 -16 -24, 16 16 16|32 x 32 x 40|
 |Square|2|-20 -20 -20, 20 20 20|40 x 40 x 40|
-|Flat|3|-24 -24 -24, 24 24 22|48 x 48 x 46|
+|Flat|3|-4 -24, 24 24 22|48 x 48 x 46|
 |Short|4|-16 -16 -24, 16 16 32|32 x 32 x 56|
 |Tall|5|-16 -16 -24, 16 16 40|32 x 32 64|
 |XTall|6|-16 -16 -24, 16 16 64|32 x 32 x 88|
@@ -96,80 +98,35 @@ For understanding the `Type` given below, refer to [[general.data-types]].
 
 * **If Left Blank:** The enemy will default to its usual size.
 
-### `gibondeath`
-* **Type:** boolean (0 or 1)
-* **If Set:** The enemy will burst into gibs when killed, if it supports gibbing.  Some monsters cannot be gibbed or have special deaths auch as monster_tarbaby or monster_skullwiz who explode and fade respectively.
-* **If Left Blank:** The enemy will die normally.
+|Key             |Type   |If Set              |If Left Blank      |
+|----------------|-------|--------------------|-------------------|
+|`gibondeath`|boolean|The enemy will burst into gibs when killed, if it supports gibbing.  Some monsters cannot be gibbed or have special deaths auch as monster_tarbaby or monster_skullwiz who explode and fade respectively.|The enemy will die normally, gibbing only if hurt to a health below its gibhealth.|
+|`bodyfadeaway`|float|Changes the default time for the body to fade and dissappear after killed.  Time = 10 + ((random between 0 and 1) * `bodyfadeaway`.  If the worldspawn's `bodyfadeaway` is set to greater than 0, that will override this setting and default to 10 to 15 seconds.|The enemy's body will fade after 999999 seconds (about 4.6 hours), unless the map's worldspawn `bodyfadeaway` is greater than 0.|
+|`turrethealth`|float|What percentage of health should be remaining before a monster that is acting as a turret is released from turret mode and begins to chase the player.  Useful for perched ogres who are in turret mode (stationary, projectile attackers), who you then want to jump down and chase the player after the player has hurt them.  Monster will remain stationary until health = health * `turrethealth`.  Monsters not in turret mode will ignore this value.|Monsters in turret mode will remain stationary until dead.  Monsters not in turret mode will ignore this value.|
+|`turrettarget`|string|Set to the name of a target to activate when the monster's health falls below health * `turrethealth`.  Useful if you want to have the environment react to a monster who is no longer in turret mode (stationary, projectile attacker), such as a door opening or a breakable breaking as the monster gets angry and bursts forth.  Monsters not in turret mode will ignore this value.|Monsters released from turret mode will not trigger anything then.  Monsters not in turret mode will ignore this value.|
+|`cooponly`|boolean|The enemy will only be present in coop, regardless of skill setting.  Skill settings Appearflags are still respected if coop is active and monsters who are set to remove on that skill will still be removed.|The enemy will appear normally.|
+|`passive_state`|boolean|The enemy will not attack the player on sight and only attack if provoked or if they see the player attack another monster.|The enemy will behave and get angry normally when they see the player.|
+|`passive_resethp`|boolean|Reset health to full when returning to passive.  After the player has been lost out of sight, the monster will return to being passive.  Useful for magical guardians who have a tether point set, but a tether is not required.|The enemy's health will never reset.|
+|`passive_resettimer`|float|Time after player has been lost out of sight before the monster forgets the player and returns to being passive and non-angry.|The enemy will not forget the player until after 999999 seconds (about 4.6 hours).|
+|`angles`|vector|Pitch Yaw Roll for viewing angle.  For instance 0 90 0 to face "north".  Set the middle value to -1 for random facing orientation, e.g. 0 -1 0.  Pitch and Roll are otherwise not used.|The enemy will orient based on `angle` if set by the map editor.|
+|`jumpdist`|vector|Jump distance defaults for monsters that have jumping behavior (e.g. monster_voreling). Specified as X Y Z with spaces between.  X = distance, Y = height.|The enemy will jump with its defaults.|
+|`jumprange`|vector|Range at which the monster will attempt a jump attack - x y 0, for example 200 300 0, which means the monster will attempt jumps when the player is between 200 and 300 units from it.|The enemy will jump with its defaults.|
 
-### `bodyfadeaway`
-* **Type:** float
-* **If Set:** Changes the default time for the body to fade and dissappear after killed.  Time = 10 + ((random between 0 and 1) * `bodyfadeaway`.  If the worldspawn's `bodyfadeaway` is set to greater than 0, that will override this setting and default to 10 to 15 seconds.
-* **If Left Blank:** The enemy's body will fade after 999999 seconds (about 4.6 hours), unless the map's worldspawn `bodyfadeaway` is greater than 0.
-
-### `turrethealth`
-* **Type:** float (0.0 to 1.0)
-* **If Set:** What percentage of health should be remaining before a monster that is acting as a turret is released from turret mode and begins to chase the player.  Useful for perched ogres who are in turret mode (stationary, projectile attackers), who you then want to jump down and chase the player after the player has hurt them.  Monster will remain stationary until health = health * `turrethealth`.  Monsters not in turret mode will ignore this value.
-* **If Left Blank:** Monsters in turret mode will remain stationary until dead.  Monsters not in turret mode will ignore this value.
-
-### `turrettarget`
-* **Type:** string
-* **If Set:** Set to the name of a target to activate when the monster's health falls below health * `turrethealth`.  Useful if you want to have the environment react to a monster who is no longer in turret mode (stationary, projectile attacker), such as a door opening or a breakable breaking as the monster gets angry and bursts forth.  Monsters not in turret mode will ignore this value.
-* **If Left Blank:** Monsters released from turret mode will not trigger anything then.  Monsters not in turret mode will ignore this value.
-
-### `cooponly`
-* **Type:** boolean (0 or 1)
-* **If Set:** The enemy will only be present in coop, regardless of skill setting.  Skill settings Appearflags are still respected if coop is active and monsters who are set to remove on that skill will still be removed.
-* **If Left Blank:** The enemy will appear normally.
-
-### `passive_state`
-* **Type:** boolean (0 or 1)
-* **If Set:** The enemy will not attack the player on sight and only attack if provoked or if they see the player attack another monster.
-* **If Left Blank:** The enemy will behave and get angry normally when they see the player.
-
-### `passive_resethp`
-* **Type:** boolean (0 or 1)
-* **If Set:** Reset health to full when returning to passive.  After the player has been lost out of sight, the monster will return to being passive.  Useful for magical guardians who have a tether point set, but a tether is not required.
-* **If Left Blank:** The enemy's health will never reset.
-
-### `passive_resettimer`
-* **Type:** float
-* **If Set:** Time after player has been lost out of sight before the monster forgets the player and returns to being passive and non-angry.
-* **If Left Blank:** The enemy will not forget the player until after 999999 seconds (about 4.6 hours).
-
-### `angles`
-* **Type:** vector
-* **If Set:** Pitch Yaw Roll for viewing angle.  For instance 0 90 0 to face "north".  Set the middle value to -1 for random facing orientation, e.g. 0 -1 0.  Pitch and Roll are otherwise not used.
-* **If Left Blank:** The enemy will orient based on `angle` if set by the map editor.
-
-### `jumpdist`
-* **Type:** vector
-* **If Set:** Jump distance defaults for monsters that have jumping behavior (e.g. monster_voreling). Specified as X Y Z with spaces between.  X = distance, Y = height.
-* **If Left Blank:** The enemy will jump with its defaults.
-
-### `jumprange`
-* **Type:** vector
-* **If Set:** Range at which the monster will attempt a jump attack - x y 0, for example 200 300 0, which means the monster will attempt jumps when the player is between 200 and 300 units from it.
-* **If Left Blank:** The enemy will jump with its defaults.
-
-### Special Overrides
+## Special Overrides
 These are attributes not listed on the fgd and are meant for special use cases or testing.  It is highly recommended to _not_ use these values since it can confuse players when, for instance, enemies simpy won't die if their health is made to be higher than normal.  Could also have a use in a special bonus level to make all enemies have only 1 health.
 
-### `health`
-* **Type:** float
-* **If Set:** Changes the enemy's health to be this value.  Setting to less than or equal to zero will be the same as if left blank.
-* **If Left Blank:** The enemy will have its default health and be predictable and satisfying.
-
-### `deathstring`
-* **Type:** string
-* **If Set:** Changes the message displayed when the player is killed by this enemy.  Should always have a space as the first character and also highly recommended to include the monster's name.  Example: ` was tusk-skewered by a raging Wildebeast.`
-* **If Left Blank:** The enemy will have its default message and netname displayed within.  Some enemies randomize between a few different appropriate messages.
-
+|Key             |Type   |If Set              |If Left Blank      |
+|----------------|-------|--------------------|-------------------|
+|`health`|float|Changes the enemy's health to be this value.  Setting to less than or equal to zero will be the same as if left blank.|The enemy will have its default health and be predictable and satisfying.|
+|`deathstring`|string|Changes the message displayed when the player is killed by this enemy.  Should always have a space as the first character and also highly recommended to include the monster's name.  Example: ` was tusk-skewered by a raging Wildebeast.`|The enemy will have its default message and netname displayed within.  Some enemies randomize between a few different appropriate messages.|
 
 ***
 
 # Example Monster
 >Picture goes here>
+
 ![Example](assets/img/ogre.png)
+
 >Used ogre as an example
 
 |Name  |Desription|

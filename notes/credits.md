@@ -2,7 +2,7 @@
 id: jejp4x6svhemnxp0ioejmc7
 title: Credits
 desc: ''
-updated: 1682424302693
+updated: 1682480842472
 created: 1657647929110
 nav_order: 2
 ---
@@ -146,7 +146,7 @@ sanity.
 - [Dwell v1.2](https://www.slipseer.com/index.php?resources/dwell.21/)
 - [extras_r4](https://www.quakewiki.net/quake-1/mods/extras-r4/)
 - [extras_r5 (Khreathor's extras_r4 mod)](https://bitbucket.org/khreathor/extras_r5/src/master/)
-- [Frikbot](https://www.insideqc.com/frikbot/fbx/)
+- [Frikbot](https://www.moddb.com/mods/frikbot-x/downloads/frikbot-x-with-waypoints)
 - [Gyro 2](https://www.quakewiki.net/quake-1/mods/gyro/)
 - [Hexen II: Hammer of Thyrion (Hexen2) by Raven Software](https://sourceforge.net/projects/uhexen2/)
 - [In the Shadows Demo 1.1 (ITS)](https://www.moddb.com/mods/its)
@@ -185,7 +185,7 @@ sanity.
 - [Temple of Tourment v0.9](https://www.quaddicted.com/reviews/temple2.html)
 - [Travail](https://www.moddb.com/mods/travail)
 - [Twisted Christmas (twx)](https://www.quaddicted.com/reviews/twxfinal.html)
-- Violent Rumble
+- [Violent Rumble](https://www.moddb.com/mods/violent-rumble/downloads/violent-rumble-100)
 - [Virtus DeathmatchMaker](https://valvedev.info/tools/virtus-deathmatch-maker/)
 - [Virtual Reality Quake (vr)](https://vittorioromeo.info/quakevr)
 - [Willy the Spider](https://www.gamers.org/pub/idgames2/quakec/monsters/) (spider21.zip)
@@ -436,7 +436,7 @@ Used its gib kicking code.
 - Matt Lander (Wolvie-311, Gurgeh, Quasimoto, Crom7, RedWine) - for map
   entities, sounds, text files, mapping
 
-### Drake
+### Drake, Drake Beta 1
 - Patrick Martin (PM)
 - Aardappel - Dmsp and Soul of Evil codebase
 - Fat Controller - Dmsp and Soul of Evil codebase
@@ -461,12 +461,104 @@ Used its gib kicking code.
 - Spirit for Quaddicted and community support
 - Tronyn for using Drake in his map packs
 
+### Drone QC Modification Beta
+- Jacob Fenwick
+- Robin Ball - modeling
+- Jim Dodge - code base
+- Bryan Martin - for MedDLe ver 1.7
+
+### Dwell v1.2
+- Fairweather - Project Lead, Level Design
+- Alekswithak - Lead Composer
+- Khreathor - QuakeC, 3D Models
+- Danz - 3D Models, Sounds, Textures
+- Markie Music - Level Design, Sounds, Music, Textures
+- JCR - Level Design, Sounds
+- Greenwood - Level Design, Textures
+- Maksim Maksimov (VoidForce) - Level Design, Textures
+- Henry Ambrose (h4724) - Level Design
+- PoolboyQ - Level Design
+- Pinchy - Level Design
+- Mazu - Level Design
+
 ### extras_r4, extras_r5
 - Frank Condello (p0x) - for coding of original extras_r4, its readme
 - Khreathor - for extras_r5 update for Sewer Jam mappack
 
+### Frikbot
+- Ryan "Frika C" Smith - main author
+- Horn - testing and suggestions
+- scar3crow - testing and suggestions
+- Electro - testing and suggestions
+- Akuma - for supporting the "FrikBot community", testing and suggestions
+- ze0 - testing and suggestions
+- Quest - for supporting the "FrikBot community", editor testing
+- Plumb - editor testing
+- SSJ4-Death - editor testing.
+- Koolio - mod testing
+- Raymond Martineau - for supporting the "FrikBot community"
+- Alan Kivlin - code snippets
+- Requiem - code snippets
+
 ### Gyro 2
 - Matthew Lawrence (Quake Matt)
+
+### Heretic II
+- Brian Raffel - Creative Director, Designer, Additional Artwork
+- Steve Raffel - Creative Director, Additional Artwork, Raven Software Animated
+  Logo
+- Brian Pelletier - Project Leader, Art Director, Additional Artwork,
+  Additional Objects
+- Steve Stringer - Producer
+- Jon Zuk - Lead Designer
+- Patrick Lipo - Lead Programmer, Player, Weapon, and Game Programmer
+- Jeff Butler - Lead 2D Artist
+- Daniell Freed - Project Administrator
+- Steven Rosenthal - Association Producer
+- Michael Raymond-Judy - Designer
+- Matt Pinkston - Designer
+- Mike Renner - Designer
+- Tom Odell - Designer
+- Jeremy Statz - Designer
+- Tim Jervis - Designer
+- Chris Forster - Additional Designer
+- Eric Biessman - Additional Designer
+- Bobby Duncanson - Additional Designer
+- Jake Simpson - Assistant Lead Programmer, Low-Level and Game Programmer
+- Robert Lover - Game Programmer and Art Asset Coordinator
+- Marcus Whitlock - Camera, Network, and Game Programmer
+- John Scott - Interface, Harware, and Low-Level Programmer
+- Josh Weier - Player, Monster, and Game Programmer
+- Mike Gummelt - Monster and Game Programmer
+- Gil Gribb - Chief Technologist
+- Rick Johnson - Scripting System and Quake Engine Expert
+- Josh Heitzman - Assistant Technologist
+- Steve Sengele - Additional AI and Special Effects Programmer
+- Nathan McKenzie - Additional Weapons Effects Programmer
+- James Monroe - 3rd Party Supporter and Programmer
+- Dan Kramer - Quake Editor Supporter and Modifier
+
+- Rob Gee - 2D Artist
+- Gina Garren - 2D Artist
+- Kim Lathrop - 2D Artist
+- Mark Nelson - 2D Artist
+- Les Dorscheid - 2D Artist, Additional Objects
+- Joe Koberstein - Additional Artwork
+- Kevin Long - Additional Artwork
+- Scott Rice - Additional Artwork
+- Jeff Lampo - 3D Artist, Object Modeler
+- Brian Shubat - Animator (Corvus, Plague Elves)
+- Jeff Dewitt - Animator (Plague Spreader, Celestial Watcher, Gorgon,
+  Carthorian, Assassin, Trial Beast, Morcalavin, Additional Corvus, G'krokon,
+  Cutscenes)
+- John Payne - Animator (Rat, Myxini, Mutant Ssithra, High Priestess, Overlord,
+  Guard, T'cherkrik, Cutscenes)
+- Eric Turman - Animator (Harpy, Plague Ssithra, T'chekrik)
+- Jarrod Showers - Additional Animations (Chicken, Cutscenes)
+- Mike Werckle - Additional Animations (G'krokon)
+- Brom - Creature Conceptualization, Box Cover Painting
+
+### Hexen II
 
 ### Marcher Fortress
 - Ben Wooding (Kinn)
@@ -554,7 +646,7 @@ Used its gib kicking code.
 - Frank Condello (p0x) - for ladders from extras
 - Joshua Skelton - for misc code
 - dumptruck_ds - for misc code
-- Qmaster - for phantom sword code assistance, testing
+- W. Josiah Jack (Qmaster) - for phantom sword code assistance, testing
 - Sock - for early AD 1.8 code, testing
 - Alex the Chemist - testing
 - Negke - testing
@@ -607,9 +699,12 @@ discovered.
 - Acidd_UK
 - aDaya
 - Adrian Carmack
-- Al Carnley
-- AlienMusic
 - Aj Greenlee (Crazed Fan)
+- Akuma
+- Al Carnley
+- Alan Kivlin
+- Alekswithak
+- AlienMusic
 - Alex Redman (Cybermind)
 - Alex the Chemist
 - American McGee
@@ -628,16 +723,21 @@ discovered.
 - Billy Joe Cain
 - Bloodshot
 - bmFbr
+- Bobby Duncanson
 - Brandon James
-- Brian Collins (EvilBastard)
 - Brian K. Martin
+- Brian Collins (EvilBastard)
+- Brian Pelletier
+- Brian Raffel
 - Bryan Hill
+- Bryan Martin
 - Burzygóry
 - Capnbubs
 - carcarooch
 - Carl Glave (General WarT')
 - Catherine Cantieri
 - Cayenne Mandua (X)
+- Chris Forster
 - Chris McGowen
 - Chris W. McCubbin
 - Christian Grawert (czg, CZG)
@@ -649,10 +749,13 @@ discovered.
 - Crinity
 - Curtis Kendrick (The Lieutenant)
 - Dan Bickell
+- Dan Kramer
 - Dan Martin
 - Dan Taillefer
 - Daniel Garcia Romero (Headcrusher)
 - Daniel Vadestrid
+- Daniell Freed
+- Danz
 - Darc Jedi
 - Darien McNeil
 - Darren Nuckolls (Tremor)
@@ -669,8 +772,10 @@ discovered.
 - Dustin Geeraert (Tronyn)
 - Eduard Schwan
 - Echoes Station
+- Eric Biessman
 - Eric VonRothKirch (RedChurch)
 - Eric Wasylishen (ericw)
+- Electro
 - Ender
 - Ernest Gibson
 - Ethan Leon
@@ -685,6 +790,8 @@ discovered.
 - Garry Ant
 - Gavin Edgington
 - Gib666
+- Gil Gribb
+- Gina Garren
 - Greenwood
 - Greg Barwis
 - Gyro Gearloose
@@ -692,7 +799,9 @@ discovered.
 - Haxan Dreams
 - Hazel Whorley
 - Henrik Oresten
+- Henry Ambrose (h4724)
 - Hipshot
+- Horn
 - Hrimfaxi
 - Hybrid_V
 - Idioplex
@@ -704,12 +813,18 @@ discovered.
 - Isabelle Rice
 - iw
 - Jack Meacher (Scrag Bait)
+- Jacob Fenwick
+- Jake Simpson
+- James Monroe
 - Jamie Wood (Sylvan Elf)
 - Jason Abbot
 - Jay Wilbur
 - Jazzinda
 - Jeehun Hwang
+- Jeff Butler
 - Jeramy Cooke (Agent)
+- Jeremy Statz
+- Jim Dodge
 - Jim Hendrickson
 - Joe Basquez
 - Johannes Hedberg
@@ -719,10 +834,14 @@ discovered.
 - John Guentzel
 - John McCann
 - John Romero
+- John Scott
 - Jon Skinner
+- Jon Zuk
 - Jonathan Clark
 - Jonathan Piasecki
 - Jose Carlos Rodriguez (JCR)
+- Josh Heitzman
+- Josh Weier
 - Joshua Skelton
 - Juha Koiste (PsychoDad)
 - Jussi Jaiskelainen
@@ -731,14 +850,17 @@ discovered.
 - Kell
 - Kell McDonald
 - Ken Alverson
+- Ken Chennar (Orl)
 - Ken Turner
 - Kevin Cloud
 - Kevin Hansen
 - Kevin Schilder
 - Khreathor
+- Kim Lathrop
 - King Chou
 - Kirk Cooper
 - Kona
+- Koolio
 - Kristian Duske (kduske)
 - Lando
 - Lee Gibson
@@ -754,31 +876,40 @@ discovered.
 - Mackenzie Stewart
 - Madfox (metfoks)
 - Magicman
+- Maksim Maksimov (VoidForce)
 - Marauder
 - Marc Fontaine
 - Marcus Dromowicz (Mexx)
 - Marcus Merell
+- Marcus Whitlock
 - Marisa Elek
 - Mark Lewis
+- Mark Nelson
 - Markie Music
 - Marshall Andrews
 - Martin O'Donnell
 - Matt Houser
 - Matt Lander (Wolvie-311, Gurgeh, Quasimoto, Crom7, RedWine)
 - Matt Metke (SG, Mutilator)
+- Matt Pinkston
 - Matthew Breit
 - Matthew Lawrence (Quake Matt)
+- Mazu
 - Melissa Tyler
 - Mickey (of TexMex)
 - Michael Abrash
 - Michael Houston
+- Michael Raymond-Judy
 - Michael Trent Reznor
+- Mike Gummelt
+- Mike Renner
 - Mike Wilson
 - Mixed Chalk
 - MissLavender
 - muk
 - Murray McMillan
 - Naitelveni
+- Nathan McKenzie
 - Neal (of Wally)
 - Neil White III
 - necros
@@ -786,27 +917,39 @@ discovered.
 - NewHouse
 - Noel Lacaillade
 - Ogro
-- Ken Chennar (Orl)
 - Parusa
+- Patrick Lipo
 - Patrick Martin (PM, Murderous Martin)
 - Philip Klevestav
+- Pinchy
+- Plumb
 - Pual Baker
 - Per
 - Peter Frain (Gwai)
+- PoolboyQ
+- Quest
+- Raymond Martineau
 - RBanninga
 - Redfield
 - Renier Banninga
+- Requiem
+- Rick Johnson
+- Rob Gee
 - Rob Patterson
 - Robert Irving
+- Robert Lover
 - Robert Prince
+- Robin Ball
 - Romain Barrilliot
 - Roman Traycey
+- Ryan Holaday (Ryanscissorhands)
 - Ryan Mallen (Gribe)
-- Ryanscissorhands
+- Ryan Smith (Frika C)
 - Sam Yeates
 - Sandy Petersen
 - Save Tara
 - Scampie
+- scar3crow
 - Sean Campbell
 - Sean Mustakas
 - Seven
@@ -821,13 +964,18 @@ discovered.
 - Simon OCallaghan (sock, simonoc, Krampus)
 - Speedy
 - Spirit
+- SSJ4-Death
 - Stas Kuznetsov (dwere)
 - Stecki
 - Stephen F. Karl
 - Stephen Heaslip
 - Steven Donaldson
+- Steven Rosenthal
 - Steve Fukuda
+- Steve Raffel
 - Steve Roscoe
+- Steve Stringer
+- Steve Sengele
 - Steviemeic
 - Stuart Bennett (Howard)
 - Stvannyr
@@ -836,12 +984,14 @@ discovered.
 - Synthsound1
 - Tan Sian Yue (Bubbah)
 - Tim Elek (ELEK)
+- Tim Jervis
 - Tim Willits
 - Tim Wright (argh)
 - Than
 - The Lone Gunmen
 - Tod Bailey
 - Tom Godsey
+- Tom Odell
 - Travis Prebble
 - Trey Hermann
 - Ty (of Wally)
@@ -849,10 +999,11 @@ discovered.
 - V.S.KiRill
 - Vigilante
 - Vengeance
-- VoidForce
 - Vondur
 - VuRkka
+- W. Josiah Jack (Qmaster, Bubbyfett)
 - Woebane
+- ze0
 - zigi
 
 ## About the Compiler

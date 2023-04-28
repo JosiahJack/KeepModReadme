@@ -64,6 +64,7 @@ thus given below.  Please see [Mjölnir](TODO Add link).
 - Jeehun Hwang - for music
 - Rob Patterson - for music
 - Martin O'Donnell - for music (yes, _that_ Martin O'Donnell)
+- Kevin Lin for [Dendron](https://www.dendron.so/about) which generates this readme website automatically
 - EVERYONE ELSE (see below) - with special emphasis on Patrick Martin for Drake
   and Sock and AD Team for Arcane Dimensions, the Quoth Team and Preach for
   Quoth, the Nehahra team for Nehahra
@@ -670,6 +671,7 @@ or otherwise fabricate in a readme to represent a person.
 - Carbon Based Lifeforms
 - Crack dot Com
 - Design Island
+- Dendron INC
 - Eidos Interactive
 - Epic Megagames
 - From Software

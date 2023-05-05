@@ -1,8 +1,2 @@
 # Auto detect text files and perform LF normalization
-* text=auto
-* linguist-vendored
-*.md linguist-vendored=false
-*.json linguist-vendored=false
-*.yml linguist-vendored=false
-*.sh linguist-vendored=false
-*.html linguist-vendored=false
+* linguist-language=Markdown

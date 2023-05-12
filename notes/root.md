@@ -5,7 +5,7 @@ desc: ''
 updated: 1682424325599
 created: 1657642701590
 ---
-#### Current Version: 0.96.2
+#### Current Version: ![tag](https://img.shields.io/github/v/tag/JosiahJack/Keep?label=Latest%20Release)
 #### Compiled and Edited by W. Josiah Jack, aka Qmaster.  2007 - 2023.
 `NOTE: This is a work in progress!  Expect updates!`
 

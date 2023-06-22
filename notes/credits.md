@@ -38,7 +38,7 @@ thus given below.  Please see [Mjölnir](TODO Add link).
 - Shadesmaster - for level design, testing, and being way ahead of the curve
 - Ironliȥard - for level design, models, textures
 - Mackenzie Stewart - for Mjölnir world map painting
-- Idioplex - for music and sound effects
+- Tyler Ferguson (Idioplex) - for music and sound effects
 - Eric Wasylishen (ericw) - for engine code, compiler enhancement, and support
 - Shpoike (aka Spike, aka Spoik) - for engine code, testing, feature support
 - Andre Drexler - for engine code, feature support, feedback

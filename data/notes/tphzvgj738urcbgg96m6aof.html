@@ -1,0 +1,221 @@
+<h1 id="shrines">Shrines<a aria-hidden="true" class="anchor-heading icon-link" href="#shrines"></a></h1>
+<p>The inhabitants of the world of Quake are not altogether unreligious.  There is a plenary collection of deities and household teraphim.  Travelers may choose to pay their respects by lighting a candle and thus receive a blessing.  It is important to distinguish between <em>teraphim</em>, who serve as physical representatives of deities and <em>idols</em>, who are treated as deities of themselves.  However, one may alternatively disregard such lesser deities and distinctions entirely and pay respects to a higher deity by counting these shrines as unholy, desecrating them by smashing them to receive an alternative blessing from an elder god.  What one does must be considered carefully, even atheistically ignoring shrines may have consequences.</p>
+<h3 id="benefits">Benefits<a aria-hidden="true" class="anchor-heading icon-link" href="#benefits"></a></h3>
+<p>These are the shrine benefits.  Detailed per <code>style</code> benefits given in the chart further down.</p>
+<p><strong>Respects</strong> are paid simply by walking up to a shrine's table structure.  The candle(s) will be lit by trigger.</p>
+<p><strong>Desecration</strong> is performed by destroying the shrine table.  Desecration after Respects will remove the respect blessing and may possibly be met with even stronger consequences.  Desecration affects all players in coop.</p>
+<p>Blessings are only granted for that level.</p>
+<h3 id="construction-standards">Construction Standards<a aria-hidden="true" class="anchor-heading icon-link" href="#construction-standards"></a></h3>
+<p>All shrines must have at least one candle placed mostly centered on a 32 high table structure with a thin <code>trigger_once</code> that is sized 8x32x32, with the trigger thinnest at the table front, touching the table, trigger top surface flush with tabletop, and trigger centered with the table.  The candle should start off by setting <code>spawnflags</code> 1 and giving a <code>targetname</code>.</p>
+<p>The <code>trigger_once</code> must target an <code>info_shrine</code> with a <code>style</code> type set, while the table shall be a <code>func_breakable</code> that targets the same <code>info_shrine</code>.  When an <code>info_shrine</code> is targeted, it checks if the target is a player for Respects, or a breakable for Desecration.</p>
+<p>Shrine theming should be consistent with the guide in the chart below; arrangement, details, and shape at mapper discretion.  Use of a shrine prefabs as-is is fine, though <code>message</code> should be changed to suit your map's story.</p>
+<p><code>info_shrine</code> should be placed above the table, ideally in a place that makes sense as a point from which aura effects emanate.  This is the center of the aura, so place accordingly.</p>
+<h3 id="story-elements">Story Elements<a aria-hidden="true" class="anchor-heading icon-link" href="#story-elements"></a></h3>
+<p>Shrines have a god associated with them that a mapper specifies with <code>message</code>.  Associated <code>&#x3C;blessing></code> is in the chart below with a different blessing message for when a shrine is respected or desecrated.
+When blessed, the centerprint displayed will display a message like so:</p>
+<pre><code>&#x3C;god>
+of the &#x3C;style> Shrine has blessed
+you with &#x3C;blessing> 
+</code></pre>
+<p>Or</p>
+<pre><code>&#x3C;god>
+of the &#x3C;style> Shrine has lost influence,
+the Elder God blesses with
+&#x3C;blessing> 
+</code></pre>
+<h3 id="aura">Aura<a aria-hidden="true" class="anchor-heading icon-link" href="#aura"></a></h3>
+<p>Auras apply the effects in the chart below to any players within the aura.  The aura effects are applied once every <code>delay</code> seconds for an amount of <code>cnt</code>.  Any monsters who are not of EVIL <code>alignment</code> will always receive healing at the same rate as the <code>delay</code> and <code>cnt</code> and also receive an increase in their pain timer to 5 seconds past the current time, so they won't go into any pain flinch animations while within the aura and can continue to consistently help players.  Monster benefits are the same regardless of <code>style</code>.</p>
+<h3 id="blessings">Blessings<a aria-hidden="true" class="anchor-heading icon-link" href="#blessings"></a></h3>
+<p>Blessings are always the same according to below, but the response to actions is map specific based on the <code>target</code> set on the <code>info_shrine</code>.  Best practice is for desecration to target delay spawned monsters who have <code>nomonstercount</code> of 1 so that shrines who aren't desecrated still show all monsters have been killed.</p>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Shrine Type</th><th><code>style</code></th><th>Rune Sign</th><th>Respect Blessing</th><th>Desecration Blessing</th><th>Theme Requirements</th><th>Recommended Decorations</th></tr></thead><tbody><tr><td>Earth</td><td>0</td><td>Green</td><td>"Aura of Earth Magick,\nbecome as stone." Grants aura that rapidly provides armor to nearby players and player followers and removes poison buffs, 1 armor per every 0.3 secs.  Prevents and removes curse buffs.  Reduces damage from slime and poison attacks by 75%.</td><td>"Poison Protection!" Gives full red armor and map lasting environmental protection against slime and poison.  Aura lost.</td><td>Dirt and stone</td><td>Wood crates, barrels, mushrooms, slime</td></tr><tr><td>Water</td><td>1</td><td>Blue</td><td>"Aura of Water Magick,\flow as water." Grants aura that recharges shells 1 per 0.5secs.  Prevents and removes fire buffs.  Reduces damage from fire and lava attacks by 75%.</td><td>"Swimfall Prowess!" Grants speed swimming (same effect as wetsuit) for duration of map.  Refills shells to max and increases max shells by 100.  Drowning damage reduced by 50% and fall damage reduced to zero for duration of map.  Aura lost.</td><td>Grass and stone, must have pool</td><td>Vines, drips, pots</td></tr><tr><td>Air</td><td>2</td><td>White</td><td>"Aura of Air Magick,\ninhale deeply." Grants aura of breath allowing indefinite underwater swimming, aura recharges nails ammo 1 per 0.5secs.</td><td>"Breath of Uplifting!" Refills nails to max and increases max nails by 100.  Grants breath healing after resurfacing for any lost health due to drowning that lasts for duration of map.  Increase jump count by 1. Aura lost.</td><td>Wood</td><td>Incense smoke, bowls</td></tr><tr><td>Fire</td><td>3</td><td>Lit Red</td><td>"Aura of Fire Magick,\nburst with rage." Grants aura that recharges lava nails, rockets, and multi-rockets 1 per 0.5 secs, reduces ice and cold creature (e.g. snowmen) damage by 75%.</td><td>"Fire and Power!" Refills lava nails, rockets, and multi-rockets to max ammo.  Boosts rocket and multi-rocket max ammo by 50, and boosts lava-nails max ammo by 100.</td><td>Metal, lava pool</td><td>flames and braziers, but not on table structure</td></tr><tr><td>Blood</td><td>4</td><td>Dark Red</td><td>"Aura of Blood Magik,\nblood of the ancients courses\nthrough you!" Rapid healing aura. Heals nearby players and player followers 1 health every 0.3 secs. Recharges bloodcrystals ammo 1 oer 0.5secs.  Prevents and removes bleeding buffs.</td><td>"Overheal Bloodlust!" Grants maximum overhealth of 300, rots down like megahealth. Increases max normal health by 25.  Refills bloodcrystals ammo to max. Aura lost.</td><td>City floor and bricks, blood trough</td><td>Spikes and gibs</td></tr><tr><td>Spirit</td><td>5</td><td>Purple</td><td>"Aura of Spirit Magik,\nthe angels watch over you." Aura granted that recharges all mana rapidly, 1 per 0.2 secs for wand mana and elemental mana ammo.  Angelic protection, all damage taken reduced by 50% within aura.</td><td>"Protection of the Watchers!" 25% damage reduction for map duration</td><td>Marble, stainglass, purple pool</td><td>purple smoke, magic glitter, bubbles</td></tr></tbody></table></div>
+<p>.</p>
+<h2 id="info_shrine"><code>info_shrine</code><a aria-hidden="true" class="anchor-heading icon-link" href="#info_shrine"></a></h2>
+<p>Grants blessing when used and runs targets.</p>
+<h3 id="style"><code>style</code><a aria-hidden="true" class="anchor-heading icon-link" href="#style"></a></h3>
+<ul>
+<li><strong>Type:</strong> integer</li>
+<li><strong>If Set:</strong> Choice between 0 through 5.  This changes the blessing granted according to the chart here.</li>
+<li>
+<ul>
+<li>0 Earth</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>1 Water</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>2 Air</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>3 Fire</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>4 Blood</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>5 Spirit</li>
+</ul>
+</li>
+<li><strong>If Left Blank:</strong> Defaults to Earth type.</li>
+</ul>
+<h3 id="proj_limit"><code>proj_limit</code><a aria-hidden="true" class="anchor-heading icon-link" href="#proj_limit"></a></h3>
+<ul>
+<li><strong>Type:</strong> float</li>
+<li><strong>If Set:</strong> Specifies override projection radial distance for aura effects, magic sparkles will shoot at the player to form a sort of beam.  Only affects blessings that have an aura.</li>
+<li><strong>If Left Blank:</strong> Defaults to 384.</li>
+</ul>
+<h3 id="message"><code>message</code><a aria-hidden="true" class="anchor-heading icon-link" href="#message"></a></h3>
+<ul>
+<li><strong>Type:</strong> string</li>
+<li><strong>If Set:</strong> Specifies god name.</li>
+<li><strong>If Left Blank:</strong> Defaults to <code>Cthulhu</code>.</li>
+</ul>
+<h3 id="delay"><code>delay</code><a aria-hidden="true" class="anchor-heading icon-link" href="#delay"></a></h3>
+<ul>
+<li><strong>Type:</strong> float</li>
+<li><strong>If Set:</strong> Specifies time between aura effects taking place, such as healing.  Each instance applies effects by the amount of <code>cnt</code>.</li>
+<li><strong>If Left Blank:</strong> Defaults to the following based on the <code>style</code> chosen.  Ideally, leave at the defaults since the effects are not customizable.</li>
+<li>
+<ul>
+<li>Earth: 0.3</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Water: 0.5</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Air: 0.5</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Fire: 0.5</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Blood: 0.3</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Spirit: 0.2</li>
+</ul>
+</li>
+</ul>
+<h3 id="cnt"><code>cnt</code><a aria-hidden="true" class="anchor-heading icon-link" href="#cnt"></a></h3>
+<ul>
+<li><strong>Type:</strong> integer</li>
+<li><strong>If Set:</strong> Specifies amount to apply for each effect at each instance every <code>delay</code> seconds.  For example, healing effects will add <code>cnt</code> + <code>target.health</code> every <code>delay</code> seconds.  Only applies to entities affected by the aura.</li>
+<li><strong>If Left Blank:</strong> Defaults to the following based on the <code>style</code> chosen.  Ideally, leave at the defaults since the effects are not customizable.</li>
+<li>
+<ul>
+<li>Earth: 1</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Water: 1</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Air: 1</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Fire: 1</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Blood: 1</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Spirit: 1</li>
+</ul>
+</li>
+</ul>

@@ -1,0 +1,130 @@
+<h1 id="logic-and-entity-state-system">Logic and Entity State System<a aria-hidden="true" class="anchor-heading icon-link" href="#logic-and-entity-state-system"></a></h1>
+<p>There are various invisible entities that control different aspects of the game and handle triggering and using the functions of other entities.  These are useful in many situations and allow for a large amount of flexibility in setups and creating special events, large and small.</p>
+<h1 id="general-logic-entities">General Logic Entities<a aria-hidden="true" class="anchor-heading icon-link" href="#general-logic-entities"></a></h1>
+<h3 id="info_player_start"><code>info_player_start</code><a aria-hidden="true" class="anchor-heading icon-link" href="#info_player_start"></a></h3>
+<p>Starting point for the player in single player games.  Also used as one of the spawn points for coop.  Placing more than one will create a warning, should only ever be 1, which is why we have...</p>
+<h3 id="info_player_startdev"><code>info_player_startdev</code><a aria-hidden="true" class="anchor-heading icon-link" href="#info_player_startdev"></a></h3>
+<p>Forced to use and only used as starting point if <code>developer</code> is 1.  Useful for immediately starting in area of the map for testing without having to noclip over there.</p>
+<h3 id="info_player_coop"><code>info_player_coop</code><a aria-hidden="true" class="anchor-heading icon-link" href="#info_player_coop"></a></h3>
+<p>Starting point for coop players.  Coop players will start here first, if present, before picking the <code>info_player_start</code> instead.  <code>spawnflags</code> 64 will cause this to start off.  Can be enabled or disabled using the entity state system (see below).</p>
+<h3 id="info_player_start2"><code>info_player_start2</code><a aria-hidden="true" class="anchor-heading icon-link" href="#info_player_start2"></a></h3>
+<p>Secondary starting point for the player in single player games.  Player will spawn here if serverflag bitmask value 16, 32, or 64 is true or if player had all 4 runes in previous map.</p>
+<h3 id="info_player_coop2"><code>info_player_coop2</code><a aria-hidden="true" class="anchor-heading icon-link" href="#info_player_coop2"></a></h3>
+<p>Secondary starting point for the player in coop games.  Player will spawn here if serverflag bitmask value 16, 32, or 64 is true or if player had all 4 runes in previous map.  Coop players will start here first, if present and met the above conditions, before picking the <code>info_player_start2</code> instead.  <code>spawnflags</code> 64 will cause this to start off.  Can be enabled or disabled using the entity state system (see below).</p>
+<h3 id="info_player_deathmatch-"><code>info_player_deathmatch </code><a aria-hidden="true" class="anchor-heading icon-link" href="#info_player_deathmatch-"></a></h3>
+<p>Secondary starting point for the player in deathmatch games.  You should sprinkle at least 4 of these around every level.  <code>spawnflags</code> 64 will cause this to start off.  Can be enabled or disabled using the entity state system (see below).</p>
+<h3 id="info_skyroom"><code>info_skyroom</code><a aria-hidden="true" class="anchor-heading icon-link" href="#info_skyroom"></a></h3>
+<p>Skyroom camera for QSS/FTE engines for implementation of 3D skyboxes.  Automatically sets worldspawn's <code>_skyroom</code> value to the origin vector of the location of this entity.  Overrides worldspawn.  Only 1 should be used.  If using multiple, the last one placed in the map editor will be used.</p>
+<h3 id="info_intermission-"><code>info_intermission </code><a aria-hidden="true" class="anchor-heading icon-link" href="#info_intermission-"></a></h3>
+<p>This is used to display a view of the level after completing it.  Typically shows off one of the best viewing angles of an area of the map.  Best if used to showcase memorable setpieces.  Can be and highly recommended to be more than one.  Clicking the mouse switches to the next camera.  Pressing jump will exit the level.
+|Key|Type|Default|Description|
+|---|---|---|---|
+|target|string||Used to trigger actions upon first switching to this intermission camera.  Happens once only.|
+|mangle|string|<code>0 0 0</code>|Viewing angle for the intermission camera. Set as a vector like <code>p y r</code> (pitch yaw roll).  Pitch is up and down, negative to look up, positive to look down.  Yaw is the rotation left and right and is same as when setting monster facing direction (e.g. 90 is north, 270 south etc.). Roll is if you want to look at something sideways, positive to tilt your head to the right, negative to tilt your head to the left, 180 to flip upside-down.|
+|fog_density|float|0|Set to change the fog density when switching to this intermission|
+|fog_colour|vector|<code>0.1 0.1 0.1</code>|Set to change the fog color when switching to this intermission, set like <code>r g b</code> (red green blue) with value between 0 and 1.0.|
+|speed|float|2|Total time to transition from previous fog settings to this intermission's fog settings.|</p>
+<h3 id="info_skullwiz_destination-"><code>info_skullwiz_destination </code><a aria-hidden="true" class="anchor-heading icon-link" href="#info_skullwiz_destination-"></a></h3>
+<p>Used by <code>monster_skullwiz</code> when phasing to teleport to while invisible.  Set <code>target</code> and <code>targetname</code> to other <code>info_skullwiz_destination</code>'s in order to have the <code>monster_skullwiz</code> teleport to them in a set sequence.
+|Key|Type|Default|Description|
+|---|---|---|---|
+|target|string||Name of the next <code>info_skullwiz_destination </code> in the chain.|
+|distance|integer|192|The player must be at least this distance away from this point before teleporting to it.|</p>
+<h3 id="info_overlord_destination-"><code>info_overlord_destination </code><a aria-hidden="true" class="anchor-heading icon-link" href="#info_overlord_destination-"></a></h3>
+<p>Used by <code>monster_super_wrath</code> to teleport to when randomly teleporting away.  Overlord will teleport to a random one of these points.  Set multiple if desired.</p>
+<h3 id="info_morph_destination"><code>info_morph_destination</code><a aria-hidden="true" class="anchor-heading icon-link" href="#info_morph_destination"></a></h3>
+<p>Used by <code>monster_morph</code> to teleport to when randomly teleporting away.  Guardian will teleport to a random one of these points.  Set multiple if desired.</p>
+<h3 id="info_target"><code>info_target</code><a aria-hidden="true" class="anchor-heading icon-link" href="#info_target"></a></h3>
+<p>Useful to set a position for an object to move towards, such as a door or button.</p>
+<h3 id="info_home"><code>info_home</code><a aria-hidden="true" class="anchor-heading icon-link" href="#info_home"></a></h3>
+<p>Useful to set a starting position for a <code>func_qrobot</code>.</p>
+<h3 id="info_null"><code>info_null</code><a aria-hidden="true" class="anchor-heading icon-link" href="#info_null"></a></h3>
+<p>Useful to set a spotlight target.  Removed on game start.</p>
+<h3 id="info_notnull"><code>info_notnull</code><a aria-hidden="true" class="anchor-heading icon-link" href="#info_notnull"></a></h3>
+<p>Does nothing...but can!  Useful for various map hacks by giving it various code functions to <code>think</code>.
+|Key|Type|Description|
+|---|---|---|
+|targetname|string|Name of this entity for use by others either as reference or to trigger the <code>use</code> function on this entity.|
+|use|string|Name of the function to execute when this is targeted. Specify as it is found in the qc code, for instance <code>func_door_use</code>, without quotes. Requires a <code>targetname</code>|
+|think|string|Name of the function that will execute after <code>nextthink</code> seconds have elapsed after map start. Specify as it is found in the qc code, for instance <code>func_door_use</code>, without quotes. Requires a <code>targetname</code>|
+|touch|string|Name of the function that will execute whenever something else registers a touch by physics to this entity. Specify as it is found in the qc code, for instance <code>func_door_trigger_touch</code>, without quotes. Requires a <code>targetname</code>|
+|nextthink|float|Amount of time in seconds after map start before executing the <code>think</code> function.  <code>think</code> must be set for this to affect anything.|
+|<field>|<any>|Set any desired fields by adding them manually.  This could be any supported data field defined by the qc code and relevant to the other functions you've set on this hack.  For instance you could set <code>wait</code>, <code>delay</code>, <code>count</code>, <code>dmg</code> etc.|</any></field></p>
+<h3 id="info_command"><code>info_command</code><a aria-hidden="true" class="anchor-heading icon-link" href="#info_command"></a></h3>
+<p>Triggerable console command.  Use with caution!  Be nice!!
+|Key|Type|Default|Description|
+|---|---|---|---|
+|targetname|string||Name of this entity.  Required.|
+|message|string||This is the actual command to pass to the console.  Works as if the player had typed the command into the console once this entity is targeted.|
+|spawnflags|integer|8|No auto newline.  Prevents automatically adding <code>\n</code> which would then execute the command.  Useful for sending partial entries to the console one after the other using multiple <code>info_command</code> entities.  This makes this <code>info_command</code>'s message not execute until another <code>info_command</code> is triggered that does not have this spawnflag set.|</p>
+<h3 id="info_command_server"><code>info_command_server</code><a aria-hidden="true" class="anchor-heading icon-link" href="#info_command_server"></a></h3>
+<p>Same as <code>info_command</code> but gets sent to all players and not just the current player on this PC.  Useful for coop or deathmatch.
+|Key|Type|Default|Description|
+|---|---|---|---|
+|targetname|string||Name of this entity.  Required.|
+|message|string||This is the actual command to pass to the console.  Works as if the player had typed the command into the console once this entity is targeted.|
+|spawnflags|integer|2|Activator Only.  Turns this back into an <code>info_command</code>.|
+|||8|No auto newline.  Prevents automatically adding <code>\n</code> which would then execute the command.  Useful for sending partial entries to the console one after the other using multiple <code>info_command</code> entities.  This makes this <code>info_command</code>'s message not execute until another <code>info_command</code> is triggered that does not have this spawnflag set.|</p>
+<h3 id="info_command_spawn"><code>info_command_spawn</code><a aria-hidden="true" class="anchor-heading icon-link" href="#info_command_spawn"></a></h3>
+<p>Same as <code>info_command_server</code>, but automatically carries out when the map starts.
+|Key|Type|Default|Description|
+|---|---|---|---|
+|targetname|string||Name of this entity.  Required.|
+|message|string||This is the actual command to pass to the console.  Works as if the player had typed the command into the console once this entity is targeted.|
+|spawnflags|integer|8|No auto newline.  Prevents automatically adding <code>\n</code> which would then execute the command.  Useful for sending partial entries to the console one after the other using multiple <code>info_command</code> entities.  This makes this <code>info_command</code>'s message not execute until another <code>info_command</code> is triggered that does not have this spawnflag set.|
+|||16|Resend on load.  Makes this execute again anytime the player loads from a save/quicksave.|</p>
+<h3 id="info_bomb"><code>info_bomb</code><a aria-hidden="true" class="anchor-heading icon-link" href="#info_bomb"></a></h3>
+<p>Used as the center point when activating the bomb effect.</p>
+<h3 id="info_effect_pulse-"><code>info_effect_pulse </code><a aria-hidden="true" class="anchor-heading icon-link" href="#info_effect_pulse-"></a></h3>
+<p>Projectile light effect.  Laucnhes an invisible projectile that has <code>effects</code> set to carry a light with it.  Useful for added dynamic lighting.
+|Key|Type|Default|Description|
+|---|---|---|---|
+|speed|float|400|How fast it should move|
+|delay|float|0.1|Delay in seconds before it sends out a pulse|
+|wait|float|0.1|Interval time between sending another pulse.  Set to -1 for only once, but needs <code>targetname</code> set for triggering if so.|</p>
+<h3 id="trigger_relay"><code>trigger_relay</code><a aria-hidden="true" class="anchor-heading icon-link" href="#trigger_relay"></a></h3>
+<h1 id="entity-state-system">Entity State System<a aria-hidden="true" class="anchor-heading icon-link" href="#entity-state-system"></a></h1>
+<p>When the Arcane Dimensions mod came out, it introduced a novel idea for handling the enabling and disabling of various entities, including triggers.  Quoting its description here:</p>
+<p><code>When Quake first came out there were strict limitations on how many entities could exist and be active at the same time. The quick fix solution to this problem was to use the ``killtarget`` key so that entities could be removed.  This was a very powerful feature with very few restrictions on what it  could affect or destroy at the same time.</code></p>
+<p><code>The idea of the entity state system is to create a way to safely switch entities on, off or have then temporarily disabled. This will help prevent situations where entity chains are broken or strange errors occur because the touch function does not have an entity anymore.</code></p>
+<p><code>The entity state is a new key on entities which is designed to work in a passive mode until it is activated. All the entities listed below have a default value so that any existing map will still work as before.</code></p>
+<p><code>There are two methods for changing the entity state and the first method is an extra key on ``trigger`` entities (_once, _multi, _relay etc)</code></p>
+<p><code>The second method is via a brand new set of entities which can affect  multiple targets at once and are much easier (visually) to see what is going on because most editors draw target lines.</code></p>
+<h2 id="entity-state-information-table">Entity State Information Table<a aria-hidden="true" class="anchor-heading icon-link" href="#entity-state-information-table"></a></h2>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Estate Action</th><th>Estate Condition Result</th><th>Description of Action</th><th>Description of State</th></tr></thead><tbody><tr><td>Disable</td><td>DISABLED</td><td>Puts entity into DISABLED state.</td><td>Blocks any targeted ability or entity functionality and turns off any visual aids like animated textures.</td></tr><tr><td>Turn Off</td><td>OFF</td><td>Puts into OFF state</td><td>Block all of the designed functionality and hide the entity entirely from interaction with the player.</td></tr><tr><td>Enable</td><td>ON</td><td>Puts into ON state</td><td>(Default) Allows the entity to work as designed, be targeted and physically exist as per its setup</td></tr></tbody></table></div>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/KeepModReadme/notes/76to6fztygwk9bqxj663bx2">Common Attributes</a></li>
+<li><a href="/KeepModReadme/notes/2k24uzhmr4ibcm0cbuxnofv">Ambients and Sound Effects</a></li>
+<li><a href="/KeepModReadme/notes/n1nwyx0vpjmxwhft2gc51o6">Point Entities</a></li>
+</ul>

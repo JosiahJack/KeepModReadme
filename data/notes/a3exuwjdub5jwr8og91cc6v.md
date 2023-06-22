@@ -1,0 +1,1 @@
+There are many items available, both for dealing damage and healing damage, affecting movement, and providing special abilities.

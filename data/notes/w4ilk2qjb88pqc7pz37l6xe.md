@@ -1,0 +1,13 @@
+Various item pickups for the following ammo types:
+- blood crystals
+- bolts
+- cells
+- elemental mana
+- lava naila
+- multi-rockets
+- plasma
+- poison
+- rockets
+- shells
+- nails
+- void shards

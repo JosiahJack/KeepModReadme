@@ -1,0 +1,78 @@
+<h1 id="behavior">Behavior<a aria-hidden="true" class="anchor-heading icon-link" href="#behavior"></a></h1>
+<p>Enemy behavior in original Quake is largely simplistic.  See a player, get
+angry at the player, chase the player in a straight line for indefinite amount
+of time.  If the enemy bumped walls, they would search for 5 seconds in one
+randomly picked direction either left or right.  If hurt, they would get angry
+at whoever hurt them unless they had the same classname.  This behavior is
+still preserved when no changes or customizations have been made.</p>
+<p>One exception is that monsters now look for any other opposing monster or
+player, not just players.  See Alignment below.</p>
+<h2 id="basic-overview">Basic Overview<a aria-hidden="true" class="anchor-heading icon-link" href="#basic-overview"></a></h2>
+<p>It is possible to make numerous customizations to enemy behavior.  We have 3
+variables that determine behavior on a monster:</p>
+<ul>
+<li>alignment</li>
+<li>temperament</li>
+<li>vulnerability</li>
+</ul>
+<p>All 3 can be changed by the mapper per monster.
+All monsters default to 0 for all 3, which is Evil Angry Normal.</p>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Key</th><th>Value Descriptions</th></tr></thead><tbody><tr><td>alignment</td><td>0 = Evil, generally opposed to players.  Ignores neutral alignment.</td></tr><tr><td></td><td>1 = Good, generally on the player's side.  Ignores neutral alignment.</td></tr><tr><td></td><td>2 = Neutral, indifferent to everyone unless provoked.  Passive temperament by default.</td></tr><tr><td>temperament</td><td>0 = Angry: reacts on sight, pain, or hearing nearby combat or shooting players.</td></tr><tr><td></td><td>1 = Cowardly: Will flee away unless cornered, with slight chance of fighting back when not cornered</td></tr><tr><td></td><td>2 = Passive: Will not respond if others are getting attacked.  Only respond and get angry if attacked directly.</td></tr><tr><td></td><td>3 = Calm: Will attack opposing enemies on sight, will follow leaders on sight if not otherwise occupied. Forgetful of enemies.</td></tr><tr><td></td><td>4 = Psychotic: Similar to Angry, but will attack anyone, even friends, if they hit us.</td></tr><tr><td>vulnerability</td><td>0 = Normal: Take 100% damage from everyone.</td></tr><tr><td></td><td>1 = Resistant: Take 100% damage from differing alignment, 50% from same alignment, that is, friends.</td></tr><tr><td></td><td>2 = Seraphic: Take 100% damage from differeing alignment, 0% from same alignment.</td></tr></tbody></table></div>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/KeepModReadme/notes/w818c2nlb0nieszykibr6cu">Bees</a></li>
+</ul>

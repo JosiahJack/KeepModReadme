@@ -1,0 +1,1 @@
+There are so many devious ways to catch unwary players off guard.  Many trap types have a lot of customization.

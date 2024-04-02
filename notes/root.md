@@ -6,7 +6,7 @@ updated: 1682424325599
 created: 1657642701590
 ---
 #### Current Version: ![tag](https://img.shields.io/github/v/tag/JosiahJack/Keep?label=Latest%20Release)
-#### Compiled and Edited by W. Josiah Jack, aka Qmaster.  2007 - 2023.
+#### Compiled and Edited by W. Josiah Jack, aka Qmaster.  Aug 23, 2008 to 2024.
 `NOTE: This is a work in progress!  Expect updates!`
 
 `NOTE: This is the manual.  For the actual mod see` [here](https://github.com/JosiahJack/Keep)

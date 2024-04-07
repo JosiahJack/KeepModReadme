@@ -59,7 +59,7 @@ The entity definition file (.fgd) contains all the necessary fields and spawnfla
 
 All features of this mod are documented here in their various sections.  A complete entity list can be found in the appendix.  In every section the entities are listed alphabetically by entity name.
 
-For what is and isn't implemented, refer to the [Checklist](https://github.com/JosiahJack/KeepModReadme/blob/master/KeepFeatureChecklist.xlsx)
+For what is and isn't implemented, refer to the [Checklist](https://github.com/JosiahJack/Keep/blob/master/KeepFeatureChecklist.xlsx)
 
 # Motivation
 

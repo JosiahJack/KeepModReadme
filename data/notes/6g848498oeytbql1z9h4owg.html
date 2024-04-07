@@ -1,0 +1,119 @@
+<h1 id="func_water">Func_water<a aria-hidden="true" class="anchor-heading icon-link" href="#func_water"></a></h1>
+<blockquote>
+<p>Moving water volumes - honest and for true.  --extras_r4</p>
+</blockquote>
+<p>A brush entity that behaves like normal water.  Has capability of acting like a
+func_door and draining or flooding an area with complete swimmability and any
+liquid effects if it is slime or lava.</p>
+<p>Capable of having a current.  If brush is very shallow, may need spawnflag 16
+or the current will be too weak.  Set current by using <code>mangle</code>.</p>
+<blockquote>
+<p>"An easy way to make rising/falling water, but
+<a href="/KeepModReadme/notes/u4blexnxlrmt9mpordkm4g7">Func_watertrain</a> is much more flexible (it can do anything
+func_water can do, and then some, but it's more work to setup)"</p>
+</blockquote>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Key</th><th>Description</th></tr></thead><tbody><tr><td>"watertype"</td><td>-3 = water, -4 = slime, -5 = lava</td></tr><tr><td>"height"</td><td>Number of units to move (negative is down).</td></tr><tr><td>"speed"</td><td>Speed used when it moves to "height" position.</td></tr><tr><td>"speed2"</td><td>Speed used when moving back to original position (pos1). Same as "speed" if not defined.</td></tr><tr><td>"wait"</td><td>Wait before returning to original position -1 = stay at pos2 until triggered again.</td></tr><tr><td>"noise"</td><td>Path to the WAV played when the water moves from pos1 to pos2 (should be looped).</td></tr><tr><td>"noise1"</td><td>Path to the WAV played when the water moves back to pos1 from pos2 (should be looped).</td></tr><tr><td>"noise2"</td><td>Path to the WAV played when the water stops moving.</td></tr><tr><td>"mangle"</td><td>Direction &#x26; speed of current.  E.g. <code>100 0 0</code> would be in positive x direction with speed of 100.</td></tr><tr><td>"drag"</td><td>Drag on player when water is moving (0 is no drag, 100 if full drag)</td></tr><tr><td>"cshift"</td><td>Custom RGB+I colour shift. Automatically set by watertype to match normal liquids if ommited.</td></tr><tr><td>"targetname"</td><td>Can be triggered (just keeps bobbing between pos1 &#x26; pos2 otherwise).</td></tr><tr><td>"target"</td><td>Activate this entity after moving (top and bottom)</td></tr></tbody></table></div>
+<p>.</p>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Spawnflag</th><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>16</td><td>Ease Undercurrent</td><td>Normally, the deeper you are, the more you are affected by current.  This reverses that, making current is stronger at the surface.</td></tr></tbody></table></div>
+<p>.</p>
+<h2 id="getting-the-inside-faces-to-draw-properly">GETTING THE INSIDE FACES TO DRAW PROPERLY:<a aria-hidden="true" class="anchor-heading icon-link" href="#getting-the-inside-faces-to-draw-properly"></a></h2>
+<h3 id="method-1">METHOD 1:<a aria-hidden="true" class="anchor-heading icon-link" href="#method-1"></a></h3>
+<p>Use a custom QBSP util with func_water support (this does NOT require an
+engine mod). Just use ericw's <a href="https://ericwa.github.io/ericw-tools/">qbsp</a>
+with _mirrorinside 1.</p>
+<p>eQBSP v1.0b for MacOS supports this - <a href="http://quake.chaoticbox.com/downloads/equakeutils.sit">eQuake Utils (852kb, MacOS 9 &#x26; MacOS X (PPC) compatible)</a>.  </p>
+<h3 id="method-2-hackaround">METHOD 2 (hackaround):<a aria-hidden="true" class="anchor-heading icon-link" href="#method-2-hackaround"></a></h3>
+<p>Add thin (1 unit) brushes for visible edges, but make sure these brushes
+DON'T touch the main volume (1 unit away), or the face will be consumed by
+QBSP!  You can disable mirroring in eQBSP per-entity by setting
+the "_nomirror" key to a non-zero value, and use "METHOD 2" to backface the
+problem brush.  Skip textured surfaces may help in some cases.  Older compilers
+may need *waterskip.  This whole method of course assumes it doesn't move,
+though so usually just use method 1 and ericw's
+<a href="https://ericwa.github.io/ericw-tools/">compilers</a>.</p>
+<h3 id="other-notes">Other Notes<a aria-hidden="true" class="anchor-heading icon-link" href="#other-notes"></a></h3>
+<p>Avoid butting func_water surfaces right up against solid geometry or you'll get
+z-fighting artifacts where real water wouldn't (extend "hidden" edges into a
+solid wall).</p>
+<p>Unavoidable differences between func_water and real water:</p>
+<ol>
+<li>Underwater surfaces don't warp</li>
+<li>Surface is always opaque</li>
+</ol>
+<p>See credits folder for extras_r4 original docs if interested in a bit of history.</p>

@@ -1,0 +1,55 @@
+<h1 id="data-types">Data Types<a aria-hidden="true" class="anchor-heading icon-link" href="#data-types"></a></h1>
+<p>Data types are handled somewhat oddly by the game code written in QuakeC.  Since these values matter when entering numbers or text onto <code>key|value</code>s in a map editor, I am providing this for reference and to help avoid typical pitfalls. Please note that the Readme Data type is how the variable is intended to be used and now how it is actually handled by the code.  Most of these can have floating point values assigned to them, but the behavior is undefined and is not recommended.</p>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Readme Data Type</th><th>QuakeC Type</th><th>Initial Value</th><th>Range/Values</th><th>Notes</th></tr></thead><tbody><tr><td>boolean</td><td>float</td><td>0</td><td>0,1</td><td>Only 0 is false, any other value, including negatives is true and treated as a value of 1 in QuakeC</td></tr><tr><td>trilean</td><td>float</td><td>0</td><td>-1,0,1</td><td>This is not technically a data type as far as the QC is concerned.  Merely an integer used like a 3 value variable as an aid to the mapper to force certain conditions by using -1.</td></tr><tr><td>integer</td><td>float</td><td>0</td><td>-8388608 to 8388608</td><td>Whole numbers used for countable quantities or for bitmasks.  Assigning a fractional value is possible, but would mess up the bits on a bit mask and might provide a wrong count, such as for <code>trigger_counter</code> which could break map progression.</td></tr><tr><td>float</td><td>float</td><td>0</td><td>-8388608.0 to 8388608.0</td><td>Numbers capable of having fractional portions after the decimal separator.  Technically should be able to go higher in maximum value using exponents, but QuakeC isn't exposed to the exponent portion of floats.</td></tr><tr><td>string</td><td>string</td><td>""</td><td>abc...123...etc.</td><td>These characters require backslashes before them: <code>\n</code> for newline, <code>\'</code> for single quote, <code>\b</code> for "bold" orange text.</td></tr></tbody></table></div>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/KeepModReadme/notes/aum55alyokbtaszwruzz064">Common Attributes</a></li>
+</ul>

@@ -1,0 +1,118 @@
+<h1 id="path_corner">path_corner<a aria-hidden="true" class="anchor-heading icon-link" href="#path_corner"></a></h1>
+<p>The path_corner is a 16x16x24 trigger.  This is used for entities that have
+following behavior to move to as their goalentity.  Typically this is only for
+<a href="/KeepModReadme/notes/9763htgi1b8f6e8jdsik5wk">Func_train</a> or <a href="/KeepModReadme/notes/i37gsihawuedrnd2b9mc7o4">Enemies</a>.</p>
+<p>The next waypoint is specified as the <code>target</code> of a path_corner.  Typically
+multiple path_corner's are setup in a target->targetname chain like so:</p>
+<ul>
+<li>path_corner (1): <code>targetname</code> path1wp1, <code>target</code> path1wp2</li>
+<li>path_corner (2): <code>targetname</code> path1wp2, <code>target</code> path1wp3</li>
+<li>path_corner (3): <code>targetname</code> path1wp3, <code>target</code> path1wp1</li>
+</ul>
+<p>Then a monster or train has its <code>target</code> set to one of the corners to start
+following the path.</p>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Key</th><th>Value</th></tr></thead><tbody><tr><td>targetname</td><td>Name of current path corner</td></tr><tr><td>corner_event</td><td>Name of target(s) to trigger when used/touched</td></tr><tr><td>corner_route</td><td>Change path_corner route (1-3 routes, 4=exact, 5=random)</td></tr><tr><td>corner_switch</td><td>Change spawnflags REVERSE (-1=NO, 1=YES, 2=Toggle)</td></tr><tr><td>corner_pause</td><td>Change spawnflags NOPAUSE (-1=NO, 1=YES, 2=Toggle)</td></tr><tr><td>corner_pstate</td><td>Change passive state (-1=OFF, 1=ON, 2=TOGGLE)</td></tr><tr><td>state</td><td>Starting route (1=forward, 2=alt forward, 3=backward)</td></tr><tr><td>target</td><td>Targetname of FORWARD route</td></tr><tr><td>target2</td><td>Alternative FORWARD route</td></tr><tr><td>targetback</td><td>Override default BACKWARD route</td></tr><tr><td>wait</td><td>fixed amount of time to pause at corner (=-1 stop)</td></tr><tr><td>delay</td><td>random amount of time to pause at corner</td></tr><tr><td>alpha</td><td>Override default for visual arrows (def=0.35)</td></tr><tr><td>speed</td><td>Override default speed of func_train (def=100)</td></tr></tbody></table></div>
+<p>.</p>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Spawnflag</th><th>Name</th><th>Description</th></tr></thead><tbody><tr><td>1</td><td>Exact</td><td>Exact route logic (def=random route choices)</td></tr><tr><td>2</td><td>Instant</td><td>Follower will teleport to this corner from previous</td></tr><tr><td>4</td><td>Reverse</td><td>Flip direction when coming to this corner back to where we came</td></tr><tr><td>8</td><td>No pause</td><td>Train will not wait at the corner, not even 0.1s!</td></tr></tbody></table></div>
+<h3 id="advanced-features">Advanced Features<a aria-hidden="true" class="anchor-heading icon-link" href="#advanced-features"></a></h3>
+<p>It's possible to set a particular path_corner to be
+teleport to such that instead of the follower moving smoothly to it, would
+instantly teleport to it, though without the teleglitter effect and sound.  Teleport to next path corner is not only a feature for trains, but monsters as
+well.</p>
+<p>A path_corner fires an <code>event</code> when a monster or train gets to the path_corner.</p>
+<p>The <a href="/KeepModReadme/notes/98p5ke25vi7ue34iopehu9s">Tether System</a> also makes use of the path_corner as its tethers.</p>

@@ -1,0 +1,58 @@
+<h1 id="protection">Protection<a aria-hidden="true" class="anchor-heading icon-link" href="#protection"></a></h1>
+<p>These items provide protection to the player of various sorts, whether by replenishing health and armor, or providing some other protective ability against attacks or the environment.</p>
+<h3 id="item_health"><code>item_health</code><a aria-hidden="true" class="anchor-heading icon-link" href="#item_health"></a></h3>
+<p>Adds to player's health up to max health.  Normal max health is 100, unless in Evil Mode which derives from Copper mod's modified Nightmare skill and has a limit of 50 max health.</p>
+<ul>
+<li>25 normal if no spawnflag is set.</li>
+<li>15 rotten if spawnflag 1 is set.</li>
+<li>100 megahealth if spawnflag 2 is set.  Only megahealth can over-heal player past normal max health, up to 250 mega max heslth for multiple megahealths.  Rots down to normal health by losing 1 health per second.</li>
+</ul>
+<h3 id="item_healthvial"><code>item_healthvial</code><a aria-hidden="true" class="anchor-heading icon-link" href="#item_healthvial"></a></h3>
+<p>Adds to player's health randomized 2 to 5 health.
+The following entities redirect to this entity type:</p>
+<ul>
+<li><code>item_healthgem</code></li>
+<li><code>item_health_potion</code></li>
+</ul>
+<h3 id="item_armor1"><code>item_armor1</code><a aria-hidden="true" class="anchor-heading icon-link" href="#item_armor1"></a></h3>
+<p>armorvalue: 100</p>
+<p>armortype: 0.3</p>
+<p>Green armor that provides 100 armor points (armorvalue) and protects against 30% damage (armortype).  The damage that would have been subtracted from health is what is subtracted from the player's armor points.  E.g., protects against 10 damage, lose 10 armor points instead of 10 health.  Formula: save = ceil(armortype <em> damage) in other words, 'health saved' = 'rounded up'(0.3 </em> damage).  Armor is reduced by up to the amount of armor left but no more.</p>
+<h3 id="item_armor2"><code>item_armor2</code><a aria-hidden="true" class="anchor-heading icon-link" href="#item_armor2"></a></h3>
+<p>armorvalue: 150</p>
+<p>armortype: 0.6</p>
+<p>Yellow armor.  Set spawnflag 2 to use Blue model instead.</p>
+<h3 id="item_armorinv"><code>item_armorInv</code><a aria-hidden="true" class="anchor-heading icon-link" href="#item_armorinv"></a></h3>
+<p>armorvalue: 200</p>
+<p>armortype: 0.8</p>
+<p>Red armor.  Contrary to what the "Inv" might make you believe, this armor does not provide "Invulnerability" but is close.</p>
+<hr>
+<strong>Children</strong>
+<ol>
+<li><a href="/KeepModReadme/notes/mu0k18ssnnawni27vk9u3oq">Item_armor1</a></li>
+<li><a href="/KeepModReadme/notes/wm7rk5ktf4db45ls8ipzeww">Item_armor2</a></li>
+<li><a href="/KeepModReadme/notes/osd5mfxy64x95nrydo8xfe5">Item_armor4</a></li>
+<li><a href="/KeepModReadme/notes/28lqmbhjjexht2gl24l4fb1">Item_armor_exotic</a></li>
+<li><a href="/KeepModReadme/notes/zxrcerylcxlcnlwybdnmku4">Item_artifact_airtank</a></li>
+<li><a href="/KeepModReadme/notes/72jfz5o6zbzzrfp59yho4r0">Item_artifact_blastbelt</a></li>
+<li><a href="/KeepModReadme/notes/8o618bg1uqrlch2q1dob2ah">Item_artifact_cross</a></li>
+<li><a href="/KeepModReadme/notes/rju8zpo5ahccxu4uszr7ve9">Item_artifact_empathy_shields</a></li>
+<li><a href="/KeepModReadme/notes/mwxw5hghvciznkcq07zroi0">Item_artifact_envirosuit</a></li>
+<li><a href="/KeepModReadme/notes/mjl4r0ppkf1punefefho0mj">Item_artifact_invulnerability</a></li>
+<li><a href="/KeepModReadme/notes/9gtv5dv95gz9rovuetunm57">Item_artifact_lavashield</a></li>
+<li><a href="/KeepModReadme/notes/b3prn095oug5holt3yvr4d0">Item_artifact_lavasuit</a></li>
+<li><a href="/KeepModReadme/notes/eb2tq38117yczm6k78ybb18">Item_artifact_regeneration</a></li>
+<li><a href="/KeepModReadme/notes/gjjm18cit8z00bjyszhcgyg">Item_artifact_vitality</a></li>
+<li><a href="/KeepModReadme/notes/076rvgh96v3gm9h3zexdtsz">Item_artifact_wetsuit</a></li>
+<li><a href="/KeepModReadme/notes/lia35szcja9bnuc4279b9bb">Item_backpack_armour</a></li>
+<li><a href="/KeepModReadme/notes/n8d6bdepzctwtldvbfkk4fx">Item_health</a></li>
+<li><a href="/KeepModReadme/notes/4xedonpmmn1ghzjvr61cgj8">Item_healthvial</a></li>
+<li><a href="/KeepModReadme/notes/fe3lryeweo3vyn40jllkzix">Item_powerup_shield</a></li>
+<li><a href="/KeepModReadme/notes/hcmm2osssl5y9dkdujovgjd">Item_sphere</a></li>
+<li><a href="/KeepModReadme/notes/bclcu002kzjj57xkytd6cb4">item_armorInv</a></li>
+</ol>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/KeepModReadme/notes/ytz7elozzr8x1p6yvxte4iv">Health and Damage</a></li>
+</ul>

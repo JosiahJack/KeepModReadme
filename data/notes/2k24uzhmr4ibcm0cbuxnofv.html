@@ -1,0 +1,380 @@
+<h1 id="ambients-and-sound-effects">Ambients and Sound Effects<a aria-hidden="true" class="anchor-heading icon-link" href="#ambients-and-sound-effects"></a></h1>
+<p>There are numerous looped sound effects, called ambients.  Most of them are the same and simply change the default sound file that is played.  Alternatively, <code>ambient_custom_looping</code> can be used in place of any of these so long as you know what sound file to specify.</p>
+<p>Some sounds are looping, others are non-looped sounds played via trigger.  Some ambients play non-looped sounds that get played at randomized intervals.  Certain specialized ambients will play multiple different randomly picked non-looped sounds at randomized intervals; these are typically named <code>ambient_custom_</code> at the beginning of their name, such as <code>ambient_custom_wind</code> or <code>ambient_custom_wood</code>.  These features are extremely popular and have many different various implementations in almost all mods.</p>
+<h1 id="standard-ambient-noises">Standard Ambient Noises<a aria-hidden="true" class="anchor-heading icon-link" href="#standard-ambient-noises"></a></h1>
+<p>These are simply static location, looping sound effects that play the same sound file over and over indefinitely.  These can have their volume and falloff adjusted at map start but cannot be changed once the level has finished starting.</p>
+<h3 id="all-of-the-following-entities-in-this-table-have-these-common-attributes">All of the following entities in this table have these common attributes:<a aria-hidden="true" class="anchor-heading icon-link" href="#all-of-the-following-entities-in-this-table-have-these-common-attributes"></a></h3>
+<p><code>spawnflags</code> - Set 8 Global to play this ambient sound everywhere all the time.  Not recommended unless for small maps in between larger levels.
+<code>volume</code> - Set to a value from 0 to 1, 0 is silent, 1 is full volume. 0.5 is default for the ambients in the table below.
+<code>speed</code> - Set to one of the following to specify the falloff attenuation.  This affects the distance the sound will be heard.</p>
+<blockquote>
+<ul>
+<li>0: Plays everywhere (same as setting <code>spawnflags</code> 8 above)</li>
+<li>1: Default</li>
+<li>2: Idle (not as noticeable)</li>
+<li>3: Static (bit shorter)</li>
+<li>4: Quiet (small radius, still barely audible at longer distances but fades out quicker)</li>
+</ul>
+</blockquote>
+<p>.</p>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Entity Name</th><th>Sound File Used</th><th>Description</th></tr></thead><tbody><tr><td><code>ambient_bublfals</code></td><td>ambience/bublfals.wav</td><td>Bubbly waterfall</td></tr><tr><td><code>ambient_comp_hum</code></td><td>ambience/comp1.wav</td><td>Computer beeping and fan noises, subtle</td></tr><tr><td><code>ambient_drain</code></td><td>ambience/drain.wav</td><td>Drain gargling</td></tr><tr><td><code>ambient_drip</code></td><td>ambience/drip1.wav</td><td>Ultra-classic echoey drip noise in a cave or on pipes or wherever</td></tr><tr><td><code>ambient_drone</code></td><td>ambience/drone6.wav</td><td>Engine/machinery sound, typically used on slipgates</td></tr><tr><td><code>ambient_eerie</code></td><td>ambience/rych1.wav</td><td>Eerie humming</td></tr><tr><td><code>ambient_factory</code></td><td>ambience/factory.wav</td><td>Factory type machinery noises</td></tr><tr><td><code>ambient_fan_blowing</code></td><td>ambience/fanblow.wav</td><td>Fan blowing</td></tr><tr><td><code>ambient_flies</code></td><td>ambience/bugs.wav</td><td>Nehahra flies buzzing</td></tr><tr><td><code>ambient_flouro_buzz</code></td><td>ambience/buzz1.wav</td><td>Fluorescent Light Buzzing Noise with pauses, yes fl<strong>o</strong>uro is a typo [sic]</td></tr><tr><td><code>ambient_flys</code></td><td>misc/flys.wav</td><td>Hipnotic flies buzzing</td></tr><tr><td><code>ambient_grinder</code></td><td>ambience/grinder.wav</td><td>Grinding churning noise</td></tr><tr><td><code>ambient_hevifals</code></td><td>ambience/hevifals.wav</td><td>Heavy waterfall</td></tr><tr><td><code>ambient_highwind</code></td><td>ambience/highwind.wav</td><td>Wind noise</td></tr><tr><td><code>ambient_hum1</code>or <code>ambient_teleport</code></td><td>ambience/hum1.wav</td><td>Teleporter noise, the breathy noise used by <code>trigger_teleport</code></td></tr><tr><td><code>ambient_humming</code></td><td>ambience/humming.wav</td><td><code>spawnflags</code> 4 changes to Nehahra's sound effect (ambience/maydn.wav) that it used on its <code>ambient_humming</code> entities.  Provided for completeness.</td></tr><tr><td><code>ambient_lapping</code></td><td>ambience/wat_amb.wav</td><td>Gentle water noise, useful for edges of pools or by dock posts.</td></tr><tr><td><code>ambient_lapping2</code></td><td>ambience/wat_cave.wav</td><td>Similar to lapping but more echoey as if in a cave.</td></tr><tr><td><code>ambient_lavagurg</code></td><td>ambience/lavagurg.wav</td><td>Lava Gurgling Noise, deeper pitched than water gurgling, sounds viscous</td></tr><tr><td><code>ambient_light_buzz</code></td><td>ambience/fl_hum1.wav</td><td>Steady fluorescent Light Buzzing Noise</td></tr><tr><td><code>ambient_machines</code></td><td>ambience/begths.wav</td><td>Loud Machines</td></tr><tr><td><code>ambient_nehum</code></td><td>ambience/filt.wav</td><td>Humming</td></tr><tr><td><code>ambient_rain</code></td><td>ambience/rain.wav</td><td>Change <code>count</code> to 0 for Rain Runoff (default), 1 for Steady Rain (ambience/rain3.wav), or 2 for Heavy Rain (ambience/rain2.wav).  Uses ambience/rain3.wav if count is higher than 2 or lower than 0.</td></tr><tr><td><code>ambient_riftpower</code></td><td>ambience/riftpowr.wav</td><td>Riftpower</td></tr><tr><td><code>ambient_running_lava</code></td><td>ambience/runlava.wav</td><td>Lava river</td></tr><tr><td><code>ambient_running_water</code></td><td>ambience/runwater.wav</td><td>Water river</td></tr><tr><td><code>ambient_rushing</code></td><td>ambience/rushing.wav</td><td>Whirring</td></tr><tr><td><code>ambient_sizzle</code></td><td>ambience/amsizl.wav</td><td>Cooking sizzle</td></tr><tr><td><code>ambient_stargate_hum</code></td><td>ambience/sgatehum.wav</td><td>Stargate humming</td></tr><tr><td><code>ambient_suck_wind</code></td><td>ambience/suck1.wav</td><td>Classic sky wind noise used outdoors</td></tr><tr><td><code>ambient_swamp1</code></td><td>ambience/swamp1.wav</td><td>Frogs croaking</td></tr><tr><td><code>ambient_swamp2</code></td><td>ambience/swamp2.wav</td><td>Frogs croaking B</td></tr><tr><td><code>ambient_swamp3</code></td><td>ambience/swamp3.wav</td><td>Frogs croaking C</td></tr><tr><td><code>ambient_teeth</code></td><td>ambience/teeth.wav</td><td>Teeth chomp chomp chomp</td></tr><tr><td><code>ambient_thrum</code></td><td>ambience/thrum.wav</td><td>Thrum</td></tr><tr><td><code>ambient_thunder</code></td><td>ambience/thunder1.wav</td><td>Constant Thundering</td></tr><tr><td><code>ambient_waterfall</code></td><td>ambience/waterfal.wav</td><td>Waterfall</td></tr><tr><td><code>ambient_water_fall</code></td><td>ambience/wat_fall.wav</td><td>Waterfall B</td></tr><tr><td><code>ambient_whnoise</code></td><td>ambience/whn.wav</td><td>Weird Humming</td></tr><tr><td><code>ambient_zzxzz</code></td><td>ambience/flash.wav</td><td>Strange Machinery</td></tr></tbody></table></div>
+<h1 id="specialty-ambient-noises">Specialty Ambient Noises<a aria-hidden="true" class="anchor-heading icon-link" href="#specialty-ambient-noises"></a></h1>
+<h3 id="ambient_custom_chime"><code>ambient_custom_chime</code><a aria-hidden="true" class="anchor-heading icon-link" href="#ambient_custom_chime"></a></h3>
+<p>Randomly plays chime sounds at randomized intervals.  Can be enabled or
+disabled using the <a href="/KeepModReadme/notes/y3svp82bm5u5sfu4brr9y80">Logic and Entity State System</a>.
+|Key|Type|Default|Description|
+|---|---|---|---|
+|<code>noise</code>|string|ad171/ambience/chimes.wav|Set to the sound file to play.  Do not include quotation marks.|
+|<code>wait</code>|integer|10|Maximum interval time.|
+|<code>delay</code>|integer|10|Minimum interval time.|
+|<code>waitmin</code>|integer|10-20|Initial minimum interval time before first playing sound after enabling.|
+|<code>waitmin2</code>|boolean (0 or 1)|-1|Set to 1 to prevent from turning off on subsequent targeting.|
+|<code>spawnflags</code>|2|0|Play only once when targeted|
+||64|0|Starts off.  Must have <code>targetname</code> set!|</p>
+<p>.</p>
+<h3 id="ambient_custom_loop-or-ambient_generalpurpose-or-ambient_custom_water"><code>ambient_custom_loop</code> or <code>ambient_generalpurpose</code> or <code>ambient_custom_water</code><a aria-hidden="true" class="anchor-heading icon-link" href="#ambient_custom_loop-or-ambient_generalpurpose-or-ambient_custom_water"></a></h3>
+<p>Useful to set a custom looping ambient noise.
+|Key|Type|Default|Description|
+|---|---|---|---|
+|<code>noise</code>|string||Set to the sound file to play, for example <code>ambient/demonwind.wav</code>.  Do not include quotation marks.|
+|<code>volume</code>|integer|1|Set to a value from 0 to 1, 0 is silent, 1 is full volume.|</p>
+<p>.</p>
+<h3 id="ambient_custom_rain"><code>ambient_custom_rain</code><a aria-hidden="true" class="anchor-heading icon-link" href="#ambient_custom_rain"></a></h3>
+<p>Plays one of 3 different rain types looping.  <strong>Must</strong> be targeted to start.
+|Key|Type|Default|Description|
+|---|---|---|---|
+|<code>count</code>|integer|0|Default Rain|
+|||1|Fast Dripping|
+|||2|Downpour|
+|<code>volume</code>|integer|1|Set to a value from 0 to 1, 0 is silent, 1 is full volume.|
+|<code>impulse</code>|integer|0|The sound channel to use; must be in the range 0 - 7.|
+|<code>speed</code>|integer|1|Set normal falloff attenuation.  This affects the distance the sound will be heard.|
+|||0|Plays everwhere|
+|||2|Idle (not as noticeable)|
+|||3|Static (bit shorter)|
+|||4|Quiet (small radius, still barely audible at longer distances but fades out quicker)|
+|<code>delay</code>|integer|2|Minimum interval time.|
+|<code>spawnflags</code>|integer|64|Always starts off.  Cannot be changed.|</p>
+<p>Sounds to play:</p>
+<blockquote>
+<ul>
+<li>ad171/ambience/rain1_nl.wav</li>
+<li>ad171/ambience/rain2_nl.wav</li>
+</ul>
+</blockquote>
+<p>.</p>
+<h3 id="ambient_custom_rumble"><code>ambient_custom_rumble</code><a aria-hidden="true" class="anchor-heading icon-link" href="#ambient_custom_rumble"></a></h3>
+<p>Randomly plays low rumbling sounds at randomized intervals.  Can be enabled or disabled using the <a href="/KeepModReadme/notes/y3svp82bm5u5sfu4brr9y80">Logic and Entity State System</a>.
+|Key|Type|Default|Description|
+|---|---|---|---|
+|<code>count</code>|integer|0|Pick different sound to start random seed from, 0 through 2|
+|<code>volume</code>|integer|0.5|Set to a value from 0 to 1, 0 is silent, 1 is full volume.|
+|<code>speed</code>|integer|1|Set normal falloff attenuation.  This affects the distance the sound will be heard.|
+|||0|Plays everwhere|
+|||2|Idle (not as noticeable)|
+|||3|Static (bit shorter)|
+|||4|Quiet (small radius, still barely audible at longer distances but fades out quicker)|
+|<code>wait</code>|integer|20|Maximum interval time.|
+|<code>delay</code>|integer|20|Minimum interval time.|
+|<code>waitmin</code>|integer|6-12|Initial start time.|
+|<code>spawnflags</code>|2|0|Play only once when targeted|
+||64|0|Starts off.  Must have <code>targetname</code> set!|</p>
+<p>Sounds to play:</p>
+<blockquote>
+<ul>
+<li>ad171/ambience/rumble1.wav</li>
+<li>ad171/ambience/rumble2.wav</li>
+<li>ad171/ambience/rumble3.wav</li>
+</ul>
+</blockquote>
+<p>.</p>
+<h3 id="ambient_custom_sound-"><code>ambient_custom_sound </code><a aria-hidden="true" class="anchor-heading icon-link" href="#ambient_custom_sound-"></a></h3>
+<p>Plays one of 3 different sounds at randomized interval.  Can be enabled or disabled using the <a href="/KeepModReadme/notes/y3svp82bm5u5sfu4brr9y80">Logic and Entity State System</a>.
+|Key|Type|Default|Description|
+|---|---|---|---|
+|<code>target</code>|string|2|If set, will run targets when making noise, useful for lights, sparks, etc.|
+|<code>noise</code>|string||Set to the 1st sound file to play, for example <code>ambient/demonwind.wav</code>.  Do not include quotation marks.|
+|<code>noise1</code>|string||Set to the 1st sound file to play, for example <code>ambient/demonwind.wav</code>.  Do not include quotation marks.|
+|<code>noise2</code>|string||Set to the 1st sound file to play, for example <code>ambient/demonwind.wav</code>.  Do not include quotation marks.|
+|<code>volume</code>|integer|1|Set to a value from 0 to 1, 0 is silent, 1 is full volume.|
+|<code>impulse</code>|integer|0|The sound channel to use; must be in the range 0 - 7.|
+|<code>speed</code>|integer|1|Set normal falloff attenuation.  This affects the distance the sound will be heard.|
+|||0|Plays everwhere|
+|||2|Idle (not as noticeable)|
+|||3|Static (bit shorter)|
+|||4|Quiet (small radius, still barely audible at longer distances but fades out quicker)|
+|<code>wait</code>|integer|20|Maximum interval time.|
+|<code>delay</code>|integer|2|Minimum interval time.|
+|<code>waitmin</code>|integer|2|Initial minimum interval time before first playing sound after enabling.|
+|<code>waitmin2</code>|boolean (0 or 1)|2|Set to 1 to prevent from turning off on subsequent targeting.|
+|<code>spawnflags</code>|2|0|Play only once when targeted|
+||64|0|Starts off.  Must have <code>targetname</code> set!|</p>
+<p>.</p>
+<h3 id="ambient_custom_wind"><code>ambient_custom_wind</code><a aria-hidden="true" class="anchor-heading icon-link" href="#ambient_custom_wind"></a></h3>
+<p>Randomly plays wind gust sounds at randomized intervals.  Can be enabled or disabled using the <a href="/KeepModReadme/notes/y3svp82bm5u5sfu4brr9y80">Logic and Entity State System</a>.
+|Key|Type|Default|Description|
+|---|---|---|---|
+|<code>count</code>|integer|0|Pick different sound to start random seed from, 0 through 5|
+|<code>volume</code>|integer|1|Set to a value from 0 to 1, 0 is silent, 1 is full volume.|
+|<code>speed</code>|integer|1|Set normal falloff attenuation.  This affects the distance the sound will be heard.|
+|||0|Plays everwhere|
+|||2|Idle (not as noticeable)|
+|||3|Static (bit shorter)|
+|||4|Quiet (small radius, still barely audible at longer distances but fades out quicker)|
+|<code>wait</code>|integer|10|Maximum interval time.|
+|<code>delay</code>|integer|10|Minimum interval time.|
+|<code>waitmin</code>|integer|4-8|Initial start time.|
+|<code>spawnflags</code>|2|0|Play only once when targeted|
+||64|0|Starts off.  Must have <code>targetname</code> set!|</p>
+<p>Sounds to play:</p>
+<blockquote>
+<ul>
+<li>ad171/ambience/windgust1.wav</li>
+<li>ad171/ambience/windgust2.wav</li>
+<li>ad171/ambience/windgust3.wav</li>
+<li>ad171/ambience/windgust4.wav</li>
+<li>ad171/ambience/windgust5.wav</li>
+<li>ad171/ambience/windgust6.wav</li>
+</ul>
+</blockquote>
+<p>.</p>
+<h3 id="ambient_custom_wood"><code>ambient_custom_wood</code><a aria-hidden="true" class="anchor-heading icon-link" href="#ambient_custom_wood"></a></h3>
+<p>Randomly plays wood creaking sounds at randomized intervals.  Can be enabled or disabled using the <a href="/KeepModReadme/notes/y3svp82bm5u5sfu4brr9y80">Logic and Entity State System</a>.
+|Key|Type|Default|Description|
+|---|---|---|---|
+|<code>count</code>|integer|0|Pick different sound to start random seed from, 0 through 3|
+|<code>volume</code>|integer|1|Set to a value from 0 to 1, 0 is silent, 1 is full volume.|
+|<code>speed</code>|integer|2|Set normal falloff attenuation.  This affects the distance the sound will be heard.|
+|||0|Plays everwhere|
+|||2|Idle (not as noticeable)|
+|||3|Static (bit shorter)|
+|||4|Quiet (small radius, still barely audible at longer distances but fades out quicker)|
+|<code>wait</code>|integer|30|Maximum interval time.|
+|<code>delay</code>|integer|15|Minimum interval time.|
+|<code>waitmin</code>|integer|8-16|Initial start time.|
+|<code>spawnflags</code>|2|0|Play only once when targeted|
+||64|0|Starts off.  Must have <code>targetname</code> set!|</p>
+<p>Sounds to play:</p>
+<blockquote>
+<ul>
+<li>ad171/ambience/woodcreak2a.wav</li>
+<li>ad171/ambience/woodcreak2b.wav</li>
+<li>ad171/ambience/woodcreak2c.wav</li>
+<li>ad171/ambience/woodcreak2d.wav</li>
+</ul>
+</blockquote>
+<hr>
+<strong>Backlinks</strong>
+<ul>
+<li><a href="/KeepModReadme/notes/n1nwyx0vpjmxwhft2gc51o6">Point Entities</a></li>
+</ul>
